@@ -2,6 +2,9 @@ name: dev_ci/cd
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - dev
   pull_request:
     types:
       - closed

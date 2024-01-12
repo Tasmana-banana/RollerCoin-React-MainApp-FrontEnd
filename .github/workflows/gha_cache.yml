@@ -2,6 +2,9 @@ name: gha cache
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - dev
   pull_request:
     types:
       - closed
