@@ -25,6 +25,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: 'npm'
+
       - name: Import Secrets
         id: secrets
         uses: hashicorp/vault-action@v2
@@ -54,6 +59,10 @@ jobs:
         id: hash
         run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
 
+      - run: npm install
+
+      - run: npm run build
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
 
@@ -73,7 +82,7 @@ jobs:
       - name: build and push image
         uses: docker/build-push-action@v4
         with:
-          context: .
-          push: false
+          context: Dockerfile_npm
+          push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
