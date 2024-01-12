@@ -1,0 +1,131 @@
+.wrapper {
+  .collection-page {
+    padding: 0;
+
+    p,
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+
+    .collection-title-wrapper {
+      position: relative;
+      margin-bottom: 8px;
+      padding: 4px;
+      text-align: center;
+      border: 1px solid #03e1e4;
+      border-radius: 4px;
+      @media only screen and (min-width: 992px) {
+        padding: 10px 0 12px;
+        border: 2px solid #03e1e4;
+      }
+
+      .collection-title {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        @media only screen and (min-width: 992px) {
+          font-size: 20px;
+        }
+
+        .collection-value {
+          color: #03e1e4;
+        }
+      }
+    }
+
+    .collection-description {
+      margin-bottom: 16px;
+      text-align: center;
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      line-height: 1.2;
+      padding: 0 30px;
+      @media only screen and (min-width: 992px) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .collection-tab-panel {
+      .nav {
+        margin-bottom: 17px;
+
+        &.nav-tabs {
+          justify-content: space-between;
+          border-bottom: 1px solid #2f3045;
+
+          .nav-item {
+            flex-basis: calc(50% - 10px);
+
+            .nav-link {
+              border: 0;
+              text-align: center;
+              cursor: pointer;
+              background-color: rgba(47, 48, 69, 0.35);
+              padding: 12px 10px;
+              font-size: 14px;
+              @media only screen and (min-width: 992px) {
+                font-size: 16px;
+              }
+
+              .tab-text {
+                .miner-img {
+                  margin-right: 10px;
+                }
+
+                .miners-value {
+                  color: #03e1e4;
+                }
+              }
+
+              &.active {
+                background-color: #2f3045;
+                border-top: 2px solid #03e1e4;
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .collection-container-info {
+      display: flex;
+      justify-content: space-between;
+      margin: 16px 0 14px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      border-bottom: 1px solid #6a668a;
+      @media only screen and (min-width: 992px) {
+        font-size: 24px;
+      }
+
+      .info-title,
+      .info-progress {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  &.pt, &.es {
+    .collection-page {
+      .collection-tab-panel {
+        .nav.nav-tabs {
+          .nav-item {
+            .nav-link {
+              font-size: 13px;
+              @media only screen and (min-width: 576px) {
+                font-size: 16px;
+              }
+              @media only screen and (min-width: 768px) {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

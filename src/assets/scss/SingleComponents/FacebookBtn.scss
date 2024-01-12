@@ -1,0 +1,93 @@
+.facebook-link-trigger {
+	color: #03e1e4;
+	font-family: Roboto, sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	&:active,
+	&:focus {
+		outline: 0;
+	}
+	&:hover {
+		color: #029698;
+		text-decoration: underline;
+	}
+}
+.facebook-modal {
+	@media screen and (min-width: 992px) {
+		min-width: 528px;
+	}
+	.facebook-modal-wrapper {
+		position: relative;
+		padding: 20px 15px;
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		@media screen and (min-width: 992px) {
+			padding: 32px 40px;
+		}
+		.close-modal-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+		}
+		.facebook-modal-title {
+			margin-bottom: 16px;
+			padding-right: 20px;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.1;
+		}
+		.facebook-modal-img {
+			margin-bottom: 20px;
+		}
+		.facebook-modal-instruction {
+			list-style-type: decimal;
+			padding-left: 28px;
+			margin-bottom: 20px;
+			font-family: Roboto, sans-serif;
+			font-size: 16px;
+			line-height: 1.2;
+			font-weight: 400;
+			letter-spacing: 0.64px;
+			> li {
+				margin-bottom: 12px;
+			}
+			.gold-text {
+				color: #ffe647;
+				font-weight: 700;
+			}
+		}
+		.facebook-modal-instruction-wrapper,
+		.facebook-modal-description,
+		.facebook-modal-link {
+			margin-bottom: 20px;
+			font-family: Roboto, sans-serif;
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 1.2;
+			letter-spacing: 0.48px;
+		}
+		.facebook-modal-link {
+			display: block;
+			margin-bottom: 24px;
+			word-wrap: break-word;
+		}
+		.facebook-modal-btn-wrapper {
+			display: flex;
+			justify-content: center;
+			.facebook-modal-btn {
+				min-width: 160px;
+				text-align: center;
+				.roller-button-text-wrapper {
+					.text {
+						font-family: Arcana, sans-serif;
+					}
+				}
+			}
+		}
+	}
+}

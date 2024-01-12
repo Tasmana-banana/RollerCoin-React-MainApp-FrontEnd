@@ -1,0 +1,162 @@
+html {
+	scroll-behavior: smooth;
+}
+.storage-preloader {
+	position: absolute;
+	left: calc(50% - 63px);
+	top: calc(50% - 63px);
+}
+.storage-preloader-layer {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 19;
+	background-color: rgba(0, 0, 0, 0.7);
+	.loader-img {
+		display: block;
+		position: absolute;
+		top: calc(50% - 45px);
+		left: 50%;
+		transform: translate(-50%, 0);
+		bottom: auto;
+		z-index: 20;
+	}
+}
+
+.storage-container {
+	padding-bottom: 60px;
+	@media only screen and (min-width: 992px) {
+		padding-bottom: 120px;
+	}
+	p,
+	h2 {
+		margin: 0;
+		padding: 0;
+	}
+	.info-tooltip-icon-container {
+		display: flex;
+		align-items: center;
+		.info-icon-block {
+			width: 24px;
+			height: 24px;
+			margin-right: 12px;
+		}
+		@media only screen and (min-width: 992px) {
+			padding: 0;
+		}
+	}
+	.storage-title {
+		padding: 16px 0;
+		margin: 0;
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+	.nav-pills-container {
+		.link-pill-ico {
+			&.product-pill {
+				cursor: pointer;
+				box-sizing: border-box;
+				border-radius: 4px;
+				font-size: 20px;
+				line-height: 1;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				padding: 8px 16px;
+				margin-bottom: 16px;
+				text-transform: capitalize;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+			&.product-pill {
+				border: 1px solid #6a668a;
+				&:hover {
+					border: 1px solid #03e1e4;
+				}
+				&.active {
+					border: 2px solid #03e1e4;
+					padding: 7px 15px;
+					&:hover {
+						border: 2px solid #03e1e4;
+					}
+				}
+			}
+			.storage-nav-image {
+				padding-right: 12px;
+				line-height: 1.8;
+				@media only screen and (min-width: 992px) and (max-width: 1200px) {
+					line-height: 2.2;
+				}
+			}
+		}
+		.menu-adv-banners {
+			overflow: hidden;
+		}
+	}
+	.craft-details-wrapper {
+		padding: 12px 0 0;
+		.craft-recipe {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			border-radius: 4px;
+			background-color: #1f1f2d;
+			padding: 4px 8px;
+			margin-bottom: 4px;
+			.list-img {
+				margin-right: 10px;
+			}
+			.recipe-text {
+				font-size: 16px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+		}
+		.recipe-item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 16px;
+			margin-bottom: 4px;
+			padding: 3px 8px;
+			border-radius: 4px;
+			background-color: #1f1f2d;
+			.rarity {
+				margin-right: 6px;
+			}
+			.item {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+			.count {
+				font-family: 'Roboto', sans-serif;
+			}
+		}
+	}
+	.mobile-header {
+		display: flex;
+		justify-content: space-between;
+		padding: 16px 0;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		.back-link {
+			color: #fff;
+		}
+		.icon {
+			padding-right: 12px;
+		}
+		.page-name {
+			color: #938c9e;
+		}
+	}
+	.bonus-percent {
+		color: #03e1e4;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+	}
+}

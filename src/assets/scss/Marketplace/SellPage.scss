@@ -1,0 +1,28 @@
+.marketplace-sell-container {
+  .marketplace-preloader-layer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 19;
+    background-color: rgba(0, 0, 0, 0.7);
+    .loader-img {
+      display: block;
+      position: absolute;
+      top: calc(50% - 45px);
+      left: 50%;
+      transform: translate(-50%, 0);
+      bottom: auto;
+      z-index: 20;
+    }
+  }
+  .marketplace-sell-main-block {
+    padding-left: 10px;
+    padding-right: 10px;
+    @media only screen and (min-width: 576px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

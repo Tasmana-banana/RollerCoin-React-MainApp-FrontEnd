@@ -1,0 +1,95 @@
+name: dev_ci/cd
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - dev
+      - '!master'
+
+
+env:
+  REGISTRY: bitmediacorp
+  IMAGE_NAME: rollercoin-react-mainapp-frontend
+  PROCESS_COUNT: 1
+
+jobs:
+  docker-build-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Import Secrets
+        id: secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          url: ${{ secrets.RC_VAULT_URL }}
+          token: ${{ secrets.RC_VAULT_TOKEN_DEV }}
+          secrets: |
+            dev/data/variable GTM_ID | GTM_ID ;
+            dev/data/variable SLACK_WEBHOOK_ROLLER_ERROR | SLACK_WEBHOOK_ROLLER_ERROR ;
+
+      - name: Set config file
+        run: |-
+          rm ./src/config/.env.production
+          mv ./src/config/.env.development ./src/config/.env.production
+          cd config/
+          mv development.json default.json
+          rm production.json
+          sed -i 's|GTM_ID|${{ steps.secrets.outputs.GTM_ID }}|g' default.json
+          sed -i 's|SLACK_WEBHOOK_ROLLER_ERROR|${{ steps.secrets.outputs.SLACK_WEBHOOK_ROLLER_ERROR }}|g' default.json
+          cat default.json
+
+      - name: Replace max process in ecosystem.js
+        run: |-
+          sed -i 's/instances: "max"/instances: "${{ env.PROCESS_COUNT }}"/g' ecosystem.config.js
+
+      - name: Get Hash
+        id: hash
+        run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: build and push image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}-${{ env.git_hash }}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:dev
+
+  send_notification_to_slack:
+    runs-on: ubuntu-22.04
+    if: always()
+    needs: [docker-build-dev]
+    steps:
+      - run: |
+          successText="SUCCESS: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Build #${{ github.run_number }}> of *${{ github.repository }}@${{ github.ref_name }}* by *${{ github.actor }}* completed successfully.🤗"
+          failureText="FAILURE: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Build #${{ github.run_number }}> of *${{ github.repository }}@${{ github.ref_name }}* by *${{ github.actor }}* failed.😱"
+          cancelledText="CANCELLED: <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|Build #${{ github.run_number }}> of *${{ github.repository }}@${{ github.ref_name }}* by *${{ github.actor }}* was cancelled.🤔"
+          status="${{ (contains(needs.*.result, 'cancelled') && 'cancelled') || (contains(needs.*.result, 'failure') && 'failure') || 'success' }}"
+
+          if [ "$status" = 'success' ]; then
+            color='good'
+            text=$successText
+          elif [ "$status" = 'failure' ]; then
+            color='danger'
+            text=$failureText
+          elif [ "$status" = "cancelled" ]; then
+            color='warning'
+            text=$cancelledText
+          fi
+
+          curl "${{ secrets.RC_SLACK_WEBHOOK_URL }}" -X "POST" --header "Content-Type: application/json" \
+            --data "{attachments: [{text: \"$text\", color: \"$color\"}]}"

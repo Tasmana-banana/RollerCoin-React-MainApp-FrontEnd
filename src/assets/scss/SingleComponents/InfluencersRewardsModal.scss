@@ -1,0 +1,59 @@
+.influercers-rewards-modal {
+	@media (min-width: 992px) {
+		max-width: 580px;
+	}
+	.influercers-rewards-modal-body {
+		padding: 20px;
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		@media (min-width: 992px) {
+			padding: 40px;
+		}
+		.influercers-rewards-wrapper {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			.item-img-wrapper {
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-shrink: 0;
+				width: 100px;
+				height: 80px;
+				margin: 0 10px 20px;
+				background-color: #1f1f2d;
+				border-radius: 4px;
+				.check-icon {
+					position: absolute;
+					top: 2px;
+					left: 2px;
+				}
+			}
+		}
+		.influercers-title {
+			font-family: Roboto, sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: center;
+		}
+		.influercers-text {
+			margin-bottom: 20px;
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+			text-align: center;
+			.accent {
+				font-weight: 700;
+			}
+		}
+		.disclaimer-btn-block {
+			margin-top: 20px;
+			text-align: center;
+			.disclaimer-button {
+				min-width: 240px;
+				font-family: Arcana, sans-serif;
+			}
+		}
+	}
+}

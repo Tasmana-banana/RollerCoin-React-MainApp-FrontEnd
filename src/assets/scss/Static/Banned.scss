@@ -1,0 +1,17 @@
+.banned-container {
+	margin-bottom: 48px;
+	.img-container {
+		margin-bottom: 32px;
+		img {
+			max-width: 100%;
+		}
+	}
+	.text-container {
+		margin-bottom: 16px;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 28px;
+		color: #ffffff;
+		line-height: 1;
+	}
+}

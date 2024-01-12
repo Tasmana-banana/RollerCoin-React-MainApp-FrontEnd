@@ -1,0 +1,14 @@
+.marketplace-types-filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #6a668a;
+  border-radius: 4px;
+  .marketplace-type-radio {
+    .radio-label-title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+    }
+  }
+}

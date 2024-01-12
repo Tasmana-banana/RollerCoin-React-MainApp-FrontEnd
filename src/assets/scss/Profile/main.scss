@@ -1,0 +1,143 @@
+.profile-container {
+	padding-bottom: 60px;
+	@media only screen and (min-width: 992px) {
+		padding-bottom: 120px;
+	}
+	p,
+	h2 {
+		margin: 0;
+		padding: 0;
+	}
+	.profile-preloader {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.7);
+		.loader-img {
+			display: block;
+			position: absolute;
+			top: calc(50% - 45px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			bottom: auto;
+			z-index: 11;
+		}
+	}
+	.profile-title {
+		padding: 20px 0;
+		margin: 0;
+		font-size: 24px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		line-height: 29px;
+	}
+	.mobile-header {
+		display: flex;
+		flex-direction: column;
+		padding-top: 23px;
+		padding-bottom: 20px;
+		line-height: 24px;
+		font-family: Roboto, sans-serif;
+		font-size: 18px;
+		.back-link {
+			color: #fff;
+		}
+		.icon {
+			padding-right: 8px;
+		}
+		.page-name {
+			font-size: 24px;
+			line-height: 29px;
+			font-weight: 700;
+		}
+	}
+	.nav-pills-container {
+		.link-pill-ico {
+			&.product-pill {
+				cursor: pointer;
+				box-sizing: border-box;
+				border-radius: 4px;
+				font-size: 24px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				padding: 16px;
+				margin-bottom: 20px;
+				text-transform: inherit;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				transition: all linear 0.2s;
+				@media only screen and (min-width: 992px) and (max-width: 1200px) {
+					font-size: 20px;
+				}
+			}
+			&.product-pill {
+				position: relative;
+				border: 1px solid #514e72;
+				background-color: #2f3045;
+				.new-pill {
+					position: absolute;
+					top: -1px;
+					right: -1px;
+					padding: 2px 8px;
+					background-color: #2bd600;
+					border-radius: 0 4px 0 4px;
+					.new-pill-text {
+						font-size: 18px;
+						color: #1f1f2d;
+						line-height: 1;
+						text-transform: uppercase;
+					}
+				}
+				&:hover {
+					border: 1px solid #03e1e4;
+				}
+				&.active {
+					border: solid 1px #2f3045;
+					background-color: #03e1e4;
+					color: #2f3045;
+					.new-pill {
+						top: -2px;
+						right: -2px;
+					}
+					&:hover {
+						border: 1px solid #03e1e4;
+					}
+					.profile-nav-link {
+						color: #2f3045;
+					}
+				}
+			}
+			.profile-nav-link {
+				display: flex;
+				align-items: center;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: 700;
+				font-family: Roboto, sans-serif;
+				color: #03e1e4;
+				max-height: 22px;
+				.profile-nav-image {
+					padding-right: 12px;
+				}
+			}
+		}
+	}
+}
+
+.wrapper {
+	&.es,
+	&.pt {
+		.profile-container {
+			.nav-pills-container {
+				.link-pill-ico,
+				.product-pill-gold {
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}

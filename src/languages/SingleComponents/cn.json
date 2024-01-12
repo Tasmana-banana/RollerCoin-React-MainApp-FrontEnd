@@ -1,0 +1,34 @@
+{
+	"or": "OR",
+	"market": {
+		"buyBox": "买箱子",
+		"buy": "买",
+		"discard": "丢弃",
+		"notEnough": "NOT ENOUGH FUNDS"
+	},
+	"disclamer": {
+		"title": "Terms and Сonditions and Privacy Policy",
+		"dearRoller": "Dear Roller!",
+		"text": ", you confirm that you have read the Terms and conditions and Privacy Policy, that you understand them and that you unconditionally agree to be bound by them.",
+		"accept": "accept",
+		"terms": "Terms of Use",
+		"privacy": "Privacy Policy",
+		"and": "and",
+		"disclaimer": "Disclaimer"
+	},
+	"customModal": {
+		"title": "You have got miner The Big Boss!",
+		"subtitle": "Congrats, Roller!",
+		"text": "You have collected all 9 Miner-Yachts and completed Luxury Yacht Club Event! You deserve an award — Miner The Big Boss with 9,200,000 Gh/s Power! ",
+		"accept": "Get Miner"
+	},
+	"eventPopup": {
+		"btnText": "Let's start!"
+	},
+	"influencers": {
+		"welcome": "Welcome to Rollercoin!",
+		"youReceived": "You‘ve received a ",
+		"toStart": " rewards. Time to start mining!",
+		"startPlay": "Start Playing"
+	}
+}

@@ -1,0 +1,69 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5FX4SDJ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Google Tag Manager -->
+<script>
+    (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-5FX4SDJ');
+</script>
+<!-- End Google Tag Manager -->
+<script>
+    const fbPixel = localStorage.getItem("fbpixel");
+    if(fbPixel) {
+        const img = document.createElement("img");
+        img.setAttribute("id", new Date().getTime());
+        img.style.display = "none";
+        img.style.width = '1px';
+        img.style.height = '1px';
+        img.setAttribute("src", `https://www.facebook.com/tr?id=${fbPixel}&ev=Lead`);
+
+        img.onload = () => document.body.removeChild(img);
+        img.onerror = () => document.body.removeChild(img);
+
+        document.body.appendChild(img);
+        localStorage.removeItem("fbpixel");
+    }
+</script>
+
+<script>
+    const arbitFB = localStorage.getItem("arbit_fb");
+    const arbitGoogle = localStorage.getItem("arbit_google");
+    if(arbitFB || arbitGoogle) {
+        const iframe = document.createElement("iframe");
+        const urlObject = {};
+        if (arbitFB) {
+            urlObject.arbit_fb = arbitFB;
+        }
+        if (arbitGoogle) {
+            urlObject.arbit_google = arbitGoogle;
+        }
+        const queryObject = new URLSearchParams(urlObject);
+        const queryString = queryObject.toString();
+        iframe.setAttribute("id", new Date().getTime());
+        iframe.style.display = "none";
+        iframe.style.width = '1px';
+        iframe.style.height = '1px';
+        iframe.setAttribute("src", `https://analytics-static.nyc3.cdn.digitaloceanspaces.com/index.html?${queryString}`);
+
+        iframe.onload = () => document.body.removeChild(iframe);
+        iframe.onerror = () => document.body.removeChild(iframe);
+
+        document.body.appendChild(iframe);
+        localStorage.removeItem("arbit_fb");
+        localStorage.removeItem("arbit_google");
+    }
+</script>

@@ -1,0 +1,207 @@
+.quests-modal {
+	max-width: 930px;
+	p {
+		padding: 0;
+		margin: 0;
+	}
+	.quests-modal-body {
+		position: relative;
+		padding: 8px 16px 24px;
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		max-width: 100%;
+		@media only screen and (min-width: 992px) {
+			padding: 16px 24px 24px;
+			min-width: 930px;
+		}
+
+		& .simplebar-track {
+			background: #1f1f2d;
+			border-radius: 4px;
+			width: 8px;
+
+			& .simplebar-scrollbar.simplebar-visible:before {
+				background-color: #6a668a;
+				border-radius: 4px;
+				left: 0;
+				opacity: 1;
+				width: 8px;
+			}
+		}
+		.quest-modal-close-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 0;
+			color: #ffffff;
+			background-color: transparent;
+			box-shadow: 0 4px #514e72, 0 5px #1f1f2c;
+			outline: none;
+			cursor: pointer;
+			z-index: 1;
+			.close-btn-img-wrapper {
+				padding: 6px;
+			}
+			.close-btn-img {
+				width: 12px;
+				height: 12px;
+			}
+			&:active,
+			&:disabled {
+				> span {
+					transform: translate(0, 3px);
+				}
+			}
+		}
+		.info-tooltip-icon-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 16px;
+			.info-icon-block {
+				width: 24px;
+				height: 24px;
+				margin-right: 12px;
+			}
+			@media only screen and (min-width: 992px) {
+				padding: 0;
+			}
+		}
+		.quests-title {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 1.1;
+			text-align: center;
+			@media only screen and (min-width: 992px) {
+				margin-bottom: 16px;
+			}
+		}
+		.quests-tab-panel {
+			.nav-tabs {
+				display: flex;
+				flex-wrap: nowrap;
+				column-gap: 16px;
+				padding-bottom: 1px;
+				border-bottom: 1px solid #6a668a;
+				.nav-item {
+					flex-grow: 1;
+					text-align: center;
+					cursor: pointer;
+					.nav-link {
+						position: relative;
+						top: 1px;
+						padding: 4px 0;
+						margin-bottom: 0;
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						font-size: 18px;
+						line-height: 1.5;
+						color: #ffffff;
+						text-transform: capitalize;
+						background-color: #1f1f2d;
+						border: 1px solid #6a668a;
+						border-top-left-radius: 4px;
+						border-top-right-radius: 4px;
+						@media only screen and (min-width: 992px) {
+							padding: 4px 0 8px;
+							font-size: 20px;
+						}
+						&.active {
+							background-color: #2f3045;
+							border-bottom-color: transparent;
+						}
+
+						& .count {
+							color: #03e1e4;
+							margin-left: 8px;
+						}
+					}
+				}
+			}
+		}
+		.quest-tab-content {
+			position: relative;
+			min-height: 560px;
+			padding: 16px;
+			border-left: 1px solid #6a668a;
+			border-right: 1px solid #6a668a;
+			border-bottom: 1px solid #6a668a;
+			border-bottom-left-radius: 4px;
+			border-bottom-right-radius: 4px;
+			.quests-preloader {
+				position: absolute;
+				left: calc(50% - 63px);
+				top: calc(50% - 63px);
+			}
+			.quest-timer-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				@media only screen and (min-width: 992px) {
+					flex-direction: row;
+				}
+				.remaining-time {
+					width: 100%;
+					padding-bottom: 16px;
+					line-height: 1;
+					text-align: center;
+					.time-icon {
+						display: inline-block;
+						max-height: 22px;
+						max-width: 22px;
+						margin-right: 12px;
+						@media only screen and (min-width: 992px) {
+							margin-right: 12px;
+							transform: translateY(-1px);
+						}
+					}
+					.time-text {
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						text-transform: lowercase;
+						display: inline-block;
+						font-size: 18px;
+						word-spacing: 0;
+						margin-bottom: 0;
+						@media (min-width: 992px) {
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		& .quest-item-card {
+			& .quest-item-xp img {
+				width: 40px;
+			}
+
+			& .quest-item-description {
+				max-width: 395px;
+			}
+
+			& .quest-item-progress-wrapper {
+				& .progress-bar {
+					width: 395px;
+
+					&.green-color {
+						> .progress-bar {
+							background-color: #2bd600;
+						}
+					}
+				}
+
+				& .quest-progress-value {
+					flex: 0 0 75px;
+
+					&.green-color {
+						color: #2bd600;
+					}
+				}
+			}
+		}
+	}
+}

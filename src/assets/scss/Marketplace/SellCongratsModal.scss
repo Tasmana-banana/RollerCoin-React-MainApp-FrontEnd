@@ -1,0 +1,28 @@
+.sell-congrats-modal {
+  min-width: 320px;
+  max-width: 380px;
+  height: auto;
+  font-size: 16px;
+  color: #ffffff;
+  .modal-body {
+    padding: 24px;
+    background-color: #2f3045;
+    border: 1px solid #6a668a;
+    border-radius: 4px 4px 4px 4px;
+    .title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      text-align: center;
+    }
+    .description {
+      font-family: 'Roboto', sans-serif;
+      text-align: center;
+    }
+    .content {
+      font-family: 'Roboto', sans-serif;
+      padding-left: 46px;
+      padding-right: 46px;
+    }
+  }
+}

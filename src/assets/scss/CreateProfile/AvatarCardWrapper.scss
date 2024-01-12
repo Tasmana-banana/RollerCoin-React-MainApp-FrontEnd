@@ -1,0 +1,17 @@
+.avatar-card-wrapper {
+	.page-title {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+	.card-wrapper {
+		border: 2px solid #6a668a;
+		border-radius: 4px;
+		background-color: #2f3045;
+		padding: 16px 20px 20px;
+		margin-bottom: 104px;
+		@media screen and (max-width: 991px) {
+			margin-bottom: 68px;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "eventBanner" : {
+    "eventPass": "EVENT PASS",
+    "levelReward": "Level Reward",
+    "level": "Level",
+    "getXp": "Get XP"
+  },
+  "socialBanner": {
+    "stayTuned": "STAY TUNED"
+  }
+}

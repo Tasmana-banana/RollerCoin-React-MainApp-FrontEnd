@@ -1,0 +1,83 @@
+.statistics-container {
+	.left-block {
+		overflow: hidden;
+		@media only screen and (min-width: 992px) {
+			padding-right: 32px;
+		}
+		.total-income-container {
+			font-size: 16px;
+			&:first-child {
+				margin-bottom: 16px;
+			}
+			.users-line {
+				display: flex;
+				align-items: center;
+				margin-bottom: 8px;
+				> .count-users {
+					font-family: 'Arcana', sans-serif;
+					padding-left: 8px;
+				}
+			}
+			.small-text-stats {
+				font-size: 16px;
+				padding-left: 4px;
+				font-family: 'Roboto', sans-serif;
+			}
+			.income-text {
+				margin-bottom: 8px;
+			}
+			.income-number {
+				font-family: 'Arcana', sans-serif;
+				font-size: 24px;
+				&.today-income {
+					font-size: 20px;
+					text-transform: uppercase;
+				}
+				&:not(.today-income) {
+					.small-text-stats {
+						font-size: 16px;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+		.note-text {
+			padding: 16px;
+			font-size: 16px;
+			margin-top: 27px;
+			margin-bottom: 27px;
+			background-color: #1f1f2d;
+			border-radius: 4px;
+			@media only screen and (min-width: 992px) {
+				margin-bottom: 0;
+			}
+			.header-text {
+				display: flex;
+				align-items: center;
+				margin-bottom: 8px;
+				font-family: 'Arcana', sans-serif;
+				.icon {
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.right-block {
+		@import "../StatisticWithNavAndChart";
+		.statistics-right-block-container {
+			.copy-referral-link-block {
+				margin-bottom: 20px;
+			}
+			.navigation-title{
+				display: none;
+				@media only screen and (min-width: 991px){
+					display: block;
+				}
+			}
+		}
+		.money-income-container {
+			margin-top: 16px;
+			@import "../RollerTable";
+		}
+	}
+}

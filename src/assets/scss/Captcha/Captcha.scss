@@ -1,0 +1,23 @@
+.captcha-modal {
+  max-width: 360px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  .modal-content {
+    margin: 10px auto;
+    background-color: #1f1f2d;
+    border-radius: 4px;
+  }
+  .captcha-body {
+    padding: 20px 15px;
+
+    .title {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+
+    .wg-modal__backdrop {
+      background-color: rgba(0, 0, 0, 0);
+    }
+  }
+}

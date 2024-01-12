@@ -1,0 +1,19 @@
+.modal-buy-buttons {
+	.tree-dimensional-button {
+		background-color: transparent;
+		&.btn-red {
+			box-shadow: 0 6px #620a12, 0 10px #1f1f2c;
+			> span {
+				box-shadow: 0 0 #dc3545, 0 1px #1f1f2c;
+				background-color: #dc3545;
+				border: 1px solid #ff8490;
+				color: #ffffff;
+			}
+		}
+	}
+	.btn-padding {
+		font-family: Arcana, sans-serif;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+}

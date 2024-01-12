@@ -1,0 +1,164 @@
+.rewards-puzzle {
+	@import "colors";
+
+	max-height: 824px;
+	.puzzle-preloader {
+		position: relative;
+		min-height: 620px;
+		@media screen and (min-width: 992px) {
+			min-height: 824px;
+		}
+		.loader-img {
+			display: block;
+			position: absolute;
+			left: calc(50%);
+			top: calc(50%);
+			transform: translate(-50%, -50%);
+			z-index: 11;
+		}
+	}
+	.rewards-puzzle-wrapper {
+		height: 100%;
+		border-radius: 4px;
+		.puzzle-container {
+			min-height: 620px;
+			border-radius: 4px;
+			border: 12px solid $darkBackgroundColor;
+			padding-left: 10px;
+			padding-right: 9px;
+			overflow: hidden;
+			@media screen and (min-width: 992px) {
+				min-height: 824px;
+				border: 19px solid $darkBackgroundColor;
+			}
+			.puzzle-row {
+				@media screen and (min-width: 992px) {
+					min-height: 788px;
+				}
+			}
+		}
+		&.claimed-all {
+			animation: background-light 600ms ease-out;
+			.puzzle-container {
+				border: none;
+			}
+		}
+	}
+	.reward-puzzle-card-wrapper {
+		padding-left: 0;
+		padding-right: 0;
+		border: 4px solid $darkBackgroundColor;
+		overflow: hidden;
+		.reward-puzzle-card-container {
+			border-radius: 6px;
+			min-height: 92px;
+			outline: 4px solid $darkBackgroundColor;
+			display: flex;
+			background-color: $darkBackgroundColor;
+			border: 3px solid #9ff2f3;
+			cursor: pointer;
+			@media screen and (min-width: 992px) {
+				min-height: 123px;
+			}
+			.golden-cell {
+				max-height: 100%;
+				background: linear-gradient($yellowLowOpacity, $yellowOpacity);
+				border-radius: 4px;
+			}
+			&.golden-border {
+				border: 3px solid $yellow;
+			}
+			&.opened-card {
+				border-color: transparent;
+				background-color: transparent;
+				cursor: default;
+				transition: all 2s ease-in-out;
+				.card-content {
+					transition: all 2s ease-in-out;
+					opacity: 0;
+				}
+			}
+			.card-content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+			}
+			.reward-img-block {
+				position: relative;
+				max-width: 100px;
+				margin: 0 auto;
+				@media screen and (min-width: 992px) {
+					padding-top: 10px;
+					max-width: 100px;
+				}
+				.reward-img {
+					max-width: 75px;
+					padding: 5px;
+					@media screen and (min-width: 992px) {
+						padding: 5px;
+						max-width: 100px;
+					}
+				}
+				&.miner {
+					padding: 0;
+					.reward-img {
+						padding: 0;
+					}
+				}
+				.rating-star-wrapper {
+					.star-wrapper {
+						line-height: 0;
+						&:not(:last-child) {
+							margin-right: 3px;
+						}
+						.star {
+							max-width: 20px;
+							max-height: 20px;
+						}
+					}
+				}
+				.collection-product-level-img-size-2 {
+					position: absolute;
+					top: 16px;
+					left: -8px;
+					z-index: 8;
+					@media screen and (min-width: 992px) {
+						top: 16px;
+					}
+				}
+				.collection-product-level-img-size-1 {
+					position: absolute;
+					top: 16px;
+					left: -6px;
+					z-index: 8;
+					@media screen and (min-width: 992px) {
+						top: 16px;
+						left: 0;
+					}
+				}
+			}
+			.reward-text-block {
+				font-family: Roboto, sans-serif;
+				font-size: 12px;
+				text-align: center;
+				line-height: 1.1;
+				@media screen and (min-width: 992px) {
+					line-height: 1.5;
+				}
+				p {
+					margin: 0;
+				}
+			}
+		}
+	}
+}
+@keyframes background-light {
+	0% {
+		filter: brightness(80);
+	}
+	100% {
+		filter: brightness(1);
+	}
+}

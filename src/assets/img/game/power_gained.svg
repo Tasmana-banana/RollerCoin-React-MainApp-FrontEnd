@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="186" height="19" fill="none" viewBox="0 0 186 19">
+    <g filter="url(#a)">
+        <path fill="url(#b)" d="M14.96 9.186h-1.905v2.019h-7.99v4.008H1.002V1.253h11.97V3.16h1.99v6.026zm-4.008 0V3.244H5.01v5.942h5.942z"/>
+        <path fill="url(#c)" d="M31.494 13.195h-1.906v2.018H19.552v-1.906h-2.018V3.244h1.906v-1.99h10.064V3.16h1.99v10.035zm-4.009 0V3.244h-5.942v9.95h5.942z"/>
+        <path fill="url(#d)" d="M48.027 15.213h-3.953v-1.906h-1.99v-2.074h-1.962v1.962h-1.99v2.018h-4.065V1.253h3.953v5.943h1.962V5.262h2.046v1.934h1.962V1.253h4.037v13.96z"/>
+        <path fill="url(#e)" d="M64.812 15.1H50.685V1.002h14.127v1.962H54.75v4.009h6.027v2.074h-6.027v4.009h10.063V15.1z"/>
+        <path fill="url(#f)" d="M81.093 9.186h-3.952v1.963h1.962v2.018h1.99v2.046H75.15v-1.906h-1.99v-2.074h-1.962v3.98h-4.065V1.253h11.97V3.16h1.99v6.026zm-4.008-1.99V3.244h-5.943v5.942h4.037v-1.99h1.906z"/>
+        <path fill="url(#g)" d="M102.333 15.213h-9.95v-1.906h-1.99v-2.018h-2.02V5.234h1.907v-1.99h2.018v-1.99h10.035v1.934h-7.904v1.99h-2.047v5.97h1.962v2.047h4.009V9.298h-1.962V7.252h5.942v7.961z"/>
+        <path fill="url(#h)" d="M118.867 15.213h-3.953v-3.98h-5.943v3.98h-4.064v-9.98h1.906v-1.99h2.018v-1.99h6.027V3.16h2.018v1.99h1.991v10.063zm-4.009-6.027V5.15h-1.99V3.244h-2.046v2.018h-1.907v3.924h5.943z"/>
+        <path fill="url(#i)" d="M134.811 15.213h-11.969v-1.962h3.952V3.3h-3.952V1.253h11.969v1.935h-3.952v9.979h3.952v2.046z"/>
+        <path fill="url(#j)" d="M151.933 15.213h-3.953v-1.906h-1.99v-2.018H144V9.242h-1.962v5.971h-4.065V1.253h3.952V3.16h2.019v1.99h1.99v2.046h1.962V1.253h4.037v13.96z"/>
+        <path fill="url(#k)" d="M168.718 15.1H154.59V1.002h14.128v1.962h-10.063v4.009h6.027v2.074h-6.027v4.009h10.063V15.1z"/>
+        <path fill="url(#l)" d="M184.999 11.205h-1.906v1.99h-1.99v2.018h-10.064V1.253h9.951V3.16h2.019v1.99h1.99v6.055zm-4.009 0V5.15H179V3.244h-3.952v9.95h4.036v-1.99h1.906z"/>
+    </g>
+    <path fill="url(#m)" fill-rule="evenodd" d="M15.962 10.187h-1.906v2.019h-7.99v4.008H0V.252h13.972v1.906h1.99v8.03zM5.066 11.205h7.989V9.186h1.906V3.16h-1.99V1.253H1v13.96h4.065v-4.008zm5.886-7.961v5.942H5.01V3.244h5.942zm-4.941 1v3.941h3.94v-3.94h-3.94zm26.484 9.952h-1.906v2.018H18.55v-1.906h-2.018V2.243h1.906V.253h12.066v1.905h1.99v12.038zm-12.942-.89v1.907h10.035v-2.018h1.906V3.16h-1.99V1.253H19.44v1.99h-1.906v10.064h2.018zm7.932-10.062v9.95h-5.942v-9.95h5.942zm-4.941 1v7.95h3.94v-7.95h-3.94zm26.484 11.97h-5.955v-1.906h-1.99v-.112h-1.95v2.018h-6.067V.252h5.955v4.009h3.968V.252h6.04v15.962zM43.99 7.196h-1.962V5.262h-2.046v1.934H38.02V1.253h-3.953v13.96h4.065v-2.018h1.99v-1.962h1.962v2.074h1.99v1.906h3.953V1.253H43.99v5.943zm21.823 8.906h-16.13V0h16.13v3.964H55.75v2.007h6.027v4.076H55.75v2.006h10.063v4.05zM54.75 13.055V9.046h6.027V6.972h-6.027V2.963h10.063V1.001H50.685v14.1h14.127v-2.046H54.75zm27.345-2.868h-1.99v1.979h1.99v4.048H74.15v-1.906H72.2v1.906h-6.067V.252h13.972v1.906h1.99v8.03zm-10.896 1.046h1.962v2.074h1.99v1.906h5.943v-2.046h-1.99v-2.018H77.14V9.186h3.952V3.16h-1.99V1.253h-11.97v13.96h4.065v-3.98zm2.98-5.038h1.906v-1.95h-3.94v3.94h2.033v-1.99zm-3.036 2.991V3.244h5.943v3.952h-1.906v1.99h-4.037zm32.193 7.028H91.381v-1.906h-1.99V12.29h-2.018V4.233h1.906v-1.99h2.018V.253h12.038v3.936H95.43v1.99h-2.047v3.968h1.963v2.047h2.006V10.3H95.39V6.25h7.945v9.963zm-4.982-3.02h-4.008v-2.046h-1.963v-5.97h2.047v-1.99h7.904V1.253H92.298v1.99H90.28v1.99h-1.906v6.056h2.018v2.018h1.99v1.906h9.951v-7.96h-5.942v2.045h1.962v3.897zm21.515 3.02h-5.955v-3.98h-3.94v3.98h-6.067V4.233h1.906v-1.99h2.018V.253h8.029v1.905h2.018v1.99h1.991v12.066zm-5.01-13.054V1.253h-6.027v1.99h-2.018v1.99h-1.906v9.98h4.064v-3.98h5.943v3.98h3.953V5.15h-1.991V3.16h-2.018zm-2.991 2.99V4.246h-.044v2.018h-1.906v1.922h3.94V6.151h-1.99zm2.991 3.036h-5.943V5.262h1.907V3.244h2.046V5.15h1.99v4.036zm20.954 7.028H121.84V12.25h3.953V4.3h-3.953V.253h13.972V4.19h-3.952v7.977h3.952v4.048zm-4.953-3.047v-9.98h3.952V1.254h-11.969V3.3h3.952v9.95h-3.952v1.963h11.969v-2.046h-3.952zm22.075 3.047h-5.955v-1.906h-1.99V12.29h-1.95v3.924h-6.067V.252h5.955v1.906h2.018v1.99h1.95V.253h6.039v15.962zm-5.038-9.018h-1.962V5.15h-1.99V3.16h-2.019V1.253h-3.952v13.96h4.065v-5.97H144v2.046h1.99v2.018h1.99v1.906h3.953V1.253h-4.037v5.943zm21.823 8.906h-16.13V0h16.13v3.964h-10.063v2.007h6.027v4.076h-6.027v2.006h10.063v4.05zm-11.064-3.047V9.046h6.027V6.972h-6.027V2.963h10.063V1.001H154.59v14.1h14.128v-2.046h-10.063zm27.345-.85h-1.906v1.99h-1.99v2.02h-12.066V.251h11.954v1.906h2.018v1.99H186v8.058zm-5.01-9.045V1.253h-9.951v13.96h10.064v-2.018h1.99v-1.99h1.906V5.15h-1.99V3.16h-2.019zm-2.991 2.99V4.246h-1.95v7.949h2.034v-1.99h1.906V6.15h-1.99zm2.991 5.055h-1.906v1.99h-4.036V3.244H179V5.15h1.99v6.055z" clip-rule="evenodd"/>
+    <defs>
+        <filter id="a" width="183.998" height="17.215" x="1.001" y="1.001" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="3"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0.353394 0 0 0 0 0.357601 0 0 0 1 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+        </filter>
+        <linearGradient id="b" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="c" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="d" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="e" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="f" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="g" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="h" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="i" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="j" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="k" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="l" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#03E1E4"/>
+            <stop offset="1" stop-color="#186C6D"/>
+        </linearGradient>
+        <linearGradient id="m" x1="93.939" x2="93.939" y1="-5.991" y2="23.042" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#C5FEFF"/>
+            <stop offset="1" stop-color="#03E1E4"/>
+        </linearGradient>
+    </defs>
+</svg>

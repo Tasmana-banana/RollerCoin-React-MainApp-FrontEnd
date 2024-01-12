@@ -1,0 +1,49 @@
+@import "./colors";
+.stats-table {
+	.table-header {
+		display: flex;
+		align-items: center;
+		.header-text {
+			padding: 4px 10px;
+			border: none;
+			border-radius: 4px;
+		}
+	}
+	.stats-info-row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 12px;
+		.body-text {
+			font-weight: 700;
+			text-align: end;
+		}
+		.stats-info-row-title {
+			color: $lavanderColor;
+			.bonus-power-value-block {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+		.bonus-percent-power-wrapper {
+			display: flex;
+			justify-content: flex-end;
+			margin-top: 2px;
+			font-weight: 700;
+			.img-block {
+				margin-right: 4px;
+			}
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	.choose-game-link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: 700;
+		.icon {
+			margin-right: 8px;
+		}
+	}
+}

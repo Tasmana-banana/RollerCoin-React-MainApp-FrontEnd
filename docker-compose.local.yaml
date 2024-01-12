@@ -1,0 +1,21 @@
+version: "3.7"
+volumes:
+  node_modules:
+services:
+  frontend:
+    image: rollercoin-frontend-local
+    build:
+      context: ./
+      dockerfile: Dockerfile-local
+    hostname: home.rollercoin.com
+    ports:
+      - 80:8090
+      - 443:8090
+    environment:
+      - NODE_ENV=development
+      - HOSTNAME=home.rollercoin.com
+      - DISABLE_MINIFICATION=1
+      - DISABLE_AUTO_FIX=1
+    volumes:
+      - .:/rollerdir
+      - node_modules:/rollerdir/node_modules

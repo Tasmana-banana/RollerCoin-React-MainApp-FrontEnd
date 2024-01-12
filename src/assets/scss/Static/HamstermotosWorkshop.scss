@@ -1,0 +1,159 @@
+.event-container {
+	margin-top: 20px;
+	padding-bottom: 80px;
+	@media screen and (min-width: 992px) {
+		margin-top: 0;
+	}
+	p {
+		margin: 0;
+	}
+	.event-title {
+		min-height: 192px;
+		margin-bottom: 32px;
+		background: url("../../img/singleComponents/hamstermotos_header_mobile.png") no-repeat 50%;
+		text-align: center;
+		image-rendering: pixelated;
+		@media screen and (min-width: 992px) {
+			background: none;
+		}
+		.event-title-background {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.gradient {
+		background-image: linear-gradient(to top, #181928, #262840, #181928);
+	}
+	.pedestal-container {
+		position: relative;
+		margin-bottom: 24px;
+		text-align: center;
+		.main-prize-container {
+			position: absolute;
+			bottom: 46%;
+			left: 50%;
+			transform: translateX(-50%) scale(1.35);
+			z-index: 2;
+			@media screen and (min-width: 500px) {
+				bottom: 54%;
+				transform: translateX(-50%) scale(1.72);
+			}
+			@media screen and (min-width: 992px) {
+				bottom: 52%;
+				transform: translateX(-50%) scale(1.72);
+			}
+			@media screen and (min-width: 1200px) {
+				bottom: 56%;
+				transform: translateX(-50%) scale(2);
+			}
+			.main-prize-img {
+				image-rendering: pixelated;
+			}
+		}
+	}
+	.event-info-container {
+		background-color: #2f3045;
+		padding: 16px 20px 32px;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		@media screen and (min-width: 992px) {
+			padding: 24px 40px 32px;
+		}
+		.event-title-text {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 32px;
+			line-height: 1.2;
+			color: #03e403;
+			text-align: center;
+		}
+		.event-subtitle {
+			margin-bottom: 24px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.1;
+			text-align: center;
+		}
+		.event-description {
+			margin-bottom: 16px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 20px;
+			line-height: 1.2;
+		}
+		.event-merge-list-title {
+			margin-bottom: 12px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 1.1;
+		}
+		.event-merge-list {
+			margin-bottom: 24px;
+			font-family: 'Roboto', sans-serif;
+			font-size: 20px;
+			list-style-type: decimal;
+			padding-inline-start: 20px;
+		}
+	}
+	.additional-prizes-wrapper {
+		margin-bottom: 28px;
+		.additional-prize-container {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			.prize-quantity {
+				margin-bottom: 8px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 24px;
+				line-height: 1.1;
+				color: #03e1e4;
+			}
+			.prize-img-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 90px;
+				width: 116px;
+				margin-bottom: 8px;
+				background-color: #1f1f2d;
+				border: 1px solid #6a668a;
+				border-radius: 4px;
+				.additional-prize-img {
+					image-rendering: pixelated;
+				}
+			}
+			.prize-title {
+				margin-bottom: 0;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 20px;
+				line-height: 1.1;
+			}
+		}
+	}
+	.footer-info {
+		margin-bottom: 24px;
+		padding-bottom: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 1.2;
+		color: #03e1e4;
+		text-align: center;
+		border-bottom: 1px solid #6a668a;
+	}
+	.event-button-container {
+		display: flex;
+		justify-content: center;
+		.grab-button {
+			width: 256px;
+		}
+	}
+	.table-loader {
+		display: flex;
+		justify-content: center;
+		padding: 77px 0 78px;
+	}
+}

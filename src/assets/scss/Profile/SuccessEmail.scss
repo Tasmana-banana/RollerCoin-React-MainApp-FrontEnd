@@ -1,0 +1,23 @@
+.email-success {
+    padding: 32px 53px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .success-image {
+        border-radius: 4px;
+    }
+    .title-text {
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    .description-text {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        line-height: 1;
+    }
+    .btn-padding {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}

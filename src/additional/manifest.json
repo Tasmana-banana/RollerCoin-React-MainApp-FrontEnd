@@ -1,0 +1,68 @@
+{
+  "name": "Rollercoin",
+  "short_name": "Rollercoin",
+  "description": "Description",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "theme_color": "#03e1e4",
+  "background_color": "#2f3045",
+  "orientation": "natural",
+  "icons": [
+    {
+      "src": "pwa/any-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/any-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/any-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/any-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/any-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "pwa/any-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "pwa/any-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "pwa/any-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "pwa/any-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "pwa/any-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

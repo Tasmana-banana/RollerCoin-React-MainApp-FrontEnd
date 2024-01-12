@@ -1,0 +1,21 @@
+.info-icon-with-tooltip-container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  padding: 0 5px;
+  line-height: 1.14;
+  .info-icon-block {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    @media only screen and (min-width: 992px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 0;
+  }
+}

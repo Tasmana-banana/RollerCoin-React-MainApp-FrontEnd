@@ -1,0 +1,45 @@
+.profile-setting-wrapper {
+	.profile-checkbox-column {
+		display: flex;
+		flex-direction: column;
+	}
+	.profile-checkbox {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
+		& + .profile-checkbox-label {
+			display: inline-flex;
+			align-items: center;
+			user-select: none;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		& + .profile-checkbox-label::before {
+			content: "";
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			flex-shrink: 0;
+			flex-grow: 0;
+			border: 2px solid #6a668a;
+			border-radius: 2px;
+			margin-right: 8px;
+			box-shadow: inset 3px 3px 0 0 #000;
+			background-color: #1f1f2d;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 50% 50%;
+		}
+		&:checked + .profile-checkbox-label::before {
+			background-image: url("../../img/profile/check.svg");
+			background-position: center center;
+			background-size: 100% 60%;
+		}
+	}
+}
+.profile-card-wrapper {
+	.two-factor-checkbox {
+		cursor: pointer;
+	}
+}

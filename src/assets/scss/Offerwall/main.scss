@@ -1,0 +1,528 @@
+.offerwall-container {
+	padding-bottom: 60px;
+	@media only screen and (min-width: 992px) {
+		padding-bottom: 120px;
+	}
+	p,
+	h2 {
+		margin: 0;
+		padding: 0;
+	}
+
+	.title-block {
+		font-family: 'Roboto', sans-serif;
+		margin-bottom: 30px;
+		.page-name {
+			font-size: 24px;
+			font-weight: 700;
+			display: none;
+			@media (min-width: 992px) {
+				display: block;
+			}
+		}
+		.subtitle-text {
+			font-size: 14px;
+			margin-top: 8px;
+			@media (min-width: 992px) {
+				margin-top: 16px;
+			}
+		}
+	}
+	.offerwall-title {
+		padding: 16px 0;
+		margin: 0;
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+	.offers-block-header {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		margin-bottom: 24px;
+	}
+	.nav-pills-container {
+		.link-pill-ico {
+			&.product-pill {
+				cursor: pointer;
+				box-sizing: border-box;
+				border-radius: 4px;
+				font-size: 18px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				padding: 15px 16px;
+				margin-bottom: 16px;
+				text-transform: capitalize;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background: #2F3045;
+			}
+			&.product-pill {
+				border: 1px solid #6a668a;
+				color: #03e1e4;
+				transition: border 0.2s ease;
+
+				span {
+					line-height: 1.35;
+				}
+				&:hover {
+					border: 1px solid #03e1e4;
+				}
+				&.active {
+					background-color: #03e1e4;
+					color: #2f3045;
+					border: 1px solid #03e1e4;
+				}
+			}
+			.offerwall-nav-image {
+				padding-right: 12px;
+				line-height: 1.35;
+				@media only screen and (min-width: 992px) and (max-width: 1200px) {
+					line-height: 2.2;
+				}
+			}
+		}
+	}
+	.products-page {
+		.container-empty-data {
+			margin-top: 16px;
+			font-size: 20px;
+			background-color: #2f3045;
+			padding: 30px;
+			border-radius: 4px;
+			@media (min-width: 992px) {
+				padding: 60px 0;
+			}
+
+			.empty-data-img {
+				opacity: 0.3;
+			}
+
+			.sorry-text {
+				font-family: 'Roboto', sans-serif;
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+		.no-offers {
+			margin: 124px auto 0;
+		}
+
+		.offers-list-page {
+			margin-top: 40px;
+			.offers-list-block {
+				padding: 0;
+				border-bottom: none;
+				.offers-info-text {
+					margin-bottom: 30px;
+				}
+			}
+		}
+
+		.payout-pagination {
+			text-align: center;
+			margin-top: 14px;
+			.payout-load-more {
+				border: none;
+				background: transparent;
+				color: #03E1E4;
+				font-family: 'Arcana', sans-serif;
+				font-size: 16px;
+				cursor: pointer;
+
+				&:focus {
+					outline: none;
+				}
+				.payout-pagination-icon {
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+	.faq-page {
+			.faq-title {
+				display: none;
+				margin-bottom: 24px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 24px;
+				@media (min-width: 992px) {
+					display: block;
+				}
+			}
+			.faq-image-block {
+				margin-top: 50px;
+				@media (min-width: 992px) {
+					margin-top: 0;
+				}
+			}
+			.faq-inscription {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 1.2;
+			}
+			.faq-description {
+				font-family: 'Roboto', sans-serif;
+				font-size: 16px;
+				line-height: 1.2;
+				margin-top: 16px;
+			}
+			.faq-note {
+				display: flex;
+				justify-items: baseline;
+				margin-bottom: 24px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 24px;
+				.image {
+					margin-right: 12px;
+				}
+			}
+			.faq-roadmap-wrapper {
+				margin: 40px 0;
+
+				.faq-title {
+					margin-bottom: 24px;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+					font-size: 24px;
+				}
+
+				.faq-roadmap-step {
+					&:nth-last-child(2n) {
+						margin-bottom: 16px;
+						@media (min-width: 992px) {
+							margin-bottom: 0;
+						}
+					}
+
+					.faq-roadmap-container {
+						position: relative;
+						border: 1px solid #514E72;
+						border-radius: 4px;
+						padding: 12px;
+						min-height: 256px;
+						@media (min-width: 992px) {
+							min-height: 250px;
+						}
+
+						.faq-roadmap-text-step {
+							font-family: 'Roboto', sans-serif;
+							font-size: 20px;
+							font-weight: 700;
+						}
+						.faq-roadmap-image {
+							text-align: center;
+						}
+						.faq-roadmap-content {
+							margin-top: 12px;
+							.faq-roadmap-title {
+								font-family: 'Roboto', sans-serif;
+								font-size: 14px;
+								font-weight: 700;
+								margin-bottom: 8px;
+								@media (min-width: 992px) {
+									font-size: 16px;
+								}
+							}
+							.faq-roadmap-text {
+								font-family: 'Roboto', sans-serif;
+								font-size: 12px;
+								@media (min-width: 992px) {
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+	}
+	.mobile-header {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 16px 0;
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		.back-link {
+			color: #ffffff;
+		}
+		.icon {
+			padding-right: 8px;
+		}
+		.page-name {
+			color: #ffffff;
+			margin-top: 20px;
+			font-size: 24px;
+			font-weight: 700;
+		}
+	}
+	.offer-container {
+		padding-bottom: 16px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		.main-info-container {
+			flex-direction: column;
+			.main-info-wrapper {
+				display: flex;
+				flex-direction: column;
+				padding: 0 12px;
+				background-color: #2f3045;
+				border: 1px solid #6a668a;
+				border-radius: 4px 4px 0 0;
+				border-bottom: none;
+				&.opened {
+					border-color: #03e1e4;
+				}
+				.offer-price-block {
+					display: flex;
+					justify-content: center;
+					.price-wrapper {
+						background-color: #03e1e4;
+						border-bottom-left-radius: 5px;
+						border-bottom-right-radius: 5px;
+						.price-text {
+							padding: 7px 14px 6px;
+							font-family: 'Arcana', sans-serif;
+							font-size: 20px;
+							color: #2f3045;
+						}
+					}
+				}
+				.offer-image-block {
+					margin: 16px auto 6px;
+					height: 100%;
+					max-height: 116px;
+					.image {
+						max-height: 100px;
+						border-radius: 23px;
+					}
+				}
+				.offer-title-block {
+					display: flex;
+					align-items: center;
+					min-height: 65px;
+					.title-text {
+						margin: 0 auto;
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						font-size: 20px;
+						line-height: 1.14;
+						text-align: center;
+						word-break: break-all;
+					}
+				}
+				.offer-action-block {
+					margin: 12px auto 20px;
+					.tree-dimensional-button {
+						> span {
+							padding: 13px 30px 12px;
+						}
+					}
+				}
+			}
+		}
+		.offer-description-wrapper {
+			position: relative;
+			padding: 0 12px;
+			background-color: #2f3045;
+			border: 1px solid #6a668a;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			&.opened {
+				border-color: #03e1e4;
+			}
+			.offer-description-block {
+				padding: 0;
+				background-color: #2f3045;
+				line-height: 1.2;
+				text-align: center;
+				z-index: 1;
+				@media only screen and (min-width: 992px) {
+					position: absolute;
+					top: 0;
+					left: -1px;
+					right: -1px;
+					padding: 0 12px;
+					border: 1px solid #03e1e4;
+					border-radius: 0 0 4px 4px;
+					border-top: none;
+				}
+				.offer-description {
+					margin: 4px 0 12px;
+				}
+				.offer-disclaimer {
+					margin-bottom: 14px;
+				}
+			}
+			.offer-description-switcher {
+				display: flex;
+				justify-content: center;
+				align-items: baseline;
+				padding: 16px;
+				border-top: 1px solid #6a668a;
+				cursor: pointer;
+				.offer-description-switcher-text {
+					margin-right: 8px;
+					font-family: 'Arcana', sans-serif;
+					font-size: 16px;
+					line-height: 1;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.reward-container {
+		.reward-info-container {
+			background-color: #2f3045;
+			border-radius: 4px;
+			padding: 6px 10px 8px;
+			@media only screen and (min-width: 992px) {
+				padding: 9px 16px 12px;
+			}
+			font-family: 'Roboto', sans-serif;
+			line-height: 1.2;
+			.title-amount-row {
+				.reward-title-block {
+					display: flex;
+					align-items: center;
+					.reward-img {
+						max-width: 16px;
+						@media only screen and (min-width: 992px) {
+							max-width: 24px;
+						}
+					}
+					.reward-text {
+						color: #C3B0D0;
+						margin: 0 0 0 8px;
+						font-size: 14px;
+						@media only screen and (min-width: 992px) {
+							font-size: 18px;
+							margin: 0 0 2px 8px;
+						}
+					}
+				}
+				.reward-amount-block {
+					font-size: 14px;
+					@media only screen and (min-width: 992px) {
+						font-size: 16px;
+					}
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+					.reward-currency-img {
+						max-width: 16px;
+						@media only screen and (min-width: 992px) {
+							max-width: 16px;
+						}
+					}
+					.reward-amount {
+						color: #2bd600;
+						margin: 0 8px 0;
+						@media only screen and (min-width: 992px) {
+							margin: 0 8px 2px 8px;
+						}
+					}
+					.reward-currency {
+						color: #8E8198;
+						margin-bottom: 0;
+						@media only screen and (min-width: 992px) {
+							margin-bottom: 2px;
+						}
+					}
+				}
+			}
+			.status-date-row {
+				margin: 0;
+				font-size: 14px;
+				@media only screen and (min-width: 992px) {
+					margin: 3px 0 5px;
+					font-size: 16px;
+				}
+				.reward-status-block {
+					.reward-status-text {
+						color: #C3B0D0;
+					}
+					.reward-status {
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						text-transform: capitalize;
+						&.paid {
+							color: #2bd600;
+						}
+						&.declined {
+							color: #d53f3f;
+						}
+					}
+				}
+				.reward-date-block {
+					display: flex;
+					justify-content: flex-end;
+					.reward-date-text {
+						color: #8E8198;
+					}
+				}
+			}
+			.offer-id-row {
+				font-size: 14px;
+				font-weight: 700;
+				@media only screen and (min-width: 992px) {
+					font-size: 16px;
+				}
+				.reward-offer-id-block {
+					.reward-reward-offer-id-text {
+						color: #C3B0D0;
+					}
+				}
+			}
+			&.new-reward-wrapper {
+				border: 2px solid #6a668a;
+				border-top-left-radius: 0;
+				position: relative;
+				margin-top: 15px;
+				.new-wrapper-text {
+					position: absolute;
+					top: -20px;
+					left: -2px;
+					border-top-left-radius: 4px;
+					border-top-right-radius: 4px;
+					background-color: #6a668a;
+					color: #ffffff;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+					font-size: 16px;
+					padding: 0 4px;
+					@media only screen and (min-width: 992px) {
+						font-size: 20px;
+						top: -24px;
+					}
+				}
+			}
+		}
+		& + .reward-container {
+			margin-top: 8px;
+			@media only screen and (min-width: 992px) {
+				margin-top: 16px;
+			}
+		}
+		&:last-of-type {
+			margin-bottom: 24px;
+		}
+	}
+}
+
+.offerwall-preloader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.container-faq {
+	.card {
+		background-color: #2f3045;
+	}
+}

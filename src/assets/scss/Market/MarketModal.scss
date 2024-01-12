@@ -1,0 +1,41 @@
+.market-modal-wrapper {
+	max-width: 380px;
+	.modal-content {
+		background-color: #2f3045;
+		border-radius: 4px;
+		border: solid 1px #6a668a;
+		font-family: 'Roboto', sans-serif;
+		.modal-header {
+			padding: 10px 15px;
+			border: none;
+			.modal-title {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 20px;
+			}
+		}
+	}
+	.invalid-feedback {
+		margin-top: 0;
+		font-size: 18px;
+		line-height: 1;
+	}
+	input {
+		border: 2px solid #595467;
+		border-radius: 4px;
+		font-size: 18px;
+		padding-top: 13px;
+		padding-bottom: 13px;
+		padding-right: 40px;
+		line-height: 1;
+		margin-bottom: 18px;
+		&.is-invalid {
+			margin-bottom: 0;
+		}
+		&:focus,
+		&:hover {
+			border: 2px solid #595467;
+			font-size: 18px;
+		}
+	}
+}

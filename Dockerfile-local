@@ -1,0 +1,11 @@
+FROM node:18.16.1
+
+# Create app directory
+EXPOSE 8080
+WORKDIR /rollerdir
+
+# Install app dependencies
+COPY package.json ./
+RUN npm install --no-progress --ignore-optional
+
+CMD [ "npm", "run", "start:local" ]

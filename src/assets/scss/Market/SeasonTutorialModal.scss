@@ -1,0 +1,93 @@
+.season-tutorial-modal {
+  @media (min-width: 992px) {
+    max-width: 680px;
+  }
+  .season-tutorial-modal-body {
+    padding: 20px 16px;
+    background-color: #2F3045;
+    border: 1px solid #514E72;
+    border-radius: 4px;
+    @media (min-width: 992px) {
+      padding: 40px;
+    }
+    .bold-text {
+      font-weight: 700;
+    }
+    .accent-text {
+      color: #FFDC00;
+    }
+    .tutorial-title {
+      margin-bottom: 20px;
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      line-height: 1.1;
+      text-align: center;
+      @media (min-width: 992px) {
+        margin-bottom: 24px;
+      }
+    }
+    .tutorial-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      @media (min-width: 992px) {
+        margin-bottom: 24px;
+      }
+      .tutorial-wrapper {
+        .tutorial-img-wrapper {
+          padding: 2px;
+          margin-bottom: 8px;
+          background-color: #181927;
+          border: 1px solid #03E1E4;
+          border-radius: 8px;
+          @media (min-width: 992px) {
+            border: 2px solid #03E1E4;
+          }
+          &.gold-board {
+            border: 1px solid #FCB300;
+            @media (min-width: 992px) {
+              border: 2px solid #FCB300;
+            }
+          }
+        }
+        .description-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 32px;
+          padding: 4px 0;
+          background-color: #18192780;
+          border-radius: 8px;
+          @media (min-width: 992px) {
+            min-height: 46px;
+            padding: 8px;
+          }
+          .description-text {
+            margin-bottom: 0;
+            font-family: Roboto, sans-serif;
+            font-size: 12px;
+            line-height: 1.2;
+            text-align: center;
+            @media (min-width: 992px) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .next-step-wrapper {
+      margin: 0 6px;
+      @media (min-width: 992px) {
+        margin: 0 12px;
+      }
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      .tutorial-btn {
+        min-width: 240px;
+      }
+    }
+  }
+}

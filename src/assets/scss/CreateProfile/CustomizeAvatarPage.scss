@@ -1,0 +1,127 @@
+.customize-avatar-page-wrapper {
+	.tree-dimensional-button {
+		.text-wrapper {
+			padding: 13px 4px 12px;
+			@media screen and (max-width: 991px) {
+				font-size: 14px;
+			}
+			img {
+				max-height: 16px;
+			}
+		}
+		.text-wrapper-without-img {
+			padding: 13px 17px 12px;
+		}
+	}
+	.header-text {
+		font-family: 'Roboto', sans-serif;
+	}
+	.profile-preloader {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		background-color: rgba(0, 0, 0, 0.7);
+		.loader-img {
+			display: block;
+			position: absolute;
+			top: calc(50% - 45px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			bottom: auto;
+			z-index: 11;
+		}
+	}
+	.avatar-img {
+		padding-top: 24px;
+		padding-left: 24px;
+		padding-right: 24px;
+		@media screen and (max-width: 991px) {
+			margin-left: 70px;
+			margin-right: 70px;
+		}
+		background-color: #7e7da0;
+		border-radius: 4px;
+		canvas, img {
+			max-width: 100%;
+			max-height: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+	.inline-radio-group {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		label {
+			font-family: 'Roboto', sans-serif;
+			margin-bottom: 0;
+		}
+		.custom-control {
+			min-height: 28px;
+			padding-left: 0;
+			label {
+				line-height: 28px;
+				cursor: pointer;
+				color: #ffffff;
+				padding-left: 35px;
+			}
+			&:not(:last-child) {
+				margin-right: 22px;
+				margin-left: 22px;
+			}
+		}
+		.custom-radio {
+			.custom-control-label:after,
+			.custom-control-label:before {
+				left: 0;
+				top: 0;
+			}
+			.custom-control-input:checked ~ .custom-control-label:after {
+				background-image: none;
+				background-color: #03e1e4;
+				width: 20px;
+				height: 20px;
+				margin-top: 4px;
+				margin-left: 4px;
+				border-radius: 2px;
+			}
+			.custom-control-label:before {
+				width: 28px;
+				height: 28px;
+				border-radius: 5px;
+				padding: 2px;
+				box-shadow: inset 5px 5px 0 0 #000000;
+				border: solid 2px #6a668a;
+				background-color: #1f1f2d;
+			}
+		}
+	}
+	.avatar-btn-group {
+		.save-btn {
+			@media screen and (max-width: 991px) {
+				padding-right: 7px;
+			}
+		}
+		.random-btn {
+			margin-top: 1.2rem;
+			@media screen and (max-width: 991px) {
+				margin-top: 0;
+				padding-left: 7px;
+			}
+		}
+	}
+	.wrapper-block {
+		.default-text {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+		.line {
+			width: 100%;
+			height: 1px;
+			background-color: #6a668a;
+		}
+	}
+}

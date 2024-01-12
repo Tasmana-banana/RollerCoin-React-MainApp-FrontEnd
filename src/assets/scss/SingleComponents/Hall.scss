@@ -1,0 +1,448 @@
+.hall-of-fame {
+	font-family: Arcana, sans-serif;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	.hall-header {
+		font-family: Roboto, sans-serif;
+		font-size: 16px;
+		color: #ffffff;
+		margin-top: 10px;
+		@media screen and(min-width: 991px) {
+			margin-top: 30px;
+		}
+		p {
+			flex-basis: 100%;
+		}
+		.hall-description-blue {
+			color: #03e1e4;
+		}
+		.hall-bonus-descr {
+			margin-top: 20px;
+		}
+		.hall-read-more {
+			text-align: center;
+			margin-top: 20px;
+			max-height: 85px;
+			overflow: hidden;
+			transition: max-height 0.5s;
+			@media screen and(min-width: 991px) {
+				max-height: 145px;
+			}
+			@media screen and(min-width: 1200px) {
+				max-height: 120px;
+			}
+		}
+		.hall-bonus-item {
+			font-size: 20px;
+			align-self: flex-end;
+			line-height: 20px;
+			margin-top: 20px;
+		}
+		.hall-bonus-item-amount {
+			min-height: 40px;
+		}
+		.hall-bonus-place-text {
+			margin-top: 5px;
+		}
+		.hall-bonus-place {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			color: #03e1e4;
+		}
+		.hall-bonus-amount {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+		}
+		.hall-bonus-percentage,
+		.hall-bonus-title,
+		.hall-bonus-text {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			text-align: center;
+		}
+		.hall-bonus-title {
+			font-size: 26px;
+			line-height: 32px;
+			margin-top: 25px;
+			@media screen and(min-width: 991px) {
+				font-size: 20px;
+			}
+			@media screen and(min-width: 1200px) {
+				font-size: 26px;
+			}
+		}
+		.hall-bonus-percentage {
+			font-size: 35px;
+			line-height: 64px;
+			color: #03e1e4;
+			text-shadow: -1px 1px 0 #186c6d, 1px 1px 0 #186c6d, 1px -1px 0 #186c6d, -1px -1px 0 #186c6d;
+		}
+		.hall-bonus-percentage-ten {
+			font-size: 45px;
+		}
+		.hall-bonus-percentage-fifteen {
+			font-size: 50px;
+		}
+		.hall-bonus-percentage-twelve {
+			font-size: 56px;
+		}
+		.hall-bonus-text {
+			font-size: 24px;
+			line-height: 24px;
+		}
+		.tokens-limit,
+		.tokens-limit-text {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 24px;
+			color: #03e1e4;
+		}
+		.tokens-limit {
+			margin: 25px auto 0;
+		}
+		.tokens-limit-text {
+			font-size: 32px;
+		}
+		.tokens-limit-presale {
+			margin-top: 20px;
+		}
+		.free-miners {
+			margin-top: 20px;
+		}
+		.free-miners-numbers {
+			font-size: 32px;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			color: #03e1e4;
+		}
+		.hall-read-more-btn {
+			font-size: 14px;
+			color: #03e1e4;
+			border-bottom: 1px solid #03e1e4;
+			padding: 0;
+			outline: none;
+			text-decoration: none;
+			font-family: Roboto, sans-serif;
+			vertical-align: middle;
+			.hall-read-arrow {
+				padding-left: 5px;
+			}
+			img {
+				transition: all 0.5s;
+			}
+		}
+		&.open {
+			.hall-read-more {
+				max-height: 3000px;
+			}
+			.hall-read-more-btn {
+				img {
+					transform: scaleY(-1);
+				}
+			}
+		}
+	}
+	.hall-title {
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		text-align: center;
+		font-size: 24px;
+		color: #03e1e4;
+		line-height: 1;
+		margin-bottom: 0;
+		margin-top: 20px;
+		@media screen and(min-width: 991px) {
+			font-size: 28px;
+		}
+	}
+	.hall-content {
+		margin-top: 20px;
+	}
+	.hall-shelf-title {
+		font-size: 20px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		text-align: center;
+		margin: 0;
+		word-break: break-word;
+		color: #654d2d;
+		text-shadow: -1px 1px 0 #eec086, 1px 1px 0 #eec086, 1px -1px 0 #eec086, -1px -1px 0 #eec086;
+		line-height: 1;
+		@media screen and(min-width: 991px) {
+			font-size: 24px;
+		}
+	}
+	.hall-top-padding {
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+		&::before,
+		&::after {
+			content: url("../../img/hall_of_fame/top_corner.png");
+			max-width: 31px;
+			flex-basis: 31px;
+			height: 64px;
+		}
+		&::after {
+			transform: scaleX(-1);
+		}
+		@media screen and(min-width: 991px) {
+			margin-top: 20px;
+		}
+	}
+	.hall-top-wrapper {
+		background: #c8985b url("../../img/hall_of_fame/top_tile.png") repeat-x center;
+		position: relative;
+		min-height: 64px;
+		flex-grow: 1;
+		padding-bottom: 7px;
+	}
+	.hall-main-wrapper {
+		flex-direction: column;
+		padding: 0 10px;
+		position: relative;
+	}
+	.hall-cups {
+		padding: 0 20px;
+	}
+	.hall-cups-sides {
+		background: #a9814d url("../../img/hall_of_fame/midle_tile.png") repeat center;
+		padding: 0 10px;
+		&::before,
+		&::after {
+			content: "";
+			background: #c8985b url("../../img/hall_of_fame/frame_edge.png") repeat-y center;
+			position: absolute;
+			flex-basis: 10px;
+			min-width: 10px;
+			height: 100%;
+			top: 0;
+			box-shadow: 3px 0 5px 0 rgba(0, 0, 0, 0.5);
+		}
+		&::before {
+			left: 10px;
+		}
+		&::after {
+			right: 10px;
+			transform: scaleX(-1);
+		}
+	}
+	.hall-top-text {
+		width: 125px;
+		background-color: #fff;
+		border: 1px solid #644c2d;
+		margin: 0 auto 20px;
+		p {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			color: #79431f;
+			font-size: 16px;
+		}
+	}
+	.hall-item-img {
+		position: relative;
+		img {
+			cursor: pointer;
+			width: auto;
+		}
+	}
+	.top-hundred-number {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 16px;
+		line-height: 19px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		color: #03e1e4;
+		cursor: pointer;
+	}
+	.hall-item-amount {
+		background: url("../../img/hall_of_fame/cups/amount_plate.png") no-repeat right;
+		background-size: 100% 100%;
+		width: 88px;
+		margin: 0 auto;
+		font-size: 16px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		color: #2f3045;
+		padding: 2px;
+		line-height: 1;
+		cursor: pointer;
+	}
+	.hall-item-info {
+		color: #2f3045;
+		font-size: 12px;
+		background: url("../../img/hall_of_fame/bottom-top.png") no-repeat right;
+		background-size: 100% 100%;
+		min-height: 70px;
+		width: 120px;
+		padding: 7px 11px 17px 12px;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		line-height: 1.1;
+		margin: 0 auto;
+		word-break: break-word;
+		@media screen and(min-width: 370px) {
+			width: 145px;
+			padding: 7px 15px 17px 17px;
+		}
+		@media screen and(min-width: 400px) {
+			width: 150px;
+		}
+		.hall-item-icon {
+			border-radius: 50%;
+			flex-basis: 34px;
+			height: 34px;
+			text-align: center;
+			background-color: #03e1e4;
+			flex-shrink: 0;
+		}
+		.hall-item-rtl {
+			margin-top: 3px;
+		}
+		.hall-item-text {
+			line-height: 0.9;
+			word-break: break-word;
+			text-align: left;
+			flex-grow: 1;
+			height: 100%;
+			@media screen and(min-width: 370px) {
+				padding-left: 5px;
+			}
+		}
+		.hall-item-name {
+			padding-left: 5px;
+			text-transform: uppercase;
+			@media screen and(min-width: 370px) {
+				padding-left: 10px;
+			}
+		}
+	}
+	.hall-item-info-text {
+		display: flex;
+		flex-direction: column;
+	}
+	.hall-end-line {
+		background: url("../../img/hall_of_fame/bollom_self_tile.png") repeat-x center;
+		height: 6px;
+	}
+	.hall-bottom-wrapper {
+		display: flex;
+		position: relative;
+		padding-bottom: 20px;
+		&::before,
+		&::after {
+			content: url("../../img/hall_of_fame/bottom_corner.png");
+			flex-basis: 31px;
+			max-width: 31px;
+			height: 64px;
+		}
+		&::after {
+			transform: scaleX(-1);
+		}
+	}
+	.hall-bottom-line {
+		height: 64px;
+		background: url("../../img/hall_of_fame/bottom_tile.png") repeat-x center;
+		flex-grow: 1;
+	}
+
+	.hall-item-right,
+	.hall-item-left,
+	.hall-item-center {
+		position: relative;
+		margin-top: 25px;
+		text-align: center;
+		align-self: flex-end;
+		.hall-item-wrapper {
+			justify-content: center;
+		}
+	}
+	.hall-item-left {
+		@media screen and(min-width: 991px) {
+			.hall-item-wrapper {
+				justify-content: flex-start;
+			}
+		}
+	}
+	.hall-item-center {
+		background: url("../../img/hall_of_fame/shelf_tile.png") repeat-x bottom;
+		padding-bottom: 8px;
+	}
+	.hall-item-right {
+		@media screen and(min-width: 991px) {
+			.hall-item-wrapper {
+				justify-content: flex-end;
+			}
+		}
+	}
+	.custom-min-width {
+		min-width: 50%;
+		flex: 1 0 50%;
+		max-width: 100%;
+		@media screen and(min-width: 991px) {
+			min-width: 20%;
+			flex: 1 0 20%;
+		}
+	}
+	.top-ten-item {
+		.hall-item-info {
+			width: 120px;
+			font-size: 12px;
+			@media screen and(min-width: 370px) {
+				width: 140px;
+				font-size: 12px;
+			}
+			@media screen and(min-width: 991px) {
+				width: 113px;
+				font-size: 12px;
+				padding: 7px 12px 17px;
+			}
+			@media screen and(min-width: 1200px) {
+				width: 140px;
+			}
+		}
+		.hall-item-name {
+			padding-left: 5px;
+			@media screen and(min-width: 1200px) {
+				padding-left: 10px;
+			}
+		}
+	}
+	.top-three-row {
+		flex-basis: 100%;
+	}
+	.top-hundred-row {
+		padding-bottom: 10px;
+		.hall-item-amount {
+			background: url("../../img/hall_of_fame/cups/amount_plate_100.png") no-repeat right;
+			width: 98px;
+			padding-top: 1px;
+		}
+	}
+	.hall-item-padding {
+		padding: 0 4px;
+	}
+	.sticky-header {
+		position: static;
+		@media only screen and (min-width: 1200px) {
+			position: sticky;
+		}
+	}
+}

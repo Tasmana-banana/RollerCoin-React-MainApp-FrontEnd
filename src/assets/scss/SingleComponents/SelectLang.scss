@@ -1,0 +1,46 @@
+.select-lag-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex: 1 1 100%;
+	color: #938d9e;
+	margin-top: 10px;
+	@media screen and (min-width: 992px) {
+		margin-top: 0;
+	}
+	input {
+		&:checked {
+			& + label {
+				background-color: transparent;
+				color: #03e1e4;
+			}
+		}
+	}
+	label {
+		margin: 0;
+		padding: 2px 8px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	.select-language {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		&:after {
+			content: "";
+			border-right: 1px solid #938d9e;
+		}
+		&:last-child {
+			&:after {
+				content: none;
+			}
+		}
+		&:first-child {
+			label {
+				padding-left: 10px;
+				@media screen and (min-width: 992px) {
+					padding-left: 0;
+				}
+			}
+		}
+	}
+}

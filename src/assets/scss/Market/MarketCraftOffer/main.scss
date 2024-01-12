@@ -1,0 +1,119 @@
+.crafting-wrapper {
+	position: relative;
+
+	.crafting-offers {
+		background: #5d5d98;
+		background: linear-gradient(90deg, #5d5d98 0%, #8d8db9 50%, #5d5d98 100%);
+		border-radius: 8px;
+		padding: 24px;
+		position: relative;
+
+		&.previous-crafting {
+			margin-top: 25px;
+			background: #2f3045;
+			border: 1px solid #6a668a;
+
+			.crafting-title-block {
+				background: transparent;
+
+				@media (min-width: 992px) {
+					background: #ffdc00;
+					background: linear-gradient(90deg, #ffdc00 0%, #e5c700 50%, #ffdc00 100%);
+				}
+
+				.crafting-title {
+					color: #ffffff;
+
+					@media (min-width: 992px) {
+						color: #2f3045;
+					}
+				}
+			}
+
+			.substrate-wrapper {
+				position: relative;
+				.substrate-row {
+					margin-top: 25px;
+					position: absolute;
+					width: 100%;
+
+					.substrate-card-wrapper {
+						padding: 0 10px 16px;
+
+						.substrate-card-container {
+							min-height: 358px;
+							background: #1f1f2d;
+							border-radius: 4px;
+							min-width: 251px;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+				}
+			}
+		}
+
+		.crafting-title {
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+
+		& .crafting-title-block {
+			background: #ffdc00;
+			background: linear-gradient(90deg, #ffdc00 0%, #e5c700 50%, #ffdc00 100%);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 12px 0;
+			border-radius: 4px;
+
+			& .crafting-title {
+				font-size: 32px;
+				color: #2f3045;
+				line-height: 1;
+				margin: 0;
+			}
+
+			& .crafting-title-timer {
+				font-size: 24px;
+				color: #2f3045;
+				line-height: 1;
+				margin: 0;
+
+				.crafting-timer-icon {
+					margin-right: 12px;
+					width: 24px;
+					@media (min-width: 992px) {
+						width: 30px;
+						margin: 0 24px;
+					}
+				}
+			}
+		}
+
+		& .products-wrapper {
+			margin-top: 25px;
+		}
+	}
+
+	.crafting-preloader-layer {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 19;
+		background-color: rgba(0, 0, 0, 0.7);
+		.loader-img {
+			display: block;
+			position: absolute;
+			top: calc(50% - 45px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			bottom: auto;
+			z-index: 20;
+		}
+	}
+}

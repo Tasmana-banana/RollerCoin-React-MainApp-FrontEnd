@@ -1,0 +1,21 @@
+.progression-multiplier-toast-container.Toastify__toast {
+	padding: 15px;
+	.progression-multiplier-toast {
+		display: flex;
+		align-items: center;
+		.progression-toast-img-wrapper {
+			margin-right: 16px;
+		}
+		.progression-toast-description {
+			.progression-toast-text {
+				margin: 0;
+				font-size: 24px;
+				color: #ffffff;
+
+				& span {
+					color: #ffdc00;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,221 @@
+.Toastify__toast-container {
+	margin-top: 100px;
+	line-height: 1;
+	.Toastify__toast {
+		border-radius: 4px;
+		color: #ffffff;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 12px 56px 12px 18px;
+		position: relative;
+
+		&.Toastify__toast--default {
+			border: solid 1px #6a668a;
+			background-color: #2f3045;
+		}
+
+		.close-toast {
+			position: absolute;
+			right: 4px;
+			top: 4px;
+			cursor: pointer;
+		}
+
+		.content-with-image {
+			display: flex;
+			align-items: center;
+			.toast-img {
+				min-height: 30px;
+				min-width: 30px;
+			}
+		}
+	}
+}
+
+.pwa-main {
+	.pwa-gift {
+		position: fixed;
+		right: 24px;
+		bottom: 100px;
+		padding: 8px;
+		background-color: #2F3045;
+		border-radius: 20px;
+		@media only screen and (min-width: 992px) {
+			right: 60px;
+			bottom: 90px;
+		}
+		&.hide {
+			display: none;
+		}
+		.pwa-gift-button {
+			padding: 0;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			.pwa-gift-image {
+				image-rendering: pixelated;
+			}
+		}
+		.pwa-gift-close-btn {
+			position: absolute;
+			top: -28px;
+			right: -10px;
+			padding: 6px;
+			line-height: 1;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			.pwa-gift-close-img {
+				image-rendering: pixelated;
+			}
+		}
+	}
+}
+
+.pwa-fullscreen-modal {
+	@media only screen and (min-width: 992px) {
+		max-width: 400px;
+	}
+	.modal-content {
+		border-radius: 10px;
+	}
+	.pwa-modal-body {
+		position: relative;
+		padding: 40px 8px;
+		font-family: Roboto, sans-serif;
+		text-align: center;
+		line-height: 1.1;
+		background-color: #2F3045;
+		border-radius: 8px;
+		@media only screen and (min-width: 992px) {
+			padding: 40px 20px;
+		}
+		.pwa-modal-close-btn {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			padding: 8px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			@media only screen and (min-width: 992px) {
+				top: 12px;
+				right: 12px;
+			}
+		}
+		.title-block {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			.title {
+				padding: 0 16px;
+				margin: 0;
+				font-size: 32px;
+				font-weight: 700;
+				&.with-padding {
+					margin-bottom: 30px;
+				}
+			}
+			.subtitle {
+				margin-top: 12px;
+				font-size: 16px;
+				line-height: 1.2;
+			}
+			.pwa-gift-image {
+				image-rendering: pixelated;
+				&.with-padding {
+					margin: 40px 0;
+				}
+			}
+			.pwa-done-gift-image {
+				margin-bottom: 40px;
+				image-rendering: pixelated;
+			}
+			.prize-text {
+				margin: 12px 0;
+				font-size: 16px;
+				line-height: 1.2;
+				white-space: pre-line;
+			}
+			.reward-text-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.reward-text {
+					margin-bottom: 0;
+					font-size: 32px;
+					color: #03E1E4;
+				}
+				.reward-icon {
+					margin: 0 12px;
+				}
+			}
+			.pwa-button-block {
+				min-width: 240px;
+				margin-top: 40px;
+			}
+		}
+		.guide-block {
+			margin-top: 22px;
+			.qr-code-block {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 30px;
+				.qr-code-wrapper {
+					display: inline-block;
+					line-height: 0;
+					border-radius: 14px;
+					overflow: hidden;
+				}
+			}
+			.guide-description-wrapper {
+				.guide-description-text {
+					margin-bottom: 0;
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+					line-height: 1.2;
+					white-space: pre-line;
+				}
+			}
+			.guide-text-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.share-icon {
+					margin: 0 4px;
+				}
+				.guide-text {
+					margin-bottom: 0;
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+					line-height: 32px;
+					white-space: pre-line;
+					.guide-text-info {
+						color: #9FF2F3;
+					}
+				}
+				.accent-text {
+					font-weight: 700;
+					color: #03E1E4;
+				}
+				.gold-text {
+					margin-left: 5px;
+					font-weight: 700;
+					color: #FFDC00;
+				}
+			}
+		}
+	}
+}
+.pwa-fullscreen-modal-backdrop{
+	background: url("../../img/pwa/modal-backdrop.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	&.show {
+		opacity: 1;
+	}
+}

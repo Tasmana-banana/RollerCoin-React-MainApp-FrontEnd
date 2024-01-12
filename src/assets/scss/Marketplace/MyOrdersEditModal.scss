@@ -1,0 +1,156 @@
+.myorders-modal {
+	& .item-block {
+		display: flex;
+
+		& .img-block {
+			background-color: #1f1f2d;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 4px;
+			min-height: 100px;
+			overflow: hidden;
+			flex: 1;
+			position: relative;
+
+			& .collection-product-level-img-size-2 {
+				position: absolute;
+				top: 15px;
+				left: 2px;
+			}
+			& .collection-product-level-img-size-1 {
+				position: absolute;
+				top: 18px;
+				left: 21px;
+			}
+		}
+
+		& .item-info-block {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			flex: 2;
+			margin-left: 15px;
+
+			& .item-title {
+				font-size: 16px;
+				margin-bottom: 10px;
+			}
+
+			& .price-group {
+				margin-bottom: 0;
+				position: relative;
+
+				& .price-label {
+					font-size: 16px;
+					font-family: 'Roboto', sans-serif;
+					margin-bottom: 5px;
+				}
+
+				& .price-input {
+					background: #1f1f2d;
+					border-radius: 4px;
+					border: solid 1px #6a668a;
+					font-size: 16px;
+					padding: 5px 15px;
+				}
+
+				& .price-calculate-wrapper-warning {
+					position: absolute;
+					bottom: -35px;
+					font-family: 'Roboto', sans-serif;
+					font-size: 16px;
+					line-height: 1;
+					color: #d53f3f;
+				}
+			}
+		}
+	}
+	& .details-block {
+		margin-top: 30px;
+		display: flex;
+		flex-wrap: wrap;
+
+		& .recipe-item {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			width: 100%;
+			border-top: 1px solid #6a668a;
+			padding: 5px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			position: relative;
+
+			& .item {
+				width: 60%;
+				position: relative;
+				padding-left: 11px;
+
+				&::before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 60%;
+					vertical-align: middle;
+					background: #6a668a;
+				}
+
+				&::after {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 60%;
+					vertical-align: middle;
+					background: #6a668a;
+				}
+			}
+
+			& .count {
+				width: 40%;
+				text-align: right;
+				padding-right: 11px;
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translateY(-50%);
+					width: 1px;
+					height: 60%;
+					vertical-align: middle;
+					background: #6a668a;
+				}
+			}
+		}
+		& .input-receive {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			padding: 5px 11px;
+			background: #1f1f2d;
+			border-radius: 4px;
+			align-items: center;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+
+			& .receive-item {
+				margin-bottom: 0;
+			}
+
+			& .receive-value {
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

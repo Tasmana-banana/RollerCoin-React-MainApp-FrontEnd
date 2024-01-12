@@ -1,0 +1,96 @@
+$cyan-color: #03e1e4;
+.referral-container{
+  padding-top: 32px;
+  padding-bottom: 50px;
+  line-height: 1;
+  font-family: 'Roboto', sans-serif;
+  .cyan-text{
+    color: #03e1e4;
+  }
+  p{
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .nav-link {
+    background-color: #19171f;
+  }
+  .vertical-pills{
+    .nav-link {
+      &:hover, &.active {
+        background-color: #1f1f2d;
+      }
+    }
+  }
+  >.left-block{
+    .nav-item{
+      width: 100%;
+      .nav-link{
+        border: 1px solid #6a668a;
+        border-radius: 4px;
+      }
+    }
+    .link-pill-ico{
+      min-height: 64px;
+      line-height: 1!important;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-size: 20px;
+      padding-left: 55px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      text-transform: capitalize;
+      &:before{
+        padding-right: 10px;
+        left: 15px;
+      }
+      &:hover, &.active {
+        background-color: #2f3045;
+      }
+      &.stats-pill{
+        &:before {
+          content: url("../../img/referral/statistics_hover.svg");
+        }
+      }
+      &.promo-pill{
+        &:before {
+          content: url("../../img/referral/promo_hover.svg");
+        }
+      }
+      &.info-pill{
+        &:before {
+          content: url("../../img/referral/info_hover.svg");
+        }
+      }
+      &.bounty-pill{
+        &:before {
+          content: url("../../img/referral/bounty_hover.svg");
+        }
+      }
+    }
+  }
+  >.right-block {
+    font-size: 16px;
+    line-height: 1.3;
+    @import "./Promo";
+    @import "./Info";
+    @import "./Statistics";
+    @media only screen and (min-width: 991px){
+      padding-left: 15px;
+    }
+  }
+  .statistics-container{
+    padding: 10px;
+    @media only screen and (min-width: 991px){
+      padding: 30px;
+    }
+  }
+  .statistics-tab-content{
+    background-color: #2f3045;
+    border: solid 1px #6a668a;
+    border-top: none;
+  }
+}

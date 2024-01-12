@@ -1,0 +1,11 @@
+{
+  "eventBanner" : {
+    "eventPass": "活动通行证",
+    "levelReward": "等级奖励",
+    "level": "级別",
+    "getXp": "获得经验值"
+  },
+  "socialBanner": {
+    "stayTuned": "关注"
+  }
+}

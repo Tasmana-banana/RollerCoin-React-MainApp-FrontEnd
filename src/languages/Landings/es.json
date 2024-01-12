@@ -1,0 +1,26 @@
+{
+  "cells": "Celda(s): ",
+  "power": "Poder: ",
+  "price": "Precio: ",
+  "unlimited": "Sin límite",
+  "left": "Restante(s)",
+  "main": {
+    "yes": "Sí",
+    "no": "No",
+    "buy": "Comprar",
+    "notEnough": "No hay suficiente",
+    "buySuccess": "¡Compra realizada!",
+    "soldOut": "Agotado",
+    "canBuy": "*Sólo puedes comprar ",
+    "onYourAccount": " en tu cuenta"
+  },
+  "landingSaleEvent": {
+    "miner": "Minero",
+    "hat": "Sombrero",
+    "appearance": "Skin",
+    "loot_box": "Caja de botín",
+    "trophy": "Trofeo",
+    "rack": "Estante",
+    "battery": "Batería"
+  }
+}

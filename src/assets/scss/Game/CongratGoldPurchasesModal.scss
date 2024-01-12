@@ -1,0 +1,39 @@
+.congratulations-season-pass-modal {
+	@media (min-width: 992px) {
+		width: 612px;
+		max-width: 100%;
+	}
+	.modal-content {
+		background: #2f3045;
+		border: none;
+		border-radius: 4px;
+		.modal-body {
+			padding: 0;
+			.congratulations-footer-block {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				border-radius: 4px;
+				padding: 20px 15px;
+
+				.congratulations-text {
+					font-family: Roboto, sans-serif;
+					font-size: 20px;
+					font-weight: 700;
+					text-align: center;
+					margin: 0;
+
+					.gold-color {
+						text-transform: uppercase;
+						color: #ffdc00;
+					}
+				}
+				.congratulations-btn {
+					min-width: 240px;
+					margin-top: 16px;
+				}
+			}
+		}
+	}
+}

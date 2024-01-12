@@ -1,0 +1,62 @@
+.part-card-container {
+	margin-top: 16px;
+	.part-card-wrapper {
+		border-radius: 4px;
+		border: solid 2px #6a668a;
+		background-color: #1f1f2d;
+		padding: 10px 12px;
+		display: flex;
+		align-items: center;
+		.part-image-block {
+			flex: 1 0 30%;
+			.image {
+				margin: 0 16px;
+			}
+		}
+		.part-info-block {
+			flex: 1 0 60%;
+			padding-left: 0;
+			@media only screen and (min-width: 992px) {
+				padding-left: 16px;
+			}
+			.type-rarity-block {
+				display: flex;
+				flex-direction: row;
+				@media only screen and (min-width: 992px) {
+					flex-direction: column;
+				}
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 1.2;
+				padding-bottom: 6px;
+				border-bottom: 1px solid #6a668a;
+				.rarity {
+					margin-right: 10px;
+					@media only screen and (min-width: 992px) {
+						margin-right: 0;
+					}
+				}
+			}
+			.quantity-block {
+				display: flex;
+				justify-content: space-between;
+				font-size: 15px;
+				padding-top: 6px;
+				.text {
+					font-family: 'Roboto', sans-serif;
+					&::before {
+						content: url("../../../img/storage/box-cyan.svg");
+						padding-right: 8px;
+						vertical-align: middle;
+					}
+				}
+				.number {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+					color: #5ce319;
+				}
+			}
+		}
+	}
+}

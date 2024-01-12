@@ -1,0 +1,99 @@
+.crypto-quests-modal {
+	padding: 0 15px;
+	margin: 0 auto;
+	width: 590px;
+	max-width: 100%;
+
+	@media (min-width: 992px) {
+		padding: 0;
+	}
+	.modal-content {
+		background: #2f3045;
+		.quest-modal-body {
+			position: relative;
+			padding: 0;
+			.content-block {
+				padding: 32px 40px;
+				background: url("../../img/questsBanners/crypto_quest_banner_bg.png");
+				background-size: cover;
+				height: 100%;
+				margin: 0;
+				.quest-modal-close-btn {
+					box-shadow: 0 2px #514e72, 0 1px #1f1f2c;
+					position: absolute;
+					right: 5px;
+					top: 5px;
+					z-index: 1;
+					span.close-btn-img-wrapper {
+						padding: 6px;
+					}
+				}
+
+				.crypto-quest-logo {
+					text-align: center;
+				}
+				.quest-timer-wrapper {
+					margin-top: 15px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(0, 0, 0, 0.3);
+					border-radius: 4px;
+					min-height: 45px;
+					.remaining-time {
+						display: flex;
+						align-items: center;
+						.time-text {
+							margin: 0;
+							font-family: 'Arcana', sans-serif;
+							font-size: 20px;
+							color: #ffdc00;
+							margin-left: 10px;
+						}
+					}
+				}
+				.crypto-quest-currency-logo {
+					text-align: center;
+
+					@media (max-width: 991px) {
+						margin-top: 15px;
+					}
+				}
+				.reward-coin-wrapper {
+					margin-top: 15px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: rgba(0, 0, 0, 0.3);
+					min-height: 45px;
+					border-radius: 4px;
+
+					.reward-value {
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						font-size: 24px;
+					}
+				}
+			}
+			.crypto-quest-action {
+				padding: 15px 50px 32px;
+				text-align: center;
+
+				.text-action {
+					text-align: center;
+					font-family: 'Roboto', sans-serif;
+					font-size: 24px;
+					color: #ffffff;
+				}
+
+				.crypto-quest-btn {
+					padding: 10px 80px;
+
+					span {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+.profile-card-wrapper {
+    border: none;
+    border-radius: 0;
+    background-color: #2f3045;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    .card-header {
+        padding: 6px 8px;
+        background-color: #1f1f2d;
+        border-bottom: none;
+        .header-image-wrapper {
+            margin-right: 10px;
+            .header-image {
+                padding-bottom: 3px;
+            }
+        }
+        .header-text {
+            line-height: 1;
+        }
+    }
+    .card-body {
+        padding: 13px 20px;
+        background-color: #2f3045;
+        border-bottom: 1px solid #1f1f2d;
+        border-left: 1px solid #1f1f2d;
+        border-right: 1px solid #1f1f2d;
+        border-radius: 0 0 4px 4px;
+    }
+}

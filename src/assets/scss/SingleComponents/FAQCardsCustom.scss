@@ -1,0 +1,133 @@
+.faq-cards-container {
+  margin-top: 60px;
+  font-family: Roboto, sans-serif;
+  .faq-section {
+    margin-bottom: 20px;
+    .faq-section-header-title {
+      margin-bottom: 30px;
+      font-family: Roboto, sans-serif;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: 700;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 8px;
+    }
+  }
+  .link-rollercoin {
+    text-decoration: underline;
+    color: #03e1e4;
+    &:hover {
+      color: #03e1e4;
+    }
+  }
+
+  .body-faq {
+    padding: 20px 16px 16px;
+    border-radius: 4px;
+    border: solid 1px #6a668a;
+    @media screen and (min-width: 992px) {
+      padding: 40px 100px;
+    }
+  }
+
+  .card {
+    border-radius: 4px;
+    border: solid 1px #6a668a;
+    background-color: #2f3045;
+    text-transform: none;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+      @media screen and (min-width: 992px) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .card-header {
+    padding: 0;
+    position: relative;
+    border: none;
+    .card-faq-header {
+      padding: 20px 16px;
+    }
+  }
+
+  .card-flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    .card-flex-questions {
+      display: flex;
+      align-items: center;
+    }
+    .collapse-btn-wrapper {
+      padding-left: 12px;
+    }
+  }
+
+  .ico-faq {
+    margin-right: 11px;
+    line-height: 24px;
+    .ico-img {
+      display: block;
+      max-width: 21px;
+      max-height: 21px;
+    }
+  }
+
+  .card-body {
+    padding: 8px 0 12px;
+    margin-right: 12px;
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    background-color: transparent;
+    border-top: 1px solid #514e72;
+    @media screen and (min-width: 992px) {
+      padding: 12px 0 20px;
+      margin-right: 16px;
+      margin-left: 16px;
+      font-size: 20px;
+    }
+  }
+  .card-body-item {
+    font-size: 14px;
+    line-height: 1.43;
+    font-weight: 400;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    .faq-card-image {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .leaderboard-faq-ul {
+      list-style-type: none;
+    }
+  }
+
+  .wrapper-small-line {
+    height: 20px;
+    width: 1px;
+    margin: 0 6px;
+    background-color: #595467;
+    @media screen and (min-width: 992px) {
+      margin: 0 16px;
+    }
+  }
+
+  .text-help {
+    padding-right: 12px;
+    @media screen and (min-width: 992px) {
+      padding-right: 20px;
+    }
+  }
+}

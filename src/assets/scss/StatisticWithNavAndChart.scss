@@ -1,0 +1,119 @@
+.statistics-right-block-container {
+	@import "./RollerDatePicker";
+	font-family: 'Roboto', sans-serif;
+	.navigation-block {
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		> p {
+			margin-right: 16px;
+			font-size: 16px;
+		}
+		.nav-link {
+			line-height: 1;
+			margin-right: 4px;
+			font-size: 14px;
+			font-family: 'Roboto', sans-serif;
+			border-top-right-radius: 4px;
+			border-top-left-radius: 4px;
+			@media only screen and (min-width: 991px){
+				font-size: 16px;
+			}
+		}
+	}
+	.body-right-block {
+		padding: 8px 0;
+		background-color: #1f1f2d;
+		@media only screen and (min-width: 992px) {
+			padding: 12px 24px 24px;
+		}
+		.filter-stats {
+			padding: 0 10px;
+			@media only screen and (min-width: 992px) {
+				padding-bottom: 24px;
+			}
+			@media only screen and (min-width: 992px) {
+				.select-referral-link {
+					padding-right: 16px;
+				}
+				.datepicker-block {
+					&:first-child {
+						padding-right: 8px;
+					}
+					&:last-child {
+						padding-left: 8px;
+					}
+				}
+			}
+			.mobile-filter-header{
+				display: none;
+			}
+			.header-filter {
+				font-size: 20px;
+				margin-bottom: 4px;
+				margin-top: 12px;
+				@media only screen and (min-width: 992px) {
+					margin-top: 0;
+				}
+			}
+			.body-filter {
+				.rollercoin-select-container {
+					.rollercoin-select__control {
+						border: 2px solid #595467;
+						border-radius: 4px;
+						background-color: #19151c;
+						color: #dfdfdf;
+						font-family: 'Roboto', sans-serif;
+						&.rollercoin-select__control--is-focused,
+						&:hover {
+							border-color: #595467;
+							box-shadow: none;
+						}
+						.rollercoin-select__value-container {
+							padding: 12px 14px;
+							font-size: 16px;
+							.rollercoin-select__single-value {
+								color: #dfdfdf;
+								& + div {
+									padding: 0;
+									margin: 0;
+								}
+							}
+						}
+						.rollercoin-select__indicator-separator {
+							display: none;
+						}
+						.rollercoin-select__dropdown-indicator {
+							color: #595467;
+							&:hover {
+								color: #595467;
+							}
+						}
+					}
+					.rollercoin-select__menu {
+						margin: 0;
+						top: calc(100% - 5px);
+						border-radius: 0 0 4px 4px;
+						border: 2px solid #595467;
+						border-top: none;
+						background-color: #19151c;
+						.rollercoin-select__menu-list {
+							.rollercoin-select__option {
+								font-size: 16px;
+								cursor: pointer;
+								padding: 12px 14px;
+								&.rollercoin-select__option--is-focused {
+									background-color: #2f3045;
+								}
+								&.rollercoin-select__option--is-selected {
+									background-color: #03e1e4;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

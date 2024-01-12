@@ -1,0 +1,62 @@
+.marketplace-price-chart {
+  @media only screen and (min-width: 992px) {
+    padding-top: 16px;
+    border-top: 1px solid #6a668a;
+  }
+  .marketplace-navigation-title {
+    padding: 0 8px 8px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    @media only screen and (min-width: 992px) {
+      padding: 8px 8px 9px 0;
+    }
+  }
+  .marketplace-navigation-block {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    .marketplace-nav-pills {
+      .nav-item {
+        margin-right: 4px;
+        padding: 0;
+        .nav-link {
+          margin: 0;
+          padding: 8px 16px 9px;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          line-height: 1.1;
+          text-transform: none;
+          background-color: #19151d;
+          border: none;
+          border-radius: 4px 4px 0 0;
+          &:hover {
+            background-color: #19151d;
+            color: #03e1e4;
+            border: none;
+            cursor: pointer;
+          }
+          &.active {
+            background-color: #1f1f2d;
+            color: #03e1e4;
+            border: none;
+            cursor: default;
+            @media only screen and (min-width: 992px) {
+              color: #ffffff;
+            }
+          }
+        }
+
+      }
+    }
+  }
+  .chart-container {
+    padding: 12px 10px;
+    background: #1f1f2d;
+    border-radius: 0 4px 4px 4px;
+    @media only screen and (min-width: 992px) {
+      padding: 26px 24px;
+      border-radius: 4px;
+    }
+  }
+}

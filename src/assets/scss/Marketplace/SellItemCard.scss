@@ -1,0 +1,64 @@
+.miners-racks-card-container {
+  &.mutation_component {
+    .card-info-block {
+      font-size: 16px;
+      .item-name {
+        font-size: 16px;
+        padding-bottom: 10px;
+      }
+    }
+    .card-image-block {
+      .card-image-wrapper {
+        position: relative;
+        .collection-product-level-img-size-2 {
+          position: absolute;
+          top: 25px;
+          left: 2px;
+          z-index: 1;
+        }
+        .collection-product-level-img-size-1 {
+          position: absolute;
+          top: 26px;
+          left: 25px;
+          z-index: 1;
+        }
+      }
+      min-width: 96px;
+      min-height: 96px;
+      flex: none;
+    }
+  }
+  .card-footer {
+    position: relative;
+    padding: 0 12px;
+    background-color: #2f3045;
+    border: 1px solid #6a668a;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+
+    .sell-status-of-sell {
+      width: 100%;
+      padding-bottom: 10px;
+
+      .text {
+        text-align: center;
+        font-family: 'Robot', sans-serif;
+        font-size: 14px;
+        line-height: 1.14;
+      }
+
+      .positive {
+        color: #5ce319;
+      }
+
+      .negative {
+        color: #d53f3f;
+      }
+    }
+
+    .sell-button {
+      margin-bottom: 20px;
+    }
+  }
+}

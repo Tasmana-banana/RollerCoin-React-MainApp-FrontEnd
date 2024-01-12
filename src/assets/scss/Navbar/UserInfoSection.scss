@@ -1,0 +1,93 @@
+.user-information-container {
+	display: flex;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1;
+	p {
+		margin: 0;
+	}
+	.user-icon-header {
+		.user-circle {
+			width: 36px;
+			height: 36px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@media only screen and (min-width: 992px) {
+				width: 60px;
+				height: 60px;
+			}
+			.mask-hexagon, .mask-circle {
+				display: flex;
+				align-items: flex-end;
+				justify-content: center;
+				width: 36px;
+				height: 36px;
+				-webkit-mask-repeat: no-repeat;
+				mask-repeat: no-repeat;
+				-webkit-mask-size: 36px 36px;
+				mask-size: 36px 36px;
+				background-size: 36px 36px;
+				@media only screen and (min-width: 992px) {
+					width: 60px;
+					height: 60px;
+					mask-size: 60px 60px;
+					-webkit-mask-size: 60px 60px;
+					background-size: 60px 60px;
+				}
+			}
+			.mask-hexagon {
+				-webkit-mask-image: url("../../img/icon/hexagon.png");
+				mask-image: url("../../img/icon/hexagon.png");
+				background-image: url("../../img/icon/hexagon.png");
+			}
+			.mask-circle {
+				-webkit-mask-image: url("../../img/icon/circle.png");
+				mask-image: url("../../img/icon/circle.png");
+				background-image: url("../../img/icon/circle.png");
+			}
+			.avatar-icon {
+				width: 30px;
+				height: 30px;
+				image-rendering: pixelated;
+				@media only screen and (min-width: 992px) {
+					width: 50px;
+					height: 50px;
+				}
+			}
+		}
+	}
+	.user-name-position-header {
+		margin-left: 10px;
+		font-size: 12px;
+		@media only screen and (min-width: 992px) {
+			font-size: 18px;
+		}
+		.top-block {
+			font-family: 'Arcana', sans-serif;
+			a {
+				color: #ffffff;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		.bottom-block {
+			margin-top: 4px;
+			font-size: 14px;
+			@media only screen and (min-width: 992px) {
+				margin-top: 8px;
+				font-size: 16px;
+			}
+			a {
+				color: #595467;
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				text-transform: lowercase;
+				> .cyan-text {
+					color: #03e1e4;
+				}
+			}
+		}
+	}
+}

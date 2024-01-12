@@ -1,0 +1,41 @@
+.empty-inventory-container {
+	padding-top: 80px;
+	display: flex;
+	justify-content: center;
+	.empty-inventory-wrapper {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		.empty-text {
+			font-family: 'Arcana', sans-serif;
+			text-align: center;
+			font-size: 16px;
+			@media only screen and (min-width: 992px) {
+				font-size: 20px;
+			}
+		}
+		.empty-image-block {
+			margin: 32px auto 0;
+			.empty-image {
+				max-width: 184px;
+				@media only screen and (min-width: 992px) {
+					max-width: none;
+				}
+			}
+		}
+		.buy-button-block {
+			margin: 24px auto 0;
+			.btn-text {
+				display: flex;
+				flex-direction: row;
+				padding: 12px 46px;
+				@media only screen and (min-width: 992px) {
+					padding: 12px 77px;
+				}
+				.btn-img {
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

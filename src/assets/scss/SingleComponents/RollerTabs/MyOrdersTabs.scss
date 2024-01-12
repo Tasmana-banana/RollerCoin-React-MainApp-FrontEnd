@@ -1,0 +1,65 @@
+.marketplace-orders-container {
+	.marketplace-preloader-layer {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 19;
+		background-color: rgba(0, 0, 0, 0.7);
+		.loader-img {
+			display: block;
+			position: absolute;
+			top: calc(50% - 45px);
+			left: 50%;
+			transform: translate(-50%, 0);
+			bottom: auto;
+			z-index: 20;
+		}
+	}
+
+	.my-orders-tabs.tabs-container {
+		.nav-tabs {
+			margin-bottom: 0;
+			overflow-y: hidden;
+
+			@media (min-width: 992px) {
+				overflow-x: visible;
+				overflow-y: visible;
+			}
+		}
+		.nav-link {
+			border-top: 1px solid #6a668a;
+			border-left: 1px solid #6a668a;
+			border-right: 1px solid #6a668a;
+			border-bottom: none;
+			background: #232436;
+			&.active {
+				border-top: 1px solid #6a668a;
+				border-left: 1px solid #6a668a;
+				border-right: 1px solid #6a668a;
+				background: #2f3044;
+				position: relative;
+				z-index: 2;
+
+				&::after {
+					content: "";
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					bottom: -1px;
+					left: 0;
+					background: #2f3044;
+					z-index: 2;
+				}
+			}
+		}
+		& .tab-content {
+			padding: 25px 30px;
+			position: relative;
+			z-index: 1;
+			background: #2f3044;
+			border: 1px solid #6a668a;
+		}
+	}
+}

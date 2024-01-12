@@ -1,0 +1,30 @@
+.myorders-modal {
+	max-width: 380px;
+	margin: 0 auto;
+	& .myorders-modal-wrapper {
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		padding: 24px;
+		& .title {
+			font-size: 24px;
+			margin-bottom: 5px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+		}
+		& .text {
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		& .button-block {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 25px;
+
+			& .myorders-modal-button {
+				width: 47%;
+			}
+		}
+	}
+}

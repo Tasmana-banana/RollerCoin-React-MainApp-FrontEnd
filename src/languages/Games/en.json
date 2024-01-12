@@ -1,0 +1,55 @@
+{
+	"playGame": "Play games to rise your power",
+	"difficulty": "DIFFICULTY:",
+	"level": "LEVEL:",
+	"start": "START",
+	"wait": "WAIT...",
+	"time": "TIME:",
+	"reward": "REWARD:",
+	"comingSoon": "Coming soon...",
+	"score": "Score: ",
+	"points": "Points",
+	"power": "Your Power",
+	"or": "or",
+	"pcInfo": {
+		"pcName": "PC ",
+		"pcLevel": "Level ",
+		"powerHolding": "Power holding: ",
+		"levelReset": "PC Level Reset: ",
+		"never": "Never",
+		"nextLevel": "Next PC level: ",
+		"maxPcLevel": "You have max PC level",
+		"winGames": "After {{gamesCount}} win games",
+		"temporaryPower": "The power you get from winning games is temporary, and every game has its own decay timer of 24 hours.",
+		"cooldown": "The cooldown of a game increases with the rise of the game difficulty.",
+		"externalSoftware": "The usage of any external software, scripts and services in RollerCoin will lead to a permanent ban of the account and freeze of the account balance.",
+		"winning": {
+			"title": "By winning games, you have a chance to receive one of the following items:",
+			"text1": "x2 Power time hold from the game",
+			"text2": "Gh/s for 24h",
+			"text3": "x2 Power reward from the game",
+			"text4": "RollerArc S1",
+			"text5": "RLT",
+			"text6": "Battery"
+		}
+	},
+	"play": {
+		"power": "Power:",
+		"newHashrate": "Your New Hashrate:",
+		"powerRemain": "Power will remain valid for next",
+		"powerWhenYouWin": "Mining Power is added only when you win the game.",
+		"goHome": "GO HOME",
+		"chooseGame": "CHOOSE GAME",
+		"hours": "hours",
+		"days": "days"
+	},
+	"captcha": {
+		"enterCaptchaTitle": "To start a game, solve the ",
+		"enterCaptchaTitleStrong": "CAPTCHA ",
+		"enterCaptchaTitleEnd": "before time expires.",
+		"timeRemain": " seconds remain",
+		"limit": "The suspicious activity detected. Please wait and try again later.",
+		"unbanTime": "Access to games opens at ",
+		"utc": " UTC."
+	}
+}

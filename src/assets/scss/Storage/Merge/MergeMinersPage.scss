@@ -1,0 +1,43 @@
+.crafting-confirmation-wrapper {
+  width: 100%;
+  .confirmation-title {
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.1;
+    @media only screen and (min-width: 992px) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+  .confirmation-merge-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+}
+.confirmation-buttons {
+  display: flex;
+  .tree-dimensional-button {
+    flex: 1 1 50%;
+    &:first-child {
+      margin-right: 12px;
+    }
+    &.btn-red {
+      box-shadow: 0 6px #620A12, 0 10px #1f1f2c;
+      > span {
+        box-shadow: 0px -1px #dc3545, 0px 1px #1f1f2c;
+        background-color: #dc3545;
+        border: 1px solid #FF8490;
+        color: #ffffff;
+      }
+    }
+    .btn-text {
+      font-size: 16px;
+      line-height: 24px;
+      @media only screen and (min-width: 992px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

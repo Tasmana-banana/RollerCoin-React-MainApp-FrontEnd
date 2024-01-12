@@ -1,0 +1,130 @@
+.search-and-sort-panel {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid #6a668a;
+	@media only screen and (min-width: 992px) {
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	.search-and-sort-wrapper {
+		@media only screen and (min-width: 992px) {
+			display: flex;
+			justify-content: space-between;
+		}
+		.search-wrapper {
+			margin-bottom: 16px;
+			@media only screen and (min-width: 992px) {
+				max-width: 210px;
+				margin-right: 16px;
+				margin-bottom: 0;
+			}
+			.search-input {
+				padding: 8px 12px;
+				color: #ffffff;
+				font-family: 'Roboto', sans-serif;
+				font-size: 14px;
+				background-color: #1f1f2d;
+				border: 1px solid #6a668a;
+				border-radius: 4px;
+				box-shadow: none;
+				@media only screen and (min-width: 992px) {
+					padding: 4px 12px;
+				}
+				&::placeholder {
+					color: #ffffff;
+				}
+				&:focus {
+					font-size: 16px;
+					background-color: #1f1f2d;
+					border: 1px solid #03e1e4;
+					border-radius: 4px;
+				}
+				&:focus::placeholder {
+					color: transparent;
+				}
+			}
+		}
+	}
+	.marketplace-select-item {
+		flex-grow: 6;
+		@media only screen and (min-width: 992px) {
+			min-width: 200px;
+		}
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+		&.short {
+			flex-grow: 1;
+			@media only screen and (min-width: 992px) {
+				min-width: 70px;
+			}
+		}
+	}
+	.marketplace-select-filter {
+		&__control {
+			min-height: unset;
+			padding: 8px 12px;
+			background-color: #1f1f2d;
+			border: 1px solid #6a668a;
+			border-radius: 4px;
+			box-shadow: none;
+			cursor: pointer;
+			@media only screen and (min-width: 992px) {
+				padding: 4px 12px;
+			}
+			&:hover  .select-filter__indicator{
+				color: #03e1e4;
+			}
+		}
+		&__value-container {
+			padding: 0;
+		}
+		&__single-value {
+			color: #ffffff;
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+		}
+		&__menu {
+			padding: 0;
+			margin: 0;
+			color: #ffffff;
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			background-color: #1f1f2d;
+			cursor: pointer;
+			&:focus {
+				outline: none;
+			}
+		}
+		&__menu-list {
+			padding: 0;
+			border: 1px solid #03e1e4;
+			border-radius: 4px;
+		}
+		&__option {
+			padding: 8px 12px;
+			cursor: pointer;
+			@media only screen and (min-width: 992px) {
+				padding: 4px 12px;
+			}
+		}
+		&__option--is-selected {
+			color: #03e1e4;
+			background-color: #1f1f2d;
+		}
+		&__option--is-focused {
+			background-color: #6a668a;
+		}
+		&__indicator {
+			padding: 0;
+			color: #ffffff;
+			svg {
+				max-width: 20px;
+			}
+		}
+		&__indicator-separator {
+			display: none;
+		}
+	}
+}
+

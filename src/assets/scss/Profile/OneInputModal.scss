@@ -1,0 +1,10 @@
+.one-input-modal-wrapper {
+    padding: 0 15px 25px;
+    .form-group {
+        margin-bottom: 0;
+        padding-bottom: 26px;
+        &.error {
+            padding-bottom: 26px;
+        }
+    }
+}

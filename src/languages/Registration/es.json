@@ -1,0 +1,73 @@
+{
+  "signUp": {
+    "services": "Iniciar sesión en los servicios",
+    "or": "o",
+    "email": "E-mail",
+    "emailError": "Este e-mail ya está en uso; elige otro",
+    "passwordRequired": "La contraseña es necesaria",
+    "registered": "¿Ya te has registrado?",
+    "logIn": "Iniciar sesión",
+    "emailVerification": "Verificación del e-mail",
+    "emailConfirmed": "¡Tu e-mail se ha confirmado!",
+    "youCan": "Ya puedes iniciar sesión",
+    "termsDescr": "By proceeding, you agree to Rollercoin's",
+    "codeSent": "Code successfully sent to your email!",
+    "logInSignUp": "LOG IN OR SIGN UP",
+    "welcome": "WELCOME BACK",
+    "weSentCode": "We sent a temporary login code to ",
+    "notYou": "Not you?",
+    "cantFindEmail": "Can't find the email? Please wait for 30 seconds and check your spam folder. For further assistance, contact",
+    "notYouDelayMessage": "For security purposes, you can only request this once every",
+    "oneMinute": "60 seconds"
+  },
+  "logIn": {
+    "services": "Iniciar sesión en los servicios",
+    "or": "o",
+    "email": "E-mail",
+    "userError": "No se puede encontrar al usuario con la contraseña",
+    "passwordRequired": "La contraseña es necesaria",
+    "keepSigned": "Mantener la sesión iniciada",
+    "notMember": "¿No eres miembro?",
+    "userNotComplete": "User hasn't completed registration and verification",
+    "cantFindUser": "No se puede encontrar al usuario con el e-mail",
+    "least6": "Introduce al menos seis caracteres"
+  },
+  "restorePass": {
+    "restore": "Restablecer contraseña",
+    "newPass": "Introducir nueva contraseña",
+    "confirm": "Confirmar",
+    "success": " La contraseña se ha modificado correctamente",
+    "invalidToken": "Tu token no es válido o ha caducado; inténtalo de nuevo. Si tienes problemas para restablecer tu contraseña, ",
+    "sendEmail": "envíanos un email",
+    "etc": "",
+    "waitPlease": "Espera un momento, procesando datos...",
+    "notMatch": "La contraseña y la confirmación de contraseña no coinciden"
+  },
+  "resetPass": {
+    "resetPass": "RESTABLECER CONTRASEÑA",
+    "receiveAnEmail": "Recibirás un correo electrónico con instrucciones para restablecer tu contraseña. Si tienes problemas para restablecer tu contraseña, ",
+    "sendEmail": "envíanos un email",
+    "instructions": "Se ha enviado un e-mail con instrucciones para crear una nueva contraseña a tu dirección: "
+  },
+  "wellDone": {
+    "title": "REVISA TU BUZÓN",
+    "description": "Acabamos de enviarte un e-mail con un enlace para confirmar tu cuenta. Revisa tu e-mail y sigue el enlace de verificación. Si no está el correo, revisa tu carpeta de correo no deseado o contacta con nosotros.",
+    "linkMain": "PÁGINA PRINCIPAL"
+  },
+  "noMatch": {
+    "metaTitle": "404 | Página no encontrada | RollerCoin.com",
+    "title": "Página no encontrada",
+    "descr": "El enlace está roto o la página se ha cambiado de sitio.",
+    "button": "PÁGINA PRINCIPAL"
+  },
+  "facebookBtnPopup": {
+    "description1": "Enter the ",
+    "email": "email",
+    "description2": " your Facebook account is registered with.",
+    "description3": "Log in using the ",
+    "description4": "temporary code",
+    "description5": " received by email",
+    "description6": "If you're having trouble accessing your account, it means that you have changed your email on Facebook after creating a RollerCoin account. To continue, please provide your previous email address.",
+    "gotIt": "GOT IT"
+  }
+}

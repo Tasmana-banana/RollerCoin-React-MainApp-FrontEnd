@@ -1,0 +1,26 @@
+{
+  "cells": "Cell(s): ",
+  "power": "Power: ",
+  "price": "Price: ",
+  "unlimited": "Unlimited",
+  "left": "Left",
+  "main": {
+    "yes": "Yes",
+    "no": "No",
+    "buy": "Buy",
+    "notEnough": "Not enough",
+    "buySuccess": "Purchase successfully!",
+    "soldOut": "Sold out",
+    "canBuy": "*You can buy only ",
+    "onYourAccount": " on your account"
+  },
+  "landingSaleEvent": {
+    "miner": "Miner",
+    "hat": "Hat",
+    "appearance": "Skin",
+    "lootbox": "Lootbox",
+    "trophy": "Trophy",
+    "rack": "Rack",
+    "battery": "Battery"
+  }
+}

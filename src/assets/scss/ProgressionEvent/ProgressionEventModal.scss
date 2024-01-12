@@ -1,0 +1,466 @@
+.progression-event-modal {
+	@media screen and (min-width: 992px) {
+		min-width: 594px;
+	}
+
+	.progression-event-wrapper {
+		padding: 0;
+
+		p {
+			margin: 0;
+		}
+
+		.progression-event-modal-header {
+			padding: 18px;
+			background-size: cover;
+			border-radius: 4px 4px 0 0;
+
+			&.complete {
+				border-radius: 4px;
+			}
+			@media screen and (min-width: 992px) {
+				padding: 32px 36px 8px;
+				background-position: center;
+			}
+
+			.progression-modal-close-btn {
+				position: absolute;
+				top: 6px;
+				right: 6px;
+				padding: 0;
+				color: #fff;
+				background-color: transparent;
+				border: none;
+				box-shadow: 0 4px #514e72, 0 5px #1f1f2c;
+				outline: none;
+				cursor: pointer;
+				z-index: 1;
+				@media screen and (min-width: 992px) {
+					top: 12px;
+					right: 14px;
+				}
+
+				span {
+					padding: 6px;
+				}
+
+				img {
+					width: 12px;
+					height: 12px;
+				}
+
+				&:active,
+				&:disabled {
+					> span {
+						transform: translate(0, 3px);
+					}
+				}
+			}
+
+			.progression-modal-header-wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				@media screen and (min-width: 992px) {
+					flex-direction: row;
+					align-items: initial;
+				}
+
+				.progression-modal-info-side {
+					width: 100%;
+					text-align: center;
+					@media screen and (min-width: 992px) {
+						width: unset;
+						margin-right: 52px;
+						margin-bottom: 20px;
+					}
+
+					.modal-logo {
+						width: 100%;
+						margin-bottom: 16px;
+						image-rendering: pixelated;
+						@media screen and (min-width: 992px) {
+							width: inherit;
+							margin: 0 0 12px;
+						}
+					}
+
+					.remaining-time {
+						display: flex;
+						justify-content: center;
+						width: 100%;
+						padding: 8px 0 7px;
+						color: #ffe14c;
+						font-family: Arcana, sans-serif;
+						font-size: 16px;
+						line-height: 1;
+						background-color: rgba(29, 37, 58, 0.8);
+						backdrop-filter: blur(4px);
+						border-radius: 4px;
+						@media screen and (min-width: 992px) {
+							padding: 12px 0 11px;
+						}
+
+						.time-icon-wrapper {
+							max-width: 15px;
+							margin-right: 16px;
+
+							.time-icon {
+								filter: drop-shadow(0 0 4px #09204b);
+							}
+						}
+
+						.time-text {
+							text-shadow: 0 0 5px rgba(9, 32, 75, 0.6);
+						}
+					}
+				}
+
+				.progression-modal-reward-side {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					position: relative;
+
+					.level-img-size-1,
+					.level-img-size-2 {
+						position: absolute;
+						image-rendering: pixelated;
+						z-index: 1;
+					}
+
+					.level-img-size-2 {
+						top: 22px;
+						left: 24px;
+						@media screen and (min-width: 992px) {
+							top: 10px;
+							left: 10px;
+						}
+					}
+
+					.level-img-size-1 {
+						top: 30px;
+						left: 44px;
+						@media screen and (min-width: 992px) {
+							top: 16px;
+							left: 44px;
+						}
+					}
+
+					.progression-reward-image {
+						margin: -10px 0 -14px;
+						filter: drop-shadow(0 0 20px #75f0b9);
+						image-rendering: pixelated;
+						@media screen and (min-width: 992px) {
+							margin: -23px 0 -12px;
+						}
+					}
+
+					.progression-modal-reward-wrapper {
+						min-width: 174px;
+						padding: 4px 8px;
+						font-family: Roboto, sans-serif;
+						font-weight: 700;
+						line-height: 1.1;
+						text-shadow: 0 0 4px rgba(9, 32, 75, 0.75);
+						text-align: center;
+						background-color: rgba(29, 37, 58, 0.8);
+						backdrop-filter: blur(4px);
+						border-radius: 4px;
+
+						.rewards-title {
+							font-size: 16px;
+							color: #fff;
+						}
+
+						.rewards-description {
+							font-size: 14px;
+							color: #ffdc00;
+						}
+					}
+				}
+			}
+
+			.progression-got-all {
+				padding: 13px 8px 12px;
+				margin-top: 12px;
+				margin-bottom: 16px;
+				background-color: #d735bc;
+				border-radius: 4px;
+				text-align: center;
+
+				.progression-got-all-text {
+					font-family: Arcana, sans-serif;
+					font-size: 20px;
+					line-height: 1.1;
+					color: #fff;
+					text-transform: uppercase;
+					@media screen and (min-width: 992px) {
+						font-size: 24px;
+					}
+				}
+			}
+		}
+
+		.progression-event-modal-body {
+			padding: 16px 15px;
+			background-color: #2f3045;
+			border: 1px solid #6a668a;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			@media screen and (min-width: 992px) {
+				padding: 16px 24px 24px;
+			}
+
+			.progression-event-modal-progress {
+				display: flex;
+				align-items: center;
+				padding: 24px 0 16px;
+				margin-bottom: 16px;
+				border-bottom: 1px solid #6a668a;
+
+				.progression-multiplier-wrapper {
+					position: relative;
+					min-width: 95px;
+					min-height: 68px;
+					background-color: #1f1f2d;
+					border-radius: 4px;
+					text-align: center;
+					@media screen and (min-width: 992px) {
+						min-width: 108px;
+						min-height: 80px;
+					}
+
+					.progression-multiplier-title {
+						position: absolute;
+						top: -22px;
+						left: 0;
+						right: 0;
+						font-family: Roboto, sans-serif;
+						font-weight: 700;
+						font-size: 15px;
+						line-height: 1;
+						text-transform: capitalize;
+						@media screen and (min-width: 992px) {
+							top: -26px;
+							font-size: 18px;
+						}
+					}
+
+					.progression-multiplier-info-wrapper {
+						display: flex;
+						align-items: center;
+						padding-left: 2px;
+						@media screen and (min-width: 992px) {
+							margin-top: 4px;
+							padding-left: 4px;
+						}
+
+						.progression-multiplier-info {
+							cursor: pointer;
+						}
+
+						.progression-multiplier-max-value {
+							padding-left: 4px;
+							font-family: Arcana, sans-serif;
+							font-size: 10px;
+							line-height: 1.4;
+							color: #aaa;
+						}
+					}
+
+					.progression-multiplier-value {
+						margin: 0;
+						font-family: Arcana, sans-serif;
+						font-size: 22px;
+						line-height: 1.5;
+						background: linear-gradient(to bottom, #ffea80 30%, #ffe14c 45%, #f93 65%);
+						background-clip: text;
+						-webkit-text-fill-color: transparent;
+						@media screen and (min-width: 992px) {
+							font-size: 26px;
+						}
+					}
+
+					.progression-multiplier-remaining-time {
+						font-family: Arcana, sans-serif;
+						font-size: 14px;
+						line-height: 1;
+						color: #fff;
+						@media screen and (min-width: 992px) {
+							font-size: 16px;
+						}
+					}
+				}
+
+				.progression-progress-block {
+					position: relative;
+					flex-grow: 1;
+
+					.progression-progress-text {
+						position: absolute;
+						margin: 0 auto;
+						top: 7px;
+						left: 0;
+						right: 0;
+						color: #fff;
+						font-family: Arcana, sans-serif;
+						font-size: 14px;
+						line-height: 1;
+						text-align: center;
+						@media only screen and (min-width: 992px) {
+							top: 6px;
+							font-size: 18px;
+						}
+					}
+
+					.progression-progress-bar {
+						background-color: #781067;
+						height: 32px;
+						margin-top: 0;
+						border-radius: 0;
+
+						> .progress-bar {
+							background-color: #d735bc;
+						}
+					}
+				}
+
+				.progression-modal-reward-wrapper {
+					display: flex;
+					justify-content: center;
+					align-items: flex-end;
+					position: relative;
+					min-width: 95px;
+					min-height: 68px;
+					padding: 0 8px;
+					background-color: #1f1f2d;
+					border-radius: 4px;
+					text-align: center;
+					@media screen and (min-width: 992px) {
+						min-width: 108px;
+						min-height: 80px;
+					}
+
+					.progression-reward-title {
+						position: absolute;
+						top: -22px;
+						left: 0;
+						right: 0;
+						font-family: Roboto, sans-serif;
+						font-weight: 700;
+						font-size: 15px;
+						line-height: 1;
+						text-transform: capitalize;
+						@media screen and (min-width: 992px) {
+							top: -26px;
+							font-size: 18px;
+						}
+					}
+
+					.progression-reward-img {
+						position: absolute;
+						inset: 0 0 15px;
+						margin: auto;
+						max-height: 52px;
+						image-rendering: pixelated;
+					}
+
+					.level-img-size-1,
+					.level-img-size-2 {
+						position: absolute;
+						image-rendering: pixelated;
+						z-index: 1;
+					}
+
+					.level-img-size-2 {
+						top: 10px;
+						left: 10px;
+						@media screen and (min-width: 992px) {
+							top: 18px;
+							left: 16px;
+						}
+					}
+
+					.level-img-size-1 {
+						top: 14px;
+						left: 24px;
+						@media screen and (min-width: 992px) {
+							top: 22px;
+							left: 30px;
+						}
+					}
+
+					.progression-reward-description {
+						font-family: Roboto, sans-serif;
+						font-weight: 700;
+						font-size: 14px;
+						line-height: 1.7;
+						color: #fff;
+					}
+				}
+			}
+
+			.progression-quests-block {
+				.progression-quests-title {
+					margin-bottom: 8px;
+					font-family: Roboto, sans-serif;
+					font-weight: 700;
+					font-size: 18px;
+					line-height: 1.1;
+					text-transform: capitalize;
+				}
+
+				.progression-quests-list {
+					.progression-quest {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						min-height: 40px;
+						padding: 6px 12px 7px;
+						margin-bottom: 8px;
+						font-family: Roboto, sans-serif;
+						font-size: 15px;
+						line-height: 1.1;
+						color: #fff;
+						background-color: #1f1f2d;
+						border-radius: 4px;
+						@media screen and (min-width: 992px) {
+							font-size: 16px;
+						}
+
+						.progression-quest-text {
+							margin-right: 24px;
+						}
+
+						.progression-quest-reward-xp {
+							white-space: nowrap;
+							text-transform: capitalize;
+						}
+
+						.accent-text {
+							font-family: Roboto, sans-serif;
+							font-weight: 700;
+							color: #00fcff;
+						}
+					}
+				}
+				.progression-quest-button {
+					display: block;
+					width: 240px;
+					margin: 15px auto 0;
+				}
+			}
+		}
+	}
+}
+
+.progression-tooltip-view {
+	.tooltip-inner {
+		max-width: 320px;
+		@media only screen and (min-width: 520px) {
+			max-width: 600px;
+		}
+	}
+}

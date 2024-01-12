@@ -1,0 +1,106 @@
+$cyan-color: #03e1e4;
+$card-background: #1f1f2d;
+
+.tutorial-popup {
+	position: relative;
+	max-width: 720px;
+	@media (max-width: 575px) {
+		margin: 0;
+	}
+	.modal-content {
+		background-color: #2f3045;
+		border-radius: 4px;
+
+		.tutorial-modal-body {
+			padding: 25px 25px 0;
+			@media (max-width: 575px) {
+				padding: 25px 15px;
+			}
+
+			.title-block {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				margin-bottom: 25px;
+				.tutorial-title {
+					margin-bottom: 0;
+					font-family: Roboto, sans-serif;
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+				}
+				.close-menu-btn {
+					border: 0;
+					background: transparent;
+					cursor: pointer;
+				}
+			}
+			.tutorial-text-block {
+				margin-bottom: 20px;
+				font-family: Roboto, sans-serif;
+				font-size: 14px;
+				p {
+					margin: 0;
+				}
+			}
+
+			.tutorial-img-block {
+				.how-to-card-wrapper {
+					padding-right: 4px;
+					padding-left: 4px;
+					margin-bottom: 12px;
+					@media screen and (min-width: 992px) {
+						margin-bottom: 24px;
+					}
+					.how-to-card {
+						height: 100%;
+						padding: 8px 12px 16px;
+						background-color: $card-background;
+						border-radius: 4px;
+						@media screen and (min-width: 992px) {
+							padding: 12px;
+						}
+						.how-to-card-step {
+							font-family: Roboto, sans-serif;
+							font-size: 18px;
+							font-weight: 700;
+							line-height: 1.1;
+							color: #ffffff;
+							@media screen and (min-width: 992px) {
+								font-size: 20px;
+							}
+						}
+						.how-to-card-image {
+							display: flex;
+							justify-content: center;
+							margin-bottom: 12px;
+						}
+						.how-to-card-title {
+							margin-bottom: 12px;
+							font-family: Roboto, sans-serif;
+							font-size: 14px;
+							font-weight: 700;
+							line-height: 1.1;
+						}
+						.how-to-card-description {
+							font-family: Roboto, sans-serif;
+							font-size: 12px;
+							line-height: 1.1;
+							margin: 0;
+						}
+					}
+				}
+			}
+
+			.tutorial-btn-block {
+				margin-top: 20px;
+				margin-bottom: 8px;
+				text-align: center;
+
+				.tutorial-button {
+					padding: 9px 80px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.crypto-quests {
+	padding: 15px 25px;
+	background: url("../../img/questsBanners/crypto_quest_banner_bg.png");
+	position: relative;
+	background-size: cover;
+	height: 100%;
+	cursor: pointer;
+
+	&.crypto-quest-mobile {
+		background: none;
+		padding: 15px 0 0 0;
+	}
+
+	.content-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		.event-icon-block {
+			width: 80px;
+			height: 80px;
+			background-color: #1f1f2d;
+			border-radius: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 0;
+			z-index: 1;
+		}
+		.progress-wrapper {
+			width: 100%;
+			position: relative;
+			max-width: 380px;
+			margin-left: 60px;
+
+			@media (min-width: 992px) {
+				margin-left: auto;
+			}
+
+			.progress-bar {
+				background: #781067;
+				height: 40px;
+				> .progress-bar {
+					background-color: #d735bc;
+					margin: 0;
+				}
+			}
+			.progress-text {
+				font-family: 'Arcana', sans-serif;
+				font-size: 20px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				width: 100%;
+				text-align: center;
+				transform: translate(-50%, -50%);
+
+				@media (min-width: 992px) {
+					font-size: 24px;
+				}
+			}
+		}
+		.reward-wrapper {
+			padding: 5px;
+			min-width: 124px;
+			min-height: 80px;
+			background-color: #1f1f2d;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+
+			.count-wrapper-block {
+				font-size: 14px;
+
+				@media (min-width: 576px) {
+					font-size: 15px;
+				}
+
+				@media (min-width: 992px) {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

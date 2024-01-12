@@ -1,0 +1,55 @@
+.custom-round-radio {
+	display: inline-block;
+	position: relative;
+	padding-left: 36px;
+	white-space: nowrap;
+	cursor: pointer;
+	.radio-label-title {
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		color: #ffffff;
+		line-height: 1.2;
+	}
+	.radio-label-subtitle {
+		margin-left: 8px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		color: #9797a2;
+	}
+	.custom-round-radio-button {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 0;
+		width: 0;
+		&:checked ~ .radio-label-checkmark:after {
+			width: 16px;
+			height: 16px;
+			transition: width 200ms cubic-bezier(0.4, 2.2, 0.6, 1), height 200ms cubic-bezier(0.4, 2.2, 0.6, 1);
+		}
+	}
+	.radio-label-checkmark {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 28px;
+		width: 28px;
+		background-color: #1f1f2d;
+		border: 2px solid #6a668a;
+		border-radius: 50%;
+		box-shadow: inset 3px 3px 0 0 #15151e;
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			margin: auto;
+			background-color: #03e1e4;
+			border-radius: 50%;
+		}
+	}
+}

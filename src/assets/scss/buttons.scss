@@ -1,0 +1,163 @@
+button {
+	&.tree-dimensional-button {
+		border: none;
+		outline: none;
+		padding: 0;
+		background-color: transparent;
+	}
+}
+.tree-dimensional-button {
+	display: inline-block;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+	&.btn-cyan {
+		box-shadow: 0 6px #186c6d, 0 10px #1f1f2c;
+		> span {
+			box-shadow: 0px -1px #186c6d, 0px 1px #1f1f2c;
+			background-color: #03e1e4;
+			border: 1px solid #9ff2f3;
+			color: #2f3045;
+		}
+	}
+	&.btn-yellow {
+		box-shadow: 0 6px #a59e03, 0 10px #1f1f2c;
+		> span {
+			box-shadow: 0px -1px #a59e03, 0px 1px #1f1f2c;
+			background-color: #ece309;
+			border: 1px solid #ece309;
+			color: #2f3045;
+		}
+	}
+	&.btn-gold {
+		box-shadow: 0 6px #a59e03, 0 10px #1f1f2c;
+		> span {
+			box-shadow: 0px -1px #a59e03, 0px 1px #1f1f2c;
+			background-color: #ffdc00;
+			border: 1px solid #ffdc00;
+			color: #2f3045;
+		}
+	}
+	&.btn-danger {
+		box-shadow: 0 6px #620A12, 0 10px #1f1f2c;
+		> span {
+			box-shadow: 0px -1px #dc3545, 0px 1px #1f1f2c;
+			background-color: #dc3545;
+			border: 1px solid #FF8490;
+			color: #ffffff;
+		}
+	}
+	&.btn-default {
+		box-shadow: 0 6px #514e72, 0 10px #1f1f2c;
+		> span {
+			box-shadow: 0px 2px #514e72, 0px 1px #1f1f2c;
+			background-color: #8984b1;
+			border: 1px solid #c3b0d0;
+			color: #ffffff;
+		}
+	}
+	&.btn-fb {
+		box-shadow: 0 6px #283b67, 0 10px #51515d;
+		> span {
+			box-shadow: 0px -1px #b5c3e3, 0px 1px #283b67;
+			background-color: #3c599b;
+			border: 1px solid #b5c3e3;
+			color: #ffffff;
+		}
+	}
+	&.btn-twitter {
+		box-shadow: 0 6px #0074a3, 0 10px #51515d;
+		> span {
+			box-shadow: 0px -1px #99e2ff, 0px 1px #00abf0;
+			background-color: #00abf0;
+			border: 1px solid #99e2ff;
+			color: #ffffff;
+		}
+	}
+	&.btn-discord {
+		box-shadow: 0 6px #283b67, 0 10px #51515d;
+		> span {
+			box-shadow: 0px -1px #dadff1, 0px 1px #6178c6;
+			background-color: #6178c6;
+			border: 1px solid #dadff1;
+			color: #ffffff;
+		}
+	}
+	.shining-inside {
+		position: relative;
+		overflow: hidden;
+		&:after {
+			animation: shine 3s ease-in-out infinite;
+			animation-fill-mode: forwards;
+			content: "";
+			position: absolute;
+			top: -110%;
+			left: -210%;
+			width: 200%;
+			height: 200%;
+			opacity: 0;
+			transform: rotate(30deg);
+			background: rgba(255, 255, 255, 0);
+			background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 77%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 0) 100%);
+		}
+	}
+	transition: box-shadow 0.1s ease-in-out;
+	> span {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		border-radius: 5px;
+		transition: transform 0.1s ease-in-out;
+		padding: 8px 10px;
+		&.with-horizontal-image {
+			flex-direction: row;
+			> .btn-text {
+				padding-left: 12px;
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			padding: 8px 20px;
+		}
+		text-transform: uppercase;
+		font-family: 'Arcana', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1;
+	}
+	&:active,
+	&.active,
+	&:disabled {
+		> span {
+			transform: translate(0, 5px);
+		}
+	}
+	&.active,
+	&:hover,
+	&:disabled {
+		opacity: 0.7;
+	}
+	&:disabled {
+		cursor: not-allowed;
+	}
+}
+@keyframes shine {
+	10% {
+		opacity: 1;
+		top: -30%;
+		left: -30%;
+		transition-property: left, top, opacity;
+		transition-duration: 0.7s, 0.7s, 0.15s;
+		transition-timing-function: ease;
+	}
+	100% {
+		opacity: 0;
+		top: -30%;
+		left: -30%;
+		transition-property: left, top, opacity;
+	}
+}

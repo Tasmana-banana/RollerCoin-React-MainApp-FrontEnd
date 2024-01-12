@@ -1,0 +1,50 @@
+.question-banner-container {
+	padding: 12px;
+	margin-top: 12px;
+	background-image: linear-gradient(to bottom, #2193cc, #ca22ca);
+	.banner-title {
+		margin-bottom: 8px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: #ffffff;
+		text-align: center;
+		text-transform: uppercase;
+		text-shadow: 0 3px 4px rgba(0, 0, 0, 0.35);
+		line-height: 1.1;
+		@media only screen and (min-width: 992px) {
+			font-size: 24px;
+		}
+		@media only screen and (min-width: 1200px) {
+			font-size: 32px;
+		}
+	}
+	.banner-img {
+		display: block;
+		margin: 0 auto;
+	}
+	.button-wrapper {
+		margin: 14px auto 8px;
+		padding: 0 6px;
+		.tree-dimensional-button {
+			box-shadow: 0 6px #a59e03, 0 10px rgba( 0, 0, 0, 0.4);
+			&:hover {
+				opacity: 1;
+			}
+			.btn-text {
+				padding: 8px 20px 7px;
+				font-size: 24px;
+				box-shadow: 0 1px #a59e03, 0 1px #1f1f2c;
+				&:hover {
+					background-color: #ffe647;
+				}
+				@media only screen and (min-width: 992px) {
+					font-size: 16px;
+				}
+				@media only screen and (min-width: 1200px) {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

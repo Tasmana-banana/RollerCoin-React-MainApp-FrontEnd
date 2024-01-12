@@ -1,0 +1,204 @@
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import PropTypes from "prop-types";
+import { Col, Row } from "reactstrap";
+import LazyLoad from "react-lazyload";
+import { withTranslation } from "react-i18next";
+import fetchWithToken from "../../services/fetchWithToken";
+import parseMarketProducts from "../../services/parseMarketProducts";
+import MarketBanner from "./MarketBanner";
+import MarketProductCard from "./MarketProductCard";
+import MarketSelectFilter from "./MarketSelectFilter";
+import MarketPagination from "./MarketPagination";
+import InfoBlockWithIcon from "../SingleComponents/InfoBlockWithIcon";
+
+import loaderImg from "../../assets/img/loader_sandglass.gif";
+
+const mapStateToProps = (state) => ({
+	balance: state.game.balance,
+	language: state.game.language,
+	isMobile: state.game.isMobile,
+	wsNode: state.webSocket.wsNode,
+});
+
+class MarketMiners extends Component {
+	static propTypes = {
+		balance: PropTypes.number.isRequired,
+		language: PropTypes.string.isRequired,
+		toggleActiveProduct: PropTypes.func.isRequired,
+		activeProductId: PropTypes.string.isRequired,
+		buyAction: PropTypes.func.isRequired,
+		wsReact: PropTypes.object.isRequired,
+		isMobile: PropTypes.bool.isRequired,
+		t: PropTypes.func.isRequired,
+		wsNode: PropTypes.object.isRequired,
+	};
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			products: [],
+			options: {
+				sort: "price",
+				sort_direction: -1,
+				skip: 0,
+				limit: 24,
+			},
+			productsQuantity: 0,
+			currentPageNumber: 1,
+			pagesQty: 1,
+			paginationType: "all",
+			isLoading: true,
+		};
+		this.defaultLimit = 24;
+		this.controller = new AbortController();
+		this.signal = this.controller.signal;
+	}
+
+	onWSNodeMessage = (event) => {
+		const data = JSON.parse(event.data);
+		const { cmd, value } = data;
+		switch (cmd) {
+			case "discount_sold_updated":
+				this.updateProductsLeftForSale(value);
+				break;
+			default:
+				break;
+		}
+	};
+
+	updateProductsLeftForSale = (data) => {
+		const { products } = this.state;
+		const updatedProductsItems = products.map((item) => {
+			if (item.discountId === data.discount_id && item.limit <= data.left_for_sale) {
+				item.discount = false;
+				item.price = item.normalPrice;
+				item.displayedPercent = 0;
+				item.sold = data.left_for_sale;
+				delete item.group;
+				item.limit = 0;
+			}
+			if (item.discountId === data.discount_id && item.sold < data.left_for_sale) {
+				item.sold = data.left_for_sale;
+			}
+			return item;
+		});
+		this.setState({
+			products: updatedProductsItems,
+		});
+	};
+
+	componentDidMount() {
+		const { wsNode } = this.props;
+		this.getMiners(this.state.options, false);
+		if (wsNode && !wsNode.listenersMessage.promoUpdates) {
+			wsNode.setListenersMessage({ promoUpdates: this.onWSNodeMessage });
+		}
+	}
+
+	componentWillUnmount() {
+		const { wsNode } = this.props;
+		if (wsNode) {
+			wsNode.removeListenersMessage("promoUpdates");
+		}
+		if (this.controller) {
+			this.controller.abort();
+		}
+	}
+
+	createSignalAndController = () => {
+		if (this.controller) {
+			this.controller.abort();
+		}
+		this.controller = new AbortController();
+		this.signal = this.controller.signal;
+	};
+
+	getMiners = async (options, isLoadMore) => {
+		const { products } = this.state;
+		const apiUrl = options ? `/api/market/get-miners?sort=${options.sort}&sort_direction=${options.sort_direction}&skip=${options.skip}&limit=${options.limit}` : `/api/market/get-miners`;
+		this.createSignalAndController();
+		try {
+			const json = await fetchWithToken(apiUrl, {
+				method: "GET",
+				signal: this.signal,
+			});
+			if (!json.success) {
+				return false;
+			}
+			let receivedProducts = json.data.items.map((item) => {
+				if (item.discount?.limit && item.discount.sold >= item.discount.limit) {
+					delete item.discount;
+				}
+				return parseMarketProducts(item, "miner");
+			});
+			if (isLoadMore) {
+				receivedProducts = [...products, ...receivedProducts];
+			}
+			this.setState({
+				products: receivedProducts,
+				productsQuantity: json.data.total_count,
+				pagesQty: Math.ceil(Math.ceil(json.data.total_count / (options ? options.limit : this.defaultLimit))),
+				isLoading: false,
+			});
+		} catch (e) {
+			console.error(e);
+		}
+	};
+
+	buyMiner = async (item) => {
+		const { buyAction } = this.props;
+		await buyAction(item);
+	};
+
+	productsUpdate = async (currentOptions, newPaginationType, currentPage) => {
+		const { options, currentPageNumber } = this.state;
+		const { toggleActiveProduct } = this.props;
+		const responseOptions = { ...options, ...currentOptions };
+		this.setState({
+			options: responseOptions,
+			paginationType: newPaginationType,
+			currentPageNumber: currentPage || currentPageNumber,
+			isLoading: newPaginationType !== "more",
+		});
+		toggleActiveProduct();
+		await this.getMiners(responseOptions, newPaginationType === "more");
+	};
+
+	render() {
+		const { activeProductId, toggleActiveProduct, wsReact, isMobile } = this.props;
+		const { products, options, paginationType, pagesQty, currentPageNumber, isLoading } = this.state;
+		return (
+			<>
+				{<InfoBlockWithIcon tName="Game" message="marketMinersInfoMessage" obj="infoHints" showButtons={isMobile} />}
+
+				<div className="products-page">
+					<Row>
+						<Col xs={12}>
+							<MarketBanner />
+							<MarketSelectFilter options={options} paginationType={paginationType} productsUpdate={this.productsUpdate} />
+						</Col>
+					</Row>
+					<Row>
+						{!isLoading &&
+							products.map((item) => (
+								<MarketProductCard wsReact={wsReact} key={item.id} item={item} activeProductId={activeProductId} toggleActiveProduct={toggleActiveProduct} buyAction={this.buyMiner} />
+							))}
+					</Row>
+					{isLoading && (
+						<div className="market-preloader">
+							<LazyLoad offset={100}>
+								<img src={loaderImg} height={126} width={126} className="loader-img" alt="sales" />
+							</LazyLoad>
+						</div>
+					)}
+					{!isLoading && +pagesQty > 1 && (
+						<MarketPagination pagesQty={pagesQty} paginationType={paginationType} currentPageNumber={currentPageNumber} options={options} productsUpdate={this.productsUpdate} />
+					)}
+				</div>
+			</>
+		);
+	}
+}
+
+export default withTranslation("Game")(connect(mapStateToProps, null)(MarketMiners));

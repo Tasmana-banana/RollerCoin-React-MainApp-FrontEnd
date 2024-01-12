@@ -1,0 +1,73 @@
+{
+  "titleOfPage": "Muro de tareas",
+  "back": "Atrás",
+  "letsGoButton": "¡VAMOS!",
+  "seeLeaderboard": "VER Clasificación",
+  "task-list": "Task list",
+  "payout-history": "Historial de pagos",
+  "leaderboard": "Clasificación",
+  "how-it-works": "Cómo funciona",
+  "all": "Todo",
+  "offer": "tarea",
+  "survey": "encuesta",
+  "tasks": "Tareas",
+  "surveys": "Encuestas",
+  "paid": "Pagado",
+  "declined": "Rechazado",
+  "highest_paying": "Pago más alto",
+  "lowest_paying": "Pago más bajo",
+  "date_new": "Fecha, nuevo",
+  "date_old": "Fecha, antiguo",
+  "sorry": "Lo sentimos, pero todavía no tienes ninguna transacción",
+  "new": "Nuevo",
+  "status": "Estado: ",
+  "offer_id": "Identificador de tarea: ",
+  "offer_reward": "Recompensa de tarea",
+  "view_task": "Ver tarea",
+  "view_offer": "Ver oferta",
+  "no_offers_yet": "TODAVÍA NO HAY TAREAS",
+  "no_surveys_yet": "TODAVÍA NO HAY ENCUESTAS",
+  "details": "Información de la TAREA",
+  "hide": "OCULTAR",
+  "featured": "Featured Task",
+  "offerwalls": "Muros de ofertas",
+  "taskAndSurveys": "TAREAS Y ENCUESTAS",
+  "attention": "ATTENTION",
+  "taskInfo": "Be cautious with tasks that require deposits on other platforms. RollerCoin is not responsible for any issues on third-party platforms.",
+  "infoHints": {
+    "bestFeatured": "¡Conoce a tus socios! Ellos son los que te dan tareas y encuestas donde conseguir más RLT.",
+    "offerwallsTip": "Consulta la lista de nuestros socios que aportan tareas al muro.",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos"
+  },
+  "howToGet": {
+    "howToGet": "How To Get STARTED?",
+    "choose": "Elige una tarea",
+    "chooseDescription": "En la lista, elige una tarea/encuesta que quieres completar",
+    "check": "Revisa los detalles",
+    "checkDescription": "Lee detenidamente los detalles de la tarea para completarla",
+    "complete": "Complétala",
+    "completeDescription": "Completa la tarea de acuerdo a las reglas",
+    "reward": "Recibe la recompensa",
+    "rewardDescription": "Tu recompensa se añadirá automáticamente a tu saldo dentro de un plazo de 7 días.",
+    "tutorialTitle": "Task Wall Leaderboard: how it works?",
+    "textModal": "Take part in the Taskwall. Complete tasks and earn points for them. At the end of the tournament, participants receive additional rewards according to their placement on the leaderboard."
+  },
+  "moreDetails": "MÁS INFORMACIÓN",
+  "rankHeader": {
+    "motivationalText": {
+      "completeTasks": "Complete tasks and get up to",
+      "weeklyAndGrand": "weekly and up to",
+      "weekly": "weekly",
+      "everyFourWeeks":  "every 4 weeks"
+    },
+    "sponsored": "Competitions sponsored by"
+  },
+  "leaderboardCompetition": {
+    "place": "Place",
+    "player": "Player",
+    "offers": "Offers",
+    "points": "Points",
+    "prize": "Prize"
+  }
+}

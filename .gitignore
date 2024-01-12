@@ -1,0 +1,38 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+/migrations
+/coverage
+/docker
+.idea
+public
+package-lock.json
+# Folders
+_obj
+log
+_test
+node_modules
+# Architecture specific extension/static/prefixes
+*.[568vq]
+[568vq].out
+config.json
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+local.json
+.DS_Store
+report_artillery_not_closed_api_with_fuzzy_data.json
+report_artillery_default_user_way.json
+.DS_Store
+report_artillery_not_closed_api_with_fuzzy_data.json
+report_artillery_default_user_way.json
+/cert

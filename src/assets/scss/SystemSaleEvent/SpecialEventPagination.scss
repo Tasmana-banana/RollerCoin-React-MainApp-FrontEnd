@@ -1,0 +1,101 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.special-event-pagination {
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	@media (min-width: 992px) {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+
+	.special-pagination-list {
+		display: flex;
+		justify-content: center;
+		padding: 4px 0 0;
+		list-style: none;
+		margin-bottom: 0;
+		.special-pagination-arrow {
+			min-height: 32px;
+			max-height: 32px;
+			min-width: 32px;
+			@media (min-width: 992px) {
+				min-height: 40px;
+				max-height: 40px;
+				min-width: 40px;
+			}
+			.special-pagination-btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100%;
+				min-width: 100%;
+				background: transparent;
+				border: none;
+				cursor: pointer;
+				outline: none;
+				&:disabled {
+					cursor: default;
+					border: none;
+				}
+				.special-pagination-arrow-icon.left-arrow {
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.special-pagination-item {
+			min-height: 32px;
+			max-height: 32px;
+			min-width: 32px;
+			margin: 0 6px;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			text-align: center;
+			@media (min-width: 992px) {
+				min-height: 40px;
+				max-height: 40px;
+				min-width: 40px;
+			}
+			.special-pagination-btn {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100%;
+				min-width: 100%;
+				color: #03e1e4;
+				background-color: transparent;
+				border: 1px solid #6a668a;
+				border-radius: 4px;
+				cursor: pointer;
+
+				&:disabled {
+					background-color: #03e1e4;
+					color: #2f3045;
+					border-color: #03e1e4;
+					cursor: default;
+				}
+				&:active {
+					outline: none;
+					border: 1px solid #03e1e4;
+				}
+			}
+			.special-pagination-divider {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100%;
+				min-width: 100%;
+				background-color: transparent;
+				border: 1px solid #6a668a;
+				border-radius: 4px;
+				font-size: 16px;
+				color: #03e1e4;
+			}
+		}
+	}
+}

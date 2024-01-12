@@ -1,0 +1,45 @@
+.roller-horizontal-tabs {
+  .nav-tabs {
+    margin-bottom: 20px;
+    border-bottom: none;
+
+    .nav-item {
+      &:not(:last-child) {
+        margin-right: 16px;
+        @media (min-width: 992px) {
+          margin-right: 20px;
+        }
+      }
+
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        border: 1px solid #514e72;
+        background-color: #2f3045;
+        text-align: center;
+        color: #03e1e4;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 600;
+        cursor: pointer;
+
+        &.active {
+          background-color: #03e1e4;
+          border-color: #03e1e4;
+          color: #2f3045;
+        }
+
+        &:hover {
+          border-color: #03e1e4;
+        }
+
+        .tabs-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,336 @@
+.upgrade-season-pass-modal {
+	@import "../colors";
+
+	p {
+		margin: 0;
+	}
+	.upgrade-modal-container {
+		position: relative;
+		padding-top: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		border-radius: 4px;
+		border: solid 1px #6a668a;
+		@media screen and (min-width: 992px) {
+			padding: 40px;
+		}
+		.season-title {
+			width: 100%;
+			font-family: Arcana, sans-serif;
+			font-size: 24px;
+			line-height: 18px;
+			text-align: center;
+		}
+		.upgrade-modal-close-btn {
+			position: absolute;
+			top: 6px;
+			right: 6px;
+			padding: 0;
+			color: #fff;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			z-index: 1;
+			@media screen and (min-width: 992px) {
+				top: 12px;
+				right: 14px;
+			}
+			span {
+				padding: 6px;
+			}
+			img {
+				width: 12px;
+				height: 12px;
+			}
+			&:active,
+			&:disabled {
+				> span {
+					transform: translate(0, 3px);
+				}
+			}
+		}
+		.upgrade-model-cards-wrapper {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 8px 16px 20px;
+			@media screen and (min-width: 992px) {
+				flex-direction: row;
+				align-items: center;
+				padding: 0;
+			}
+			&.only-premium {
+				justify-content: center;
+			}
+			.upgrade-modal-options-text {
+				margin: 0 20px;
+				font-family: Arcana, sans-serif;
+				font-size: 24px;
+			}
+			.upgrade-modal-card {
+				position: relative;
+				margin-top: 15px;
+				padding: 12px;
+				background-color: #2f3045;
+				border-radius: 4px;
+				box-shadow: 0 4px 5px rgba(9, 32, 75, 0.5);
+				@media screen and (min-width: 992px) {
+					padding: 20px;
+					box-shadow: 0 4px 5px rgba(9, 32, 75, 0.5);
+				}
+
+				.upgrade-modal-card-title-wrapper {
+					text-align: center;
+					z-index: 1;
+					margin-bottom: 10px;
+					.upgrade-title {
+						font-family: Arcana, sans-serif;
+						font-size: 22px;
+						color: #ffffff;
+						&.premium-title {
+							color: #ffe647;
+						}
+					}
+				}
+				.upgrade-modal-card-row {
+					.upgrade-modal-card-item {
+						margin-bottom: 14px;
+						.upgrade-modal-card-title {
+							font-family: Roboto, sans-serif;
+							font-size: 14px;
+							font-weight: 400;
+							text-align: center;
+						}
+						.upgrade-modal-card-content {
+							display: flex;
+							flex-direction: column;
+							align-items: center;
+							justify-content: center;
+							border-radius: 4px;
+							background-color: #1f1f2d;
+							.upgrade-modal-card-icon {
+								width: 72px;
+							}
+							.upgrade-modal-card-stats {
+								font-family: Roboto, sans-serif;
+								font-size: 14px;
+								font-weight: 400;
+								color: #c3b0d0;
+							}
+						}
+					}
+				}
+				.upgrade-modal-card-list {
+					padding: 12px 14px 5px 12px;
+					margin-bottom: 16px;
+					font-family: Roboto, sans-serif;
+					font-size: 14px;
+					font-weight: 300;
+					border-radius: 4px;
+					background-color: #232434;
+					@media screen and (min-width: 992px) {
+						padding: 8px 12px 6px;
+						margin-bottom: 12px;
+						font-size: 16px;
+						background-color: rgba(0, 0, 0, 0.25);
+					}
+					.upgrade-modal-card-list-item {
+						display: flex;
+						margin-bottom: 8px;
+						.upgrade-modal-list-icon {
+							flex-shrink: 0;
+							padding-right: 10px;
+							line-height: 1;
+							> img {
+								height: 16px;
+								width: auto;
+							}
+						}
+						.upgrade-modal-list-text {
+							color: #c3b0d0;
+							line-height: 1.2;
+						}
+						.gold-text {
+							color: #ffe647;
+						}
+					}
+				}
+				.upgrade-modal-button-wrapper {
+					display: flex;
+					flex-direction: column;
+					.upgrade-modal-price-wrapper {
+						display: flex;
+						justify-content: space-between;
+						position: relative;
+						min-width: 280px;
+						padding: 11px 12px;
+						margin-bottom: 16px;
+						font-family: Roboto, sans-serif;
+						line-height: 1;
+						font-weight: 700;
+						font-size: 18px;
+						color: #fff;
+						background-color: #1f1f2d;
+						border-radius: 4px;
+						&.with-tag {
+							margin-top: 20px;
+							@media screen and (min-width: 992px) {
+								margin-top: 24px;
+							}
+						}
+						.upgrade-modal-old-price {
+							color: #cccccc;
+							text-decoration: line-through;
+							text-decoration-color: #cc4c33;
+						}
+						.upgrade-modal-price {
+							font-family: Roboto, sans-serif;
+							color: $goldColor;
+						}
+						.upgrade-modal-value-tag {
+							position: absolute;
+							bottom: 100%;
+							left: 50%;
+							transform: translateX(-50%);
+							padding: 0 16px 1px;
+							color: $darkColor;
+							font-family: Roboto, sans-serif;
+							font-weight: 700;
+							font-size: 16px;
+							line-height: 1.1;
+							background-color: $cyanColor;
+							border-top-left-radius: 4px;
+							border-top-right-radius: 4px;
+							@media screen and (min-width: 992px) {
+								font-size: 20px;
+							}
+						}
+					}
+					.upgrade-button {
+						.roller-button-text {
+							font-family: Arcana, sans-serif;
+							font-size: 16px;
+						}
+					}
+					.btn-gold {
+						box-shadow: 0 6px #b98500, 0 10px rgba(0, 0, 0, 0.25);
+						&:active,
+						&:disabled {
+							box-shadow: 0 6px #b98500, 0 8px rgba(0, 0, 0, 0.25);
+							.button-text-wrapper {
+								transform: translateY(4px);
+							}
+						}
+						&:hover,
+						&:disabled {
+							opacity: 1;
+						}
+						.button-text-wrapper {
+							padding: 13px 4px 12px;
+							font-family: Arcana, sans-serif;
+							font-size: 16px;
+							text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+							box-shadow: none;
+							border: 1px solid #fff199;
+							&:hover {
+								background-color: #ffe647;
+							}
+							.btn-icon {
+								max-height: 16px;
+								margin-right: 10px;
+								transform: translateY(-1px);
+							}
+						}
+					}
+					.upgrade-modal-confirm-buttons {
+						display: flex;
+						justify-content: space-between;
+						.tree-dimensional-button {
+							flex: 1 1 45%;
+							&:hover {
+								opacity: 1;
+							}
+							&:first-child {
+								margin-right: 12px;
+							}
+							&.btn-default {
+								.button-text-wrapper {
+									padding: 13px 4px 12px;
+									font-size: 16px;
+									text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+									box-shadow: none;
+									font-family: Arcana, sans-serif;
+									color: #ffffff;
+								}
+							}
+							&.btn-red {
+								box-shadow: 0 7px #620a12, 0 10px rgba(0, 0, 0, 0.25);
+								&:active,
+								&:disabled {
+									box-shadow: 0 7px #620a12, 0 9px rgba(0, 0, 0, 0.25);
+									.button-text-wrapper {
+										transform: translateY(4px);
+									}
+								}
+								.button-text-wrapper {
+									padding: 13px 4px 12px;
+									font-size: 16px;
+									text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+									box-shadow: none;
+									background-color: #dc3545;
+									border: 1px solid #ff8490;
+									font-family: Arcana, sans-serif;
+									color: #ffffff;
+									&:hover {
+										background-color: #d36469;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.upgrade-cards-divider {
+				width: 100%;
+				margin: 0 12px 24px;
+				font-family: Roboto, sans-serif;
+				font-weight: 700;
+				font-size: 32px;
+				overflow: hidden;
+				text-align: center;
+				filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.8));
+				> span {
+					display: inline-block;
+					color: #ffffff;
+					vertical-align: middle;
+				}
+				&::before,
+				&::after {
+					content: "----------";
+					display: inline-block;
+					position: relative;
+					font-size: 38px;
+					vertical-align: middle;
+					@media screen and (min-width: 992px) {
+						display: none;
+					}
+				}
+				&::before {
+					margin-left: -100%;
+					left: -16px;
+				}
+				&::after {
+					margin-right: -100%;
+					right: -16px;
+				}
+				@media screen and (min-width: 992px) {
+					margin: 0 12px;
+					font-size: 32px;
+				}
+			}
+		}
+	}
+}

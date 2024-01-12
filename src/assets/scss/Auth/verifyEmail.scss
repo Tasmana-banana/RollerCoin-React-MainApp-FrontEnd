@@ -1,0 +1,255 @@
+.verify-header-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 24px;
+	min-height: 90px;
+
+	@media (min-width: 992px) {
+		justify-content: flex-start;
+	}
+	.logo-block {
+		display: flex;
+		align-items: center;
+		.hamster-logo-icon {
+			margin-right: 20px;
+		}
+	}
+}
+
+.wrapper {
+	min-height: 100vh;
+}
+.main-container-row {
+	background-color: #2f3045;
+}
+
+.main-container-confirm {
+	min-height: 442px;
+	font-family: Roboto, sans-serif;
+	font-weight: 400;
+	background-color: #2f3045;
+	padding: 30px 24px;
+
+	.confirm-title {
+		font-family: Arcana, sans-serif;
+		font-size: 28px;
+
+		@media screen and (min-width: 992px) {
+			font-size: 32px;
+			margin: 0;
+		}
+	}
+
+	.text-block {
+		margin-top: 15px;
+		font-size: 14px;
+		p {
+			margin-bottom: 0;
+		}
+		span {
+			font-weight: 700;
+			color: #ffdc00;
+		}
+	}
+	.btn-block {
+		.edit-btn {
+			font-weight: 700;
+			font-size: 14px;
+			margin-top: 15px;
+			padding: 0;
+			border: none;
+			background: none;
+			color: #03e1e4;
+			cursor: pointer;
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+	.confirm-input-block {
+		position: relative;
+		margin-top: 30px;
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+
+		.confirm-input {
+			border: 2px solid #5f5d7e;
+			border-radius: 4px;
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			&:hover,
+			&:focus {
+				border: 2px solid #6fa9aa;
+			}
+
+			&.invalid-code {
+				border: 1px solid #d53f3f;
+			}
+		}
+
+		.resend-block {
+			position: absolute;
+			top: 55%;
+			right: 10px;
+			.resend-btn {
+				background: none;
+				border: none;
+				color: #03e1e4;
+				cursor: pointer;
+
+				&:focus {
+					outline: none;
+				}
+			}
+			.resend-timer {
+				display: flex;
+				align-items: center;
+				color: #5f5d7e;
+				img {
+					margin-left: 10px;
+				}
+			}
+		}
+		label {
+			font-size: 14px;
+		}
+	}
+	.label-invalid-code {
+		color: #d53f3f;
+		font-size: 12px;
+	}
+
+	.confirm-submit-btn {
+		width: 100%;
+		margin-top: 30px;
+		.roller-button-text {
+			font-family: Arcana, sans-serif;
+			font-size: 16px;
+		}
+	}
+
+	.receive-btn {
+		display: block;
+		margin-top: 40px;
+		padding: 0;
+		background: none;
+		border: none;
+		color: #03e1e4;
+		cursor: pointer;
+
+		&:focus {
+			outline: none;
+		}
+	}
+	.auth-back-link {
+		margin-bottom: 25px;
+		font-size: 14px;
+		.back-link {
+			margin-top: 0;
+		}
+	}
+
+	@media screen and (min-width: 992px) {
+		padding: 32px 110px 48px;
+		min-height: 620px;
+	}
+}
+
+.confirm-modal {
+	.modal-content {
+		max-width: 355px;
+		margin: 0 auto;
+		background-color: #2f3045;
+		border: 0;
+		outline: 1px solid #6a668a;
+		border-radius: 4px;
+
+		.modal-body {
+			padding: 30px;
+			.img-block {
+				text-align: center;
+				margin-bottom: 20px;
+			}
+			.modal-title {
+				font-family: Arcana, sans-serif;
+				font-size: 24px;
+				text-align: center;
+				line-height: 1;
+			}
+			.modal-text-block {
+				font-family: Roboto, sans-serif;
+				font-size: 14px;
+				margin-bottom: 25px;
+				.modal-text {
+					margin: 14px 0;
+				}
+				.modal-ol {
+					padding-left: 12px;
+					.modal-li {
+						margin-bottom: 14px;
+					}
+				}
+			}
+			.modal-btn {
+				width: 100%;
+				.roller-button-text {
+					font-family: Arcana, sans-serif;
+				}
+			}
+		}
+	}
+}
+
+.confirm-tooltip {
+	.tooltip.show {
+		pointer-events: none;
+		opacity: 1;
+
+		.tooltip-inner {
+			padding: 6px 10px;
+			font-family: Roboto, sans-serif;
+			font-size: 12px;
+			text-align: left;
+			background-color: #2f3045;
+			border: 1px solid #514e72;
+			border-radius: 8px;
+		}
+	}
+	.bs-tooltip-auto[x-placement^="bottom"],
+	.bs-tooltip-auto[x-placement^="top"] {
+		.arrow:before {
+			border-bottom-color: #514e72;
+			border-top-color: #514e72;
+		}
+	}
+	.bs-tooltip-auto[x-placement^="left"],
+	.bs-tooltip-auto[x-placement^="right"] {
+		.arrow:before {
+			border-left-color: #514e72;
+			border-right-color: #514e72;
+		}
+	}
+}
+
+.verify-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+
+	.footer-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		color: #8e8198;
+		@media (min-width: 992px) {
+			justify-content: flex-end;
+		}
+	}
+}

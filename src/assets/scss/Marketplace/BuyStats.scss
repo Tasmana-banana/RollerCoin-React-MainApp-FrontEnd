@@ -1,0 +1,75 @@
+.marketplace-buy-stats-block {
+  margin-bottom: 16px;
+  .marketplace-buy-stats-title {
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #9797a2;
+    text-align: center;
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 16px;
+    }
+  }
+  .marketplace-buy-stats-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background-color: #1f1f2d;
+    border: 2px solid #6a668a;
+    border-radius: 4px;
+    @media only screen and (min-width: 992px) {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      border-radius: 0;
+    }
+    .buy-stats-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media only screen and (min-width: 992px) {
+        flex-direction: row;
+        padding: 20px 8px 20px 24px;
+        background-color: #1f1f2d;
+        border: 2px solid #6a668a;
+        border-radius: 4px;
+        height: 100%;
+      }
+      .buy-stats-card-icon {
+        margin-bottom: 4px;
+        @media only screen and (min-width: 992px) {
+          margin-right: 16px;
+          margin-bottom: 0;
+        }
+      }
+      .buy-stats-card-text-wrapper {
+        text-align: center;
+        color: #ffffff;
+        @media only screen and (min-width: 992px) {
+          text-align: left;
+        }
+        .buy-stats-card-title {
+          font-family: 'Roboto', sans-serif;
+          font-size: 14px;
+          line-height: 1.2;
+          @media only screen and (min-width: 1200px) {
+            font-size: 18px;
+          }
+        }
+        .buy-stats-card-amount {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 1.2;
+          @media only screen and (min-width: 1200px) {
+            font-size: 22px;
+          }
+          @media only screen and (min-width: 1296px) {
+            font-size: 26px;
+          }
+        }
+      }
+    }
+  }
+}

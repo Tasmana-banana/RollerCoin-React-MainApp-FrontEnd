@@ -1,0 +1,275 @@
+$cyan-color: #03e1e4;
+.game-play-container {
+	margin-top: 32px;
+	.cyan-text {
+		color: $cyan-color;
+	}
+	.magenta-text {
+		color: #d735bc;
+	}
+	font-family: 'Roboto', sans-serif;
+	.game-banners {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.play-game-result {
+		padding: 0;
+	}
+	.game-result-info {
+		padding: 16px;
+		.result-sprite-container {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 16px;
+			margin-top: 10px;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+		.score-block,
+		.power-block,
+		.power-block-inside {
+			font-size: 16px;
+			line-height: 1;
+			margin-bottom: 12px;
+			text-align: center;
+			.bold-text {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+		}
+		.loading {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			position: relative;
+			max-width: 100%;
+			.power-block-inside {
+				position: absolute;
+				text-align: center;
+				width: 100%;
+				flex: 0 0 100%;
+				left: 0;
+				bottom: -40px;
+			}
+			.hashrate-text {
+				padding-top: 8px;
+			}
+			.stats-games-info {
+				padding-top: 16px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				img {
+					margin-left: 16px;
+					margin-right: 5px;
+				}
+			}
+			.wrap-line {
+				display: none;
+			}
+			.power-remain {
+				padding-top: 24px;
+			}
+			@media only screen and (max-width: 500px) {
+				.react-responsive-spritesheet-container {
+					transform: scale(0.6) !important;
+					transform-origin: center !important;
+				}
+				.power-block-inside {
+					bottom: 12px;
+					margin-bottom: 0 !important;
+				}
+				.wrap-line {
+					display: block;
+				}
+			}
+		}
+		.router-btns {
+			display: flex;
+			justify-content: center;
+			margin-top: 40px;
+			flex-wrap: wrap;
+			> .btn {
+				&:first-child {
+					margin-bottom: 12px;
+					@media only screen and (min-width: 992px) {
+						margin-bottom: 0;
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+		.btn-ok-container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	.win-banners {
+		margin-bottom: 20px;
+	}
+	@media only screen and (min-width: 992px) {
+		.play-game-result {
+			padding-right: 10px;
+			padding-left: 10px;
+			.container-result-info {
+				height: 100%;
+			}
+		}
+		.game-banners {
+			margin-bottom: 0;
+			margin-top: 0;
+		}
+		.win-banners {
+			margin-bottom: 0;
+		}
+	}
+	#phaserGame {
+		text-align: center;
+		div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			canvas {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+.captcha-window {
+	.modal-content {
+		background-color: #2f3045;
+		.captcha-header {
+			font-family: 'Roboto', sans-serif;
+			padding: 10px;
+			border-bottom: none;
+			h5 {
+				font-size: 16px;
+				text-align: center;
+				border-bottom: 1px solid #595467;
+				width: 100%;
+				padding-bottom: 10px;
+			}
+		}
+		.captcha-body {
+			padding: 16px 20px 24px;
+			.mobile-mgt-16 {
+				margin-top: 16px;
+			}
+			.captcha-timer-container{
+				font-size: 24px;
+				padding-top: 15px;
+				text-align: center;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				.time-left{
+					color: #03e1e4;
+				}
+			}
+			.reloadCaptcha {
+				height: 50px;
+				background-color: #03e1e4;
+				border-color: #03e1e4;
+				border-right: 1px solid #0a0a0a;
+				cursor: pointer;
+				display: flex;
+				align-content: center;
+				justify-content: center;
+			}
+			@media only screen and (min-width: 992px) {
+				.mobile-mgt-16 {
+					margin-top: 0;
+				}
+			}
+			.input-solve {
+				padding-left: 0;
+				padding-right: 0;
+				@media only screen and (min-width: 992px) {
+					padding-left: 8px;
+					padding-right: 8px;
+				}
+				input {
+					text-align: center;
+				}
+			}
+			.btn {
+				padding: 9px;
+				font-size: 23px;
+				line-height: 1;
+			}
+			.text-error-captcha {
+				margin-top: 16px;
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+		.captcha-expire-body{
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			.captcha-expire-close{
+				text-align: right;
+				.close-menu-btn{
+					span {
+						padding: 6px;
+					}
+					img {
+						width: 12px;
+						height: 12px;
+					}
+				}
+			}
+			.captcha-expire-text-danger{
+				color: #ca444a;
+			}
+			.captcha-expire-image{
+				text-align: center;
+				padding-bottom: 16px;
+				padding-top: 16px;
+				margin-bottom: 16px;
+				border-bottom: 1px solid #6a668a;
+			}
+		}
+	}
+	.captcha-image {
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+}
+.modal-trophy-container {
+	max-width: 580px;
+	.you-win-trophy-modal {
+		line-height: 1;
+		min-height: 492px;
+		position: relative;
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		align-items: center;
+		border-radius: 4px;
+		border: solid 1px #6a668a;
+		background-color: #2f3045;
+		.modal-trophy-header {
+			font-size: 32px;
+			font-family: 'Arcana', sans-serif;
+			margin-bottom: 16px;
+		}
+
+		p.trophy-text {
+			font-size: 20px;
+			text-align: center;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.btn-container {
+			position: absolute;
+			bottom: 40px;
+		}
+	}
+}

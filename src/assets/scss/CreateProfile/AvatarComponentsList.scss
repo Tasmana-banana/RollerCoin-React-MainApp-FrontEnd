@@ -1,0 +1,99 @@
+.avatar-components-list-wrapper {
+    @media screen and (max-width: 991px) {
+        margin-top: 24px;
+    }
+    .nav-tabs {
+        margin-left: 10px;
+        @media screen and (max-width: 991px) {
+            margin-left: 0;
+        }
+        line-height: 1;
+        border: none;
+        .nav-item {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            @media screen and (max-width: 991px) {
+                font-size: 14px;
+            }
+            background-color: #19151D;
+            & + .nav-item {
+                margin-left: 8px;
+            }
+            .nav-link {
+                border: none;
+                padding: 9px 11px;
+                &:hover {
+                    border: none;
+                    cursor: pointer;
+                    background-color: #1F1F2D;
+                }
+                @media screen and (max-width: 991px) {
+                    flex-direction: column;
+                }
+                .component-icon-wrapper {
+                    padding-right: 10px;
+                    @media screen and (max-width: 991px) {
+                        padding-right: 0;
+                    }
+                }
+            }
+            &.active {
+                background-color: #1F1F2D;
+                color: #00fcff;
+                .component-icon {
+                    filter: invert(.5) sepia(1) saturate(5) hue-rotate(134deg);
+                }
+            }
+        }
+    }
+    .tab-content {
+        border: none;
+        border-radius: 4px;
+        background-color: #1F1F2D;
+        padding: 16px;
+        height: 100vh;
+        max-height: 600px;
+        overflow: auto;
+        @media screen and (max-width: 991px) {
+            height: 100%;
+            max-height: 100%;
+            padding-bottom: 10px;
+        }
+        .img-for-select {
+            cursor: pointer;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: solid 2px #6a668a;
+            background-color: #7e7da0;
+            .component-img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+            &.selected-item {
+                border-color: #03e1e4;
+            }
+        }
+        .mobile-slider {
+            @media screen and (max-width: 991px) {
+                flex-wrap: nowrap;
+            }
+        }
+        &::-webkit-scrollbar {
+            margin-right: 10px;
+            width: 12px;
+            @media screen and (max-width: 991px) {
+                display: none;
+            }
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: #6A668A;
+            height: 24px;
+            border-radius: 3px;
+            border: 0.5px solid #AA92BA;
+        }
+    }
+}

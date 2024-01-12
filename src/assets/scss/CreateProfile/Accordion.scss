@@ -1,0 +1,65 @@
+.accordion-wrapper {
+	p {
+		margin: 0;
+	}
+	.card {
+		background-color: #2f3045;
+		border: none;
+		.card-header {
+			background-color: inherit;
+			border-radius: 0;
+			padding: 16px 0;
+			border-bottom: none;
+			border-top: 1px solid #6a668a;
+			.token-preview {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				cursor: pointer;
+			}
+			.nft-info-wrapper {
+				line-height: 1;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				.nft-service-name {
+					font-size: 24px;
+				}
+				.item-count {
+					font-size: 20px;
+					color: #03e1e4;
+				}
+			}
+			.nft-service-cover {
+				max-width: 48px;
+				border-radius: 50%;
+			}
+		}
+		.card-body {
+			padding: 0;
+			.nft-avatar-img-wrapper {
+				position: relative;
+				.nft-avatar-img {
+					display: block;
+					margin: 0 auto;
+					border-radius: 4px;
+					cursor: pointer;
+					&.is-selected {
+						outline: 1px solid #03e1e4;
+						box-sizing: border-box;
+					}
+					&.is-used-as-avatar {
+						border: 2px solid #2bd600;
+						position: relative;
+					}
+				}
+				.green-check {
+					position: absolute;
+					width: 32px;
+					height: 32px;
+					left: calc(50% - 65px);
+					bottom: 8px;
+				}
+			}
+		}
+	}
+}

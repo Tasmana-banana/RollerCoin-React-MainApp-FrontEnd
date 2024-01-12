@@ -1,0 +1,74 @@
+.technical-popup {
+	position: relative;
+	max-width: 720px;
+	@media (max-width: 575px) {
+		margin: 0;
+	}
+	.modal-content {
+		margin: 0 15px;
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+
+		.close-menu-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			border: 0;
+			background: transparent;
+			cursor: pointer;
+		}
+
+		.technical-modal-body {
+			padding: 40px;
+			@media (max-width: 575px) {
+				padding: 25px 15px;
+			}
+			.img-block {
+				text-align: center;
+			}
+
+			.technical-title {
+				margin: 20px 0;
+				font-family: Roboto, sans-serif;
+				font-weight: 700;
+				font-size: 20px;
+				text-align: center;
+				@media (min-width: 962px) {
+					font-weight: 700;
+					font-size: 26px;
+				}
+			}
+
+			.technical-text {
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				margin-bottom: 0;
+				span {
+					font-family: Roboto, sans-serif;
+					font-weight: 700;
+					color: #fff199;
+				}
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.technical-btn-block {
+				margin-top: 20px;
+				margin-bottom: 8px;
+				text-align: center;
+
+				.technical-button {
+					min-width: 240px;
+					padding: 8px 0 7px;
+					.roller-button-text-wrapper {
+						.roller-button-text {
+							font-family: Arcana, sans-serif;
+						}
+					}
+				}
+			}
+		}
+	}
+}

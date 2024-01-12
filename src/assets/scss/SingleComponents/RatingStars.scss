@@ -1,0 +1,15 @@
+.rating-star-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.star-wrapper {
+		&:not(:last-child) {
+			margin-right: 4px
+		}
+		.star {
+			&.extinct {
+				opacity: 0.25;
+			}
+		}
+	}
+}

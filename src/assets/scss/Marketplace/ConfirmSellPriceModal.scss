@@ -1,0 +1,76 @@
+.confirm-sell-price-modal {
+  min-width: 320px;
+  max-width: 440px;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  .modal-body {
+    padding: 24px;
+    background-color: #2f3045;
+    border: 1px solid #6a668a;
+    border-radius: 4px 4px 4px 4px;
+    .title {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    $info-spacing-horizontal: 10px;
+    $info-spacing-vertical: 7px;
+    .info-container {
+      .info-divider {
+        height: 1px;
+        background-color: #6a668a;
+        margin: $info-spacing-vertical 2px;
+      }
+      .info-row {
+        display: flex;
+        flex-grow: 1;
+        p {
+          margin-bottom: 0;
+        }
+        .info-desc {
+          flex: 1;
+          border-left: 1px solid #6a668a;
+          border-right: 1px solid #6a668a;
+          padding-left: $info-spacing-horizontal;
+        }
+        .info-val {
+          width: 40%;
+          text-align: right;
+          border-right: 1px solid #6a668a;
+          padding-right: $info-spacing-horizontal;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .you-receive-container {
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      margin: 10px 0;
+      padding: 5px 12px 7px;
+      border-radius: 4px;
+      background-color: #1f1f2d;
+      .you-receive-val {
+        text-align: right;
+        text-transform: uppercase;
+      }
+    }
+    .agreement {
+      margin-bottom: 15px;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+    }
+  }
+}

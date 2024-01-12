@@ -1,0 +1,7 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1.5 10.5v-3h6V6H9V3h1.5V0h3v3H15v3h1.5v1.5h6v3H21V12h-1.5v1.5H18V15h1.5v4.5H21V24h-3v-1.5h-1.5V21h-3v-1.5h-3V21h-3v1.5H6V24H3v-4.5h1.5V15H6v-1.5H4.5V12H3v-1.5H1.5z" fill="#A08437"/>
+    <path d="M1.5 9V7.5h6V6H9V3h1.5V0h3v3H15v3h1.5v1.5h6V9H21v1.5h-1.5V12H18v3h1.5v4.5H21v3h-3V21h-1.5v-1.5h-3V18h-3v1.5h-3V21H6v1.5H3v-3h1.5V15H6v-3H4.5v-1.5H3V9H1.5z" fill="#ECC551"/>
+    <path d="M10.5 0h3v1.5H12V3h-1.5v3H9v1.5H7.5V9h-3v1.5H6V12h1.5v3H6v4.5H4.5v3H3v-3h1.5V15H6v-3H4.5v-1.5H3V9H1.5V7.5h6V6H9V3h1.5V0z" fill="#F9E08D"/>
+    <path d="M10.5 9V7.5H12V9h-1.5v3H9V9h1.5z" fill="#F9E08D"/>
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 21v1.5H6V21h1.5v-1.5h3V18h3v1.5h3V21H18v1.5h3v-3h-1.5V15H18v-3h1.5v-1.5H21V9h1.5V7.5H21V9h-1.5v1.5H18V12h-1.5v3H18v4.5h-1.5V18h-3v-1.5h-3V18h-3v1.5H6V21H4.5zM18 19.5h1.5V21H18v-1.5z" fill="#D3B048"/>
+</svg>

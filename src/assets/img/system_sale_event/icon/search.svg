@@ -1,0 +1,16 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#gpj2phqyga)" fill="#fff">
+        <path d="M14.785 13.238v1.048h-1.048v1.047h2.096v-2.095h-1.048zM13.737 14.286v-1.048H12.69v1.048h1.047zM12.69 13.238v-1.047h-1.048v1.047h1.048zM11.642 10.095v1.048h1.048v-1.048h-1.048zM11.642 12.19v-1.047h-1.047v1.048h1.047zM14.785 12.19h-1.048v1.048h1.048v-1.047zM12.69 11.143v1.048h1.047v-1.048H12.69zM9.547 11.143H4.309v1.048h5.238v-1.048z"/>
+        <path d="M10.595 11.143v-1.048H9.547v1.048h1.048zM11.642 9.048h-1.047v1.047h1.047V9.048zM12.69 9.048V3.81h-1.048v5.238h1.048zM4.309 8V4.857H3.26V8H4.31zM3.261 9.048H2.214v1.047H3.26V9.048zM4.309 11.143v-1.048H3.26v1.048H4.31zM1.166 3.81v5.238h1.048V3.81H1.166zM3.261 3.81V2.762H2.214V3.81H3.26zM4.309 1.714H3.26v1.048H4.31V1.714zM5.356 4.857V3.81H4.31v1.047h1.047zM6.404 2.762H5.356V3.81h1.048V2.762zM9.547 1.714V.667H4.309v1.047h5.238zM10.595 2.762V1.714H9.547v1.048h1.048zM11.642 3.81V2.762h-1.047V3.81h1.047z"/>
+    </g>
+    <defs>
+        <filter id="gpj2phqyga" x="1.166" y=".667" width="14.666" height="15.667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_527_67290"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_527_67290" result="shape"/>
+        </filter>
+    </defs>
+</svg>

@@ -1,0 +1,120 @@
+.special-event-faq-wrapper {
+	.faq-container {
+		padding-left: 5px;
+		padding-right: 5px;
+		@media (min-width: 992px) {
+			padding: 0;
+		}
+	}
+	.faq-title {
+		margin-bottom: 30px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		&.offerwalls {
+			display: none;
+			@media (min-width: 992px) {
+				display: block;
+			}
+		}
+	}
+	.faq-image-block {
+		margin-top: 50px;
+		@media (min-width: 992px) {
+			margin-top: 0;
+		}
+		.image {
+			width: 100%;
+		}
+	}
+	.faq-inscription {
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.2;
+	}
+	.faq-description {
+		font-family: Roboto, sans-serif;
+		font-size: 16px;
+		line-height: 1.2;
+		margin-top: 16px;
+		font-weight: 400;
+	}
+	.faq-note {
+		display: flex;
+		justify-items: baseline;
+		margin-bottom: 24px;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		.image {
+			margin-right: 12px;
+		}
+	}
+	.faq-roadmap-wrapper {
+		margin: 40px 0;
+		padding-left: 5px;
+		padding-right: 5px;
+		@media (min-width: 992px) {
+			padding: 0;
+		}
+
+		.faq-title {
+			margin-bottom: 24px;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 24px;
+		}
+
+		.faq-roadmap-step {
+			&:nth-last-child(2n) {
+				margin-bottom: 16px;
+				@media (min-width: 992px) {
+					margin-bottom: 0;
+				}
+			}
+
+			.faq-roadmap-container {
+				position: relative;
+				border: 1px solid #514e72;
+				border-radius: 4px;
+				padding: 12px;
+				min-height: 256px;
+				background-color: #181927;
+				@media (min-width: 992px) {
+					min-height: 250px;
+				}
+
+				.faq-roadmap-text-step {
+					font-family: Roboto, sans-serif;
+					font-size: 20px;
+					font-weight: 700;
+				}
+				.faq-roadmap-image {
+					text-align: center;
+				}
+				.faq-roadmap-content {
+					margin-top: 12px;
+					.faq-roadmap-title {
+						font-family: Roboto, sans-serif;
+						font-size: 15px;
+						font-weight: 700;
+						margin-bottom: 8px;
+						@media (min-width: 992px) {
+							font-size: 16px;
+						}
+					}
+					.faq-roadmap-text {
+						font-family: Roboto, sans-serif;
+						font-size: 12px;
+						font-weight: 400;
+						margin-bottom: 0;
+						@media (min-width: 992px) {
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

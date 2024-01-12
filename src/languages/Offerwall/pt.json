@@ -1,0 +1,72 @@
+{
+  "titleOfPage": "Mural de Tarefas",
+  "back": "Voltar",
+  "letsGoButton": "Vamos lá!",
+  "seeLeaderboard": "Ver Leaderboard",
+  "task-list": "Task list",
+  "payout-history": "Histórico de pagamentos",
+  "leaderboard": "Leaderboard",
+  "how-it-works": "Como funciona?",
+  "all": "Todos",
+  "offer": "tarefa",
+  "survey": "pesquisa",
+  "tasks": "Tarefas",
+  "surveys": "Pesquisas",
+  "paid": "Pago",
+  "declined": "Recusado",
+  "highest_paying": "Maior pagamento",
+  "lowest_paying": "Menor pagamento",
+  "date_new": "Data - novo",
+  "date_old": "Data - antigo",
+  "sorry": "Você ainda não tem nenhuma transação",
+  "new": "Novo",
+  "status": "Situação: ",
+  "offer_id": "ID da Tarefa: ",
+  "offer_reward": "Recompensa da tarefa",
+  "view_task": "Ver Tarefa",
+  "view_offer": "Ver Oferta",
+  "no_offers_yet": "SEM TAREFAS AINDA",
+  "no_surveys_yet": "SEM PESQUISAS AINDA",
+  "details": "Detalhes da TAREFA",
+  "hide": "OCULTAR",
+  "featured": "Featured Task",
+  "offerwalls": "Paredes de Ofertas",
+  "taskAndSurveys": "Tarefas e Pesquisas",
+  "attention": "ATTENTION",
+  "taskInfo": "Be cautious with tasks that require deposits on other platforms. RollerCoin is not responsible for any issues on third-party platforms.",
+  "infoHints": {
+    "bestFeatured": "Conheça nossos parceiros! São eles que lhe oferecem tarefas e pesquisas para o Mural de Tarefas, permitindo que você ganhe mais RLT.",
+    "offerwallsTip": "Confira a lista de nossos parceiros que fornecem tarefas para o TaskWall",
+    "showMore": "Ver mais",
+    "showLess": "Ver menos"
+  },
+  "howToGet": {
+    "howToGet": "How To Get STARTED?",
+    "choose": "Escolha uma tarefa",
+    "chooseDescription": "Escolha uma tarefa ou pesquisa que você quer completar",
+    "check": "Confira os detalhes",
+    "checkDescription": "Leia os detalhes da tarefa cuidadosamente para completá-la",
+    "complete": "Complete-a",
+    "completeDescription": "Complete a tarefa de acordo com as regras",
+    "reward": "Receba a recompensa",
+    "tutorialTitle": "Task Wall Leaderboard: how it works?",
+    "textModal": "Take part in the Taskwall. Complete tasks and earn points for them. At the end of the tournament, participants receive additional rewards according to their placement on the leaderboard."
+  },
+  "moreDetails": "MAIS DETALHES",
+  "rankHeader": {
+    "motivationalText": {
+      "completeTasks": "Complete tasks and get up to",
+      "weeklyAndGrand": "weekly and up to",
+      "weekly": "weekly",
+      "everyFourWeeks":  "every 4 weeks"
+    },
+    "sponsored": "Competitions sponsored by"
+  },
+  "leaderboardCompetition": {
+    "place": "Place",
+    "player": "Player",
+    "offers": "Offers",
+    "points": "Points",
+    "prize": "Prize"
+  }
+}

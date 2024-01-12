@@ -1,0 +1,24 @@
+.progression-task-toast-container.Toastify__toast {
+	padding: 14px 24px 14px 14px;
+	width: 360px;
+	.progression-task-toast {
+		display: flex;
+		align-items: center;
+		.progression-toast-img-wrapper {
+			margin-right: 16px;
+		}
+		.progression-toast-description {
+			.progression-toast-text {
+				margin: 0;
+				font-size: 18px;
+				font-weight: 700;
+				color: #ffffff;
+				text-transform: uppercase;
+
+				& span {
+					color: #03e1e4;
+				}
+			}
+		}
+	}
+}

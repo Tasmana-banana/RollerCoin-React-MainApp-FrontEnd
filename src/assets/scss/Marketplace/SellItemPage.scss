@@ -1,0 +1,39 @@
+.marketplace-sell-item-page {
+  position: relative;
+  min-height: 480px;
+  padding: 12px 16px 24px;
+  background-color: #2f3045;
+  border: 1px solid #6a668a;
+  border-radius: 4px;
+  @media only screen and (min-width: 992px) {
+    padding: 16px 30px 40px;
+  }
+  .item-loader-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 480px;
+  }
+  .item-main-wrapper {
+    margin-bottom: 16px;
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 36px;
+    }
+  }
+  .main-item-title {
+    margin-bottom: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1;
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 16px;
+    }
+  }
+  .item-main-wrapper {
+    margin-bottom: 16px;
+    @media only screen and (min-width: 992px) {
+      margin-bottom: 36px;
+    }
+  }
+}

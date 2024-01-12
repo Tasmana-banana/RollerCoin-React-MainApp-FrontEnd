@@ -1,0 +1,130 @@
+.internal-offers-container {
+	overflow: hidden;
+	padding-bottom: 40px;
+	@media only screen and (min-width: 992px) {
+		margin-bottom: 44px;
+		border-bottom: 1px solid #5f5d7e;
+	}
+	.internal-offers-header {
+		margin-bottom: 30px;
+		font-family: Roboto, sans-serif;
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 1.1;
+		text-transform: capitalize;
+	}
+	.info-block-with-icon-container {
+		margin-bottom: 16px;
+		@media only screen and (min-width: 992px) {
+			margin-bottom: 24px;
+		}
+
+		.info-text-wrapper.close-tips {
+			.info-text {
+				max-height: 17px;
+			}
+		}
+		.info-text {
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+		}
+		.info-show-btn {
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+			font-weight: 700;
+		}
+	}
+	.width-checker {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.internal-offers-preloader,
+	.internal-no-offers {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 226px;
+		flex-direction: column;
+		font-family: Arcana, sans-serif;
+		font-size: 32px;
+		@media only screen and (min-width: 992px) {
+			height: 380px;
+		}
+		p {
+			margin-bottom: 24px;
+		}
+	}
+	.internal-offers-cards-wrapper {
+		flex-wrap: nowrap;
+		margin: 0 -5px 30px;
+		position: relative;
+		.internal-offer-card {
+			padding: 16px 15px;
+			border-radius: 4px;
+			background-color: #2f3045;
+			border: 1px solid #514e72;
+			cursor: pointer;
+			transition: background-color 0.2s ease;
+			&:hover {
+				background-color: #514e72;
+			}
+			.internal-offer-header {
+				margin-bottom: 16px;
+				text-align: center;
+				.img-wrapper {
+					min-height: 150px;
+					.internal-offer-image {
+						border-radius: 4px;
+					}
+				}
+			}
+			.internal-offer-body {
+				.internal-offer-description {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin-bottom: 14px;
+					font-size: 14px;
+					font-weight: 700;
+					font-family: Roboto, sans-serif;
+					line-height: 1;
+					.internal-offer-description-text.payout {
+						color: #03e1e4;
+					}
+					.internal-offer-description-icon-wrapper {
+						margin-right: 8px;
+					}
+				}
+			}
+			.internal-offer-card-footer {
+				font-family: Arcana, sans-serif;
+				color: #ffffff;
+				font-size: 16px;
+				text-align: center;
+			}
+		}
+	}
+	.pagination-block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.pagination-btn {
+			> span {
+				padding: 8px;
+			}
+		}
+		.pagination-progress {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 16px;
+			.progress-divider {
+				display: inline-block;
+				padding-left: 4px;
+				padding-right: 4px;
+			}
+		}
+		.tree-dimensional-button.btn-default {
+			box-shadow: none;
+		}
+	}
+}

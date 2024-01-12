@@ -1,0 +1,13 @@
+.marketplace-orders-container {
+	& .marketplace-orders-main-block {
+		flex-direction: column-reverse;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+	.marketplace-orders-empty {
+		margin: 64px auto 48px;
+		text-align: center;
+	}
+}

@@ -1,0 +1,120 @@
+.box-present-modal {
+  .present-modal-wrapper {
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px #6a668a;
+    background-image: linear-gradient(180deg, #161829, #090B14);
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    .present-modal-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      .close-menu-btn {
+        .close-btn-text {
+          padding: 6px;
+        }
+      }
+    }
+    .lootbox-block {
+      position: relative;
+      .background-light {
+        position: absolute;
+        transform: scale(1.1);
+        top: 5%;
+        opacity: 0;
+        @media only screen and (max-width: 375px) {
+          transform: scale(.9);
+        }
+        &.enable {
+          opacity: .5;
+          transition: all 400ms ease-in;
+          .light {
+            animation: background-light 8s linear infinite;
+          }
+        }
+      }
+      .lootbox-bonus {
+        position: absolute;
+        image-rendering: pixelated;
+        top: 25%;
+        left: 36%;
+        z-index: 2;
+        transform: scale(2.5);
+        opacity: 0;
+        &.component {
+          top: 31%;
+          left: 43%;
+        }
+        &.power {
+          top: 26%;
+          left: 34%;
+          transform: scale(2);
+        }
+        @media only screen and (max-width: 375px) {
+          transform: scale(2.2);
+        }
+        &.enable {
+          opacity: 1;
+          transition: all 400ms ease-in;
+        }
+      }
+      .bonus-info {
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+        opacity: 0;
+        p, h2 {
+          margin: 0;
+          padding: 0;
+        }
+        .info-title {
+          white-space: nowrap;
+          font-size: 24px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          text-align: center;
+        }
+        .info-description {
+          font-size: 18px;
+          font-family: 'Roboto', sans-serif;
+          text-align: center;
+        }
+        &.enable {
+          opacity: 1;
+          transition: all 400ms ease-in;
+        }
+      }
+      .lootbox-sprite-block {
+        @media only screen and (max-width: 375px) {
+          image-rendering: pixelated;
+          transform: scale(.8);
+        }
+      }
+      .collect-button {
+        position: absolute;
+        top: 95%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+        z-index: 2;
+        opacity: 0;
+        @media only screen and (max-width: 375px) {
+          padding: 0 35px;
+        }
+        .btn-gold:hover {
+          opacity: .85;
+        }
+        &.enable {
+          opacity: 1;
+          transition: all 400ms ease-in;
+        }
+      }
+    }
+  }
+}

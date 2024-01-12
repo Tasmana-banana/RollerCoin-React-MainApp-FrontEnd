@@ -1,0 +1,123 @@
+.item-modal {
+  position: relative;
+
+  .item-modal-body {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 28px;
+    background-color: #2f3045;
+    border: 1px solid #6a668a;
+    border-radius: 4px;
+    @media only screen and (min-width: 992px) {
+      flex-direction: row;
+      padding: 16px 16px 24px;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .item-modal-title {
+      font-family: Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1;
+      padding-bottom: 12px;
+      @media only screen and (min-width: 992px) {
+        padding-bottom: 8px;
+      }
+    }
+
+    .item-modal-left-side {
+      @media only screen and (min-width: 992px) {
+        margin-right: 16px;
+      }
+
+      .item-modal-img-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 176px;
+        min-width: 100%;
+        padding: 12px 18px;
+        background: #1f1f2d;
+        @media only screen and (min-width: 992px) {
+          min-width: 226px;
+        }
+
+        .item-modal-img {
+          image-rendering: pixelated;
+        }
+      }
+    }
+
+    .item-modal-right-side {
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 36px;
+
+      .item-modal-size,
+      .item-modal-power {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .item-modal-description {
+        font-size: 14px;
+        padding-top: 8px;
+        line-height: 1.1;
+      }
+
+      .with-divider {
+        border-bottom: 1px solid #6a668a;
+      }
+    }
+
+    .buy-btn-wrapper {
+      margin-top: 16px;
+
+      .tree-dimensional-button {
+        .button-text-wrapper {
+          padding: 12px 10px 11px;
+          font-family: Arcana, sans-serif;
+
+          .btn-icon {
+            transform: translateY(-1px);
+          }
+        }
+      }
+    }
+  }
+
+  .item-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 3px #514e72, 0 4px #1f1f2c;
+    outline: none;
+    cursor: pointer;
+
+    span {
+      padding: 4px;
+      box-shadow: none;
+    }
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+
+    &:active,
+    &:disabled {
+      box-shadow: 0 3px #514e72, 0 3px #1f1f2c;
+
+      > span {
+        transform: translateY(2px);
+      }
+    }
+  }
+}

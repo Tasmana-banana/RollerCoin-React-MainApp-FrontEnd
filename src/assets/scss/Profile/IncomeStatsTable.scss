@@ -1,0 +1,106 @@
+.income-stats-table {
+	.table-loader {
+		display: flex;
+		justify-content: center;
+		padding: 77px 0 78px;
+	}
+	.table-stats-wrapper {
+		border-radius: 4px;
+		border: 1px solid #1f1f2d;
+		overflow: auto;
+		.table-stats {
+			width: 100%;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			line-height: 1;
+			td {
+				padding: 10px 16px;
+				white-space: nowrap;
+			}
+			th {
+				padding: 8px 16px;
+				white-space: nowrap;
+			}
+			.table-header {
+				background-color: #1f1f2d;
+			}
+			.table-body {
+				position: relative;
+				.table-loader {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+				tr:not(:last-child) {
+					border-bottom: 1px solid #6a668a;
+				}
+				td {
+					position: relative;
+					&:not(:last-child)::after {
+						content: "";
+						display: block;
+						width: 1px;
+						top: 9px;
+						bottom: 9px;
+						position: absolute;
+						right: 0;
+						background-color: #6a668a;
+					}
+				}
+			}
+			.total {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				text-align: right;
+			}
+		}
+	}
+	.table-pagination-wrapper {
+		margin-top: 16px;
+		padding-top: 23px;
+		border-top: 1px solid #6a668a;
+		.income-pagination {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			.stats-page-item {
+				& + .stats-page-item {
+					margin-left: 12px;
+				}
+				&.empty-item {
+					padding: 8px 5px 0;
+					> span {
+						display: inline-block;
+						vertical-align: bottom;
+					}
+				}
+				.stats-page-btn {
+					border: solid 1px #6a668a;
+					border-radius: 4px;
+					background-color: #2f3045;
+					padding: 8px 11px;
+					line-height: 1;
+					color: #ffffff;
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+					font-size: 16px;
+					&.active {
+						border-radius: 4px;
+						border: solid 1px #c3b0d0;
+						background-color: #8984b1;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+					&:focus {
+						outline: 0;
+					}
+				}
+			}
+		}
+	}
+}

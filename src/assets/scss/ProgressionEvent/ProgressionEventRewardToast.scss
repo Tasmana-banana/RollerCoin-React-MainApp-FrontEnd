@@ -1,0 +1,48 @@
+.progression-reward-toast-container.Toastify__toast {
+	padding: 2px;
+	width: 360px;
+	.progression-reward-toast {
+		display: flex;
+		align-items: center;
+		.progression-toast-img-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 80px;
+			width: 120px;
+			margin-right: 16px;
+			padding: 2px 8px;
+			background-color: #1f1f2d;
+			border-radius: 4px;
+			.progression-toast-img {
+				max-height: 56px;
+			}
+			.level-img-size-1,
+			.level-img-size-2 {
+				position: absolute;
+				image-rendering: pixelated;
+				z-index: 1;
+			}
+			.level-img-size-2 {
+				top: 28px;
+				left: 30px;
+			}
+			.level-img-size-1 {
+				top: 32px;
+				left: 44px;
+			}
+		}
+		.progression-toast-description{
+			.progression-toast-title {
+				margin-bottom: 4px;
+				font-size: 24px;
+				color: #03e1e4;
+			}
+			.progression-toast-text {
+				margin: 0;
+				font-size: 20px;
+				color: #ffffff;
+			}
+		}
+	}
+}

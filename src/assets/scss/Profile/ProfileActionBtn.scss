@@ -1,0 +1,29 @@
+.profile-action-btn {
+	margin-bottom: 20px;
+	.image-size {
+		height: 24px;
+		width: auto;
+	}
+}
+
+.wrapper {
+	&.es,
+	&.pt {
+		.profile-action-btn {
+			.tree-dimensional-button > span {
+				@media only screen and (min-width: 992px) {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	&.pt {
+		.profile-action-btn {
+			.tree-dimensional-button > span {
+				@media only screen and (min-width: 992px) and (max-width: 1200px) {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}

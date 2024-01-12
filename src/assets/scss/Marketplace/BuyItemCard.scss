@@ -1,0 +1,104 @@
+.marketplace-buy-item-card {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 16px;
+	padding: 8px 12px 8px 8px;
+	border: 1px solid #6a668a;
+	border-radius: 4px;
+	cursor: pointer;
+	@media only screen and (min-width: 992px) {
+		justify-content: space-between;
+		padding: 8px 16px 8px 8px;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+	.item-info-wrapper {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		.item-img-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			margin-right: 16px;
+			min-height: 100px;
+			min-width: 126px;
+			background-color: #1f1f2d;
+			border-radius: 4px;
+			overflow: hidden;
+			.rating-star-wrapper {
+				.star-wrapper {
+					line-height: 0;
+					&:not(:last-child) {
+						margin-right: 3px;
+					}
+					.star {
+						max-width: 20px;
+						max-height: 20px;
+					}
+				}
+			}
+			.collection-product-level-img-size-2 {
+				position: absolute;
+				top: 25px;
+				left: 2px;
+			}
+			.collection-product-level-img-size-1 {
+				position: absolute;
+				top: 26px;
+				left: 25px;
+			}
+		}
+		.item-text-wrapper {
+			text-align: left;
+			line-height: 1;
+			.item-title {
+				margin-bottom: 6px;
+				font-family: Roboto, sans-serif;
+				font-weight: 700;
+				font-size: 18px;
+				line-height: 21px;
+				color: #ffffff;
+			}
+			.item-addition {
+				margin-bottom: 6px;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				color: #ffffff;
+			}
+			.item-quantity {
+				margin-bottom: 6px;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				color: #ffffff;
+				text-transform: capitalize;
+				@media only screen and (min-width: 992px) {
+					margin-bottom: 0;
+				}
+				.item-quantity-amount {
+					font-family: Roboto, sans-serif;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.item-price-wrapper {
+		text-align: right;
+		line-height: 1.2;
+	}
+	.item-price-label {
+		font-family: Roboto, sans-serif;
+		font-size: 16px;
+		color: #ffffff;
+		text-transform: capitalize;
+	}
+	.item-price {
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		font-size: 16px;
+		color: #03e1e4;
+	}
+}

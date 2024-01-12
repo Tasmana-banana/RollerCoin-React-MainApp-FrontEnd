@@ -1,0 +1,134 @@
+.filters-container {
+	.filters-wrapper {
+		display: inline-block;
+		width: 100%;
+		padding: 4px;
+		border: 1px solid #514E72;
+		border-radius: 4px;
+		background: #2F3045;
+		@media (min-width: 992px) {
+			width: auto;
+		}
+	}
+	margin-bottom: 16px;
+	.selected-column {
+		margin-top: 10px;
+		@media only screen and (min-width: 992px) {
+			margin-top: 0;
+		}
+	}
+	.filter-btn {
+		width: 33%;
+		padding: 7px 0;
+		border-radius: 4px;
+		line-height: 1;
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+
+		@media (min-width: 992px) {
+			width: 98px;
+		}
+		.btn-text {
+			color: #03E1E4;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+		}
+		&.disabled {
+			cursor: default;
+			opacity: .5;
+		}
+		&.active {
+			background-color: #03e1e4;
+			.btn-text {
+				color: #2f3045;
+			}
+		}
+		&:active, &:focus {
+			outline: none;
+		}
+	}
+	.filter-short-container {
+		@media only screen and (min-width: 1200px) {
+			padding-left: 48px;
+		}
+		@media only screen and (min-width: 1296px) {
+			padding-left: 60px;
+		}
+	}
+	.select-filter-container {
+		.select-filter {
+			&__control {
+				min-height: unset;
+				padding: 7px 6px;
+				background-color: #2f3045;
+				border: 1px solid #6a668a;
+				border-radius: 4px;
+				box-shadow: none;
+				cursor: pointer;
+				@media only screen and (min-width: 992px) {
+					padding: 7px 6px;
+				}
+				.select-filter__indicator {
+					color: #8E8198;
+				}
+				&--is-disabled {
+					opacity: .5;
+				}
+			}
+			&__value-container {
+				padding: 0;
+			}
+			&__single-value {
+				color: #9797a2;
+				font-family: 'Roboto', serif;
+				font-size: 14px;
+				font-weight: 700;
+			}
+			&__menu {
+				padding: 0;
+				margin: 0;
+				color: #fff;
+				font-family: 'Roboto', serif;
+				font-size: 14px;
+				font-weight: 700;
+				background-color: #2f3045;
+				cursor: pointer;
+
+				&:focus {
+					outline: none;
+				}
+			}
+			&__menu-list {
+				padding: 0;
+				border: 1px solid #03e1e4;
+				border-radius: 4px;
+			}
+			&__option {
+				padding: 8px 12px;
+				cursor: pointer;
+				@media only screen and (min-width: 992px) {
+					padding: 4px 12px;
+				}
+			}
+			&__option--is-focused {
+				background-color: #6a668a;
+			}
+			&__indicator {
+				padding: 0;
+				color: #fff;
+
+				svg {
+					max-width: 20px;
+				}
+
+				@media only screen and (min-width: 992px) {
+				}
+			}
+			&__indicator-separator {
+				display: none;
+			}
+		}
+	}
+}

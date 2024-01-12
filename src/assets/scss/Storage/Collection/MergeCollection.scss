@@ -1,0 +1,12 @@
+.collection-body-wrapper {
+	.collection-filter {
+		border-bottom: 1px solid #6a668a;
+		margin-bottom: 16px;
+	}
+
+	.collection-container {
+		@media only screen and (min-width: 992px) {
+			margin-bottom: 8px;
+		}
+	}
+}

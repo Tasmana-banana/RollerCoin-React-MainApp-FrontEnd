@@ -1,0 +1,21 @@
+.info-block-container {
+	margin: 16px 0 0;
+	display: flex;
+	justify-content: flex-start;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	padding: 0 5px;
+	line-height: 1.5;
+	.info-icon-block {
+		padding-right: 12px;
+		.info-icon {
+			min-width: 24px;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		padding: 0;
+	}
+	.info-cyan {
+		color: #03e1e4;
+	}
+}

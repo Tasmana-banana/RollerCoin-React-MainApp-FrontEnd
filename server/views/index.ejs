@@ -1,0 +1,177 @@
+<% var data = {
+    title: title,
+    description: description,
+    keywords: typeof keywords !== "undefined" ? keywords : "",
+    pathname: typeof pathname !== "undefined" ? pathname : "/",
+    contentLanguage: typeof contentLanguage !== "undefined" ? contentLanguage : "EN",
+    hreflang: typeof hreflang !== "undefined" ? hreflang : { default: "", en: "", cn: "" },
+    canonical: typeof canonical !== "undefined" ? canonical.replace(/\/$/, "") : "",
+    originalUrl: typeof originalUrl !== "undefined" ? originalUrl : "/",
+    gtmId: typeof gtmId !== "undefined" ? gtmId : "",
+    robots: typeof robots === "object" ? robots : null
+}; %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%=data.title%></title>
+    <meta name="360-site-verification" content="4b30faac08ed8e4bc4891f837121edc6" />
+    <meta name="description" content="<%=data.description%>" data-react-helmet="true" >
+    <meta property="og:title" content="<%=data.title%>" data-react-helmet="true" />
+    <meta property="og:description" content="<%=data.description%>" data-react-helmet="true" />
+    <meta property="og:image" content="/static/fav/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0 ">
+    <meta name="theme-color" content="#2f3045" />
+    <meta property="application-name" content="Rollercoin" />
+    <meta property="apple-mobile-web-app-title" content="Rollercoin" />
+    <meta property="apple-mobile-web-app-capable" content="yes" />
+    <meta property="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta property="msapplication-config" content="/static/pwa/browserconfig.json" />
+    <link rel="manifest" crossorigin="use-credentials" href="/static/manifest.json" />
+    <link rel="apple-touch-icon" href="/static/pwa/any-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/static/pwa/any-512.png" sizes="512x512" />
+    <meta name="baidu-site-verification" content="code-9faJGaYeqs" />
+    <meta http-equiv="Content-Language" content="<%=data.contentLanguage%>" data-react-helmet="true">
+    <meta name="keywords" content="<%=data.keywords%>" data-react-helmet="true"/>
+    <meta name="ahrefs-site-verification" content="92f371d6cec294d8e7a2149c7f013151da0c8d080773239b03e98db796cd766a">
+    <link rel="icon" href="/static/fav/rollercoin_favicon_48x48.png" sizes="48x48" />
+    <link rel="icon" href="/static/fav/rollercoin_favicon_96x96.png" sizes="96x96" />
+    <link rel="icon" href="/static/fav/rollercoin_favicon_144x144.png" sizes="144x144" />
+    <link rel="mask-icon" href="/static/fav/rollercoin_favicon_144x144.svg" color="#ffffff" />
+    <% if(!!data.canonical){ %>
+    <link rel="canonical" href="<%=data.canonical%>" data-react-helmet="true" />
+    <% } %>
+    <% if(!!data.hreflang.default){ %>
+    <link rel="alternate" href="<%=data.hreflang.default%>" hreflang="x-default" data-react-helmet="true" />
+    <% } %>
+    <% if(!!data.hreflang.en){ %>
+    <link rel="alternate" href="<%=data.hreflang.en%>" hreflang="en" data-react-helmet="true" />
+    <% } %>
+    <% if(!!data.hreflang.cn){ %>
+    <link rel="alternate" href="<%=data.hreflang.cn%>" hreflang="zh-cn" data-react-helmet="true" />
+    <% } %>
+    <% if(data.robots !== null && !data.originalUrl.includes("/?r=")) {%>
+    <meta name="robots" content="<%=data.robots.index ? "index" : "noindex"%>, <%=data.robots.follow ? "follow" : "nofollow"%>" data-react-helmet="true"/>
+    <% } %>
+    <% if(data.originalUrl.includes("/?")) {%>
+        <meta name="robots" content="noindex, follow" data-react-helmet="true" />
+    <% } %>
+    <style>
+        .loader-main-page {
+            display: none;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 9998;
+        }
+
+        .dom-loading, .content-loading {
+            height: 100%;
+            overflow: hidden
+        }
+
+        .dom-loading > .loader-main-page, .content-loading > .loader-main-page {
+            display: block;
+        }
+
+        .content-loading > .loader-main-page {
+            background-color: transparent;
+        }
+
+        .content-loading > .loader-main-page:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #000;
+            opacity: 0.7;
+        }
+
+        .loader-main-page > .loader-img {
+            display: block;
+            position: absolute;
+            top: calc(50% - 45px);
+            left: 50%;
+            transform: translate(-50%, 0);
+            bottom: auto;
+            z-index: 9999;
+        }
+
+        .container-loader.dom-loading ~ .wrapper {
+            max-height: 100vh;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+<script>
+    document.body.classList.add("loader-visible");
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            document.getElementById('preLoader').classList.remove('dom-loading');
+            document.body.classList.remove("loader-visible");
+        }, 550);
+    });
+</script>
+<script>
+    (function(){
+        function initMetricsOnEvent() {
+            initGTM();
+            initBaidu();
+            document.removeEventListener("scroll", initMetricsOnEvent);
+            document.removeEventListener("mousemove", initMetricsOnEvent);
+            document.removeEventListener("touchstart", initMetricsOnEvent);
+        }
+        function initBaidu(){
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?ab3ef5cd88d6d875a1a7c0bb981aec24";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        }
+        function initGTM() {
+          if (window.gtmDidInit) {
+                return false;
+            }
+          window.gtmDidInit = true; // flag to ensure script does not get added to DOM more than once.
+            const script = document.createElement("script");
+            script.type = "text/javascript";
+            script.async = true;
+            script.onload = () => {
+                if(!window.dataLayer){
+                    window.dataLayer = [];
+                }
+                // window.dataLayer.push({event: "pageview"});
+                window.dataLayer.push({ event: "gtm.js", "gtm.start": new Date().getTime(), "gtm.uniqueEventId": 0 });
+            }; // this part ensures PageViews is always tracked
+            script.src = "https://www.googletagmanager.com/gtm.js?id="+"<%=data.gtmId%>";
+
+            document.head.appendChild(script);
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            /** init gtm after 3500 ms - this could be adjusted */
+            setTimeout(initMetricsOnEvent, 3500);
+        });
+        document.addEventListener("scroll", initMetricsOnEvent);
+        document.addEventListener("mousemove", initMetricsOnEvent);
+        document.addEventListener("touchstart", initMetricsOnEvent);
+    })();
+</script>
+<div class="container-loader dom-loading gray-bg" id="preLoader">
+    <div class="loader-main-page">
+        <img src="/static/img/icon/hamster_loader.gif?v=1.0.12" class="loader-img" alt="hamster loader">
+    </div>
+</div>
+<div id="root"></div>
+<script default src="<%-getVersionedPath("/static/js/bundle.js");%>"></script>
+</body>
+</html>

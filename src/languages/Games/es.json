@@ -1,0 +1,56 @@
+{
+	"playGame": "JUEGA PARA AUMENTAR TU PODER",
+	"difficulty": "DIFICULTAD:",
+	"level": "NIVEL:",
+	"start": "EMPEZAR",
+	"wait": "ESPERA...",
+	"time": "TIEMPO:",
+	"reward": "RECOMPENSA:",
+	"comingSoon": "Próximamente...",
+	"score": "Puntuación: ",
+	"points": "Puntos",
+	"power": "Tu poder",
+	"or": "o",
+	"pcInfo": {
+		"pcName": "Nombre de PC: ",
+		"pcLevel": "Nivel de PC: ",
+		"powerHolding": "Duración de poder:",
+		"levelReset": "Reinicio de nivel de PC: ",
+		"never": "Nunca",
+		"nextLevel": "Siguiente nivel de PC: ",
+		"maxPcLevel": "Tienes el nivel de PC máximo",
+		"winGames": "Después de ganar {{gamesCount}} partidas",
+		"temporaryPower": "El poder que consigues de los juegos es temporal. La recarga del tiempo para jugar aumenta a medida que juegas teniendo un tiempo de descenso a las 24 horas.",
+		"cooldown": "",
+		"externalSoftware": "El uso de cualquier script, servicio o software externo acarreará un baneo permanente de la cuenta y la congelación del saldo de la misma.",
+		"winning": {
+			"title": "By winning games, you have a chance to receive one of the following items:",
+			"text1": "x2 Power time hold from the game",
+			"text2": "Gh/s for 24h",
+			"text3": "x2 Power reward from the game",
+			"text4": "RollerArc S1",
+			"text5": "RLT",
+			"text6": "Battery"
+		}
+	},
+	"play": {
+		"power": "Poder:",
+		"newHashrate": "Tu nuevo hashrate:",
+		"powerRemain": "El poder seguirá válido durante las próximas:",
+		"powerWhenYouWin": "El poder de minería sólo se añade cuando ganas el juego.",
+		"goHome": "IR A CASA",
+		"chooseGame": "ELEGIR JUEGO",
+		"hours": "horas",
+		"days": "días"
+	},
+	"captcha": {
+		"enterCaptchaTitle": "Para empezar un juego, resuelve el ",
+		"enterCaptchaTitleStrong": "CAPTCHA ",
+		"enterCaptchaTitleEnd": "antes de que se agote el tiempo.",
+		"timeRemain": " segundos restantes",
+		"limit": "Actividad sospechosa detectada. Espera y vuelve a intentarlo más tarde.",
+		"unbanTime": "El acceso a los juegos se abre a las ",
+		"utc": " UTC."
+	},
+	"error": "¡Error! ¡No se pueden validar los resultados del juego!"
+}

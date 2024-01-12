@@ -1,0 +1,27 @@
+.social-banner-container {
+	margin-top: 14px;
+	background-image: linear-gradient(to top, #27273f, #363659, #363659, #27273f);
+	.banner-title {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 48px;
+		text-align: center;
+		text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+		background-image: linear-gradient(180deg, #8884ae, #615f87);
+		padding-top: 12px;
+		padding-bottom: 13px;
+	}
+	.buttons-container {
+		padding: 30px 12px 14px 12px;
+		max-width: 300px;
+		margin: 0 auto;
+
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		.social-image {
+			width: 75px;
+			margin: 0 4px 16px;
+		}
+	}
+}

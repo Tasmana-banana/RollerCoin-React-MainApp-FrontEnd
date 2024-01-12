@@ -1,0 +1,171 @@
+.connect-metamask-container {
+    padding: 40px 16px 60px;
+    border-radius: 4px;
+    border: solid 1px #6a668a;
+    background-color: #2f3045;
+    text-align: center;
+    @media only screen and (min-width: 992px) {
+        padding: 56px 16px 72px;
+    }
+    .metamask-placeholder-img {
+        margin-bottom: 24px;
+    }
+    .metamask-title {
+        margin-bottom: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        @media only screen and (min-width: 992px) {
+            font-size: 24px;
+        }
+    }
+    .metamask-description {
+        margin-bottom: 16px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 1.2;
+        @media only screen and (min-width: 992px) {
+            font-size: 18px;
+        }
+    }
+    .metamask-buttons-wrapper {
+        margin: 0 auto;
+        max-width: 100%;
+        @media only screen and (min-width: 992px) {
+            max-width: 290px;
+        }
+        .tree-dimensional-button {
+            .with-horizontal-image {
+                padding: 12px 20px;
+                @media only screen and (min-width: 992px) {
+                    padding: 8px 20px;
+                }
+                .btn-text {
+                    margin-top: 3px;
+                    font-family: 'Arcana', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        .metamask-buttons-divider {
+            width: 100%;
+            margin: 26px 0 18px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            overflow: hidden;
+            text-align: center;
+            @media only screen and (min-width: 991px) {
+                margin: 16px 0 10px;
+            }
+            > span {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &:before,
+            &:after {
+                content: "";
+                display: inline-block;
+                position: relative;
+                vertical-align: middle;
+                width: 50%;
+                border-bottom: 1px solid #6a668a;
+                opacity: 1;
+            }
+            &:before {
+                margin-left: -100%;
+                left: -16px;
+            }
+            &:after {
+                margin-right: -100%;
+                right: -16px;
+            }
+        }
+    }
+}
+.no-nft-found-container {
+    padding: 32px 16px 8px;
+    border-radius: 4px;
+    border: solid 1px #6a668a;
+    background-color: #2f3045;
+    text-align: center;
+    @media only screen and (min-width: 991px) {
+        padding: 56px 30px 24px;
+    }
+    .no-found-img {
+        margin-bottom: 16px;
+        @media only screen and (min-width: 992px) {
+            margin-bottom: 22px;
+        }
+    }
+    .no-found-title {
+        margin-bottom: 8px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        @media only screen and (min-width: 992px) {
+            margin-bottom: 16px;
+            font-size: 32px;
+        }
+    }
+    .no-found-description {
+        margin-bottom: 32px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        line-height: 1.2;
+        @media only screen and (min-width: 992px) {
+            font-size: 24px;
+            line-height: 1.1;
+        }
+    }
+    .some-collection-wrapper {
+        display: flex;
+        justify-content: center;
+        .some-collection-card {
+            padding: 16px 24px;
+            margin-bottom: 16px;
+            border: 2px solid #6a668a;
+            border-radius: 4px;
+            .some-collection-image {
+                margin-bottom: 16px;
+                border-radius: 50%;
+                @media screen and (min-width: 992px) {
+                    margin-bottom: 12px;
+                }
+            }
+            .some-collection-title {
+                margin-bottom: 5px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1;
+                @media screen and (min-width: 992px) {
+                    font-size: 20px;
+                }
+                @media screen and (min-width: 1200px) {
+                    font-size: 28px;
+                }
+                @media screen and (min-width: 1296px) {
+                    font-size: 32px;
+                }
+            }
+            .link-open-sea {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                text-decoration: underline;
+            }
+            .tree-dimensional-button {
+                margin: 18px 0 12px;
+                .button-text-wrapper {
+                    padding: 16px;
+                    box-shadow: 0 3px #186c6d;
+                    .btn-text {
+                        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+	"playGame": "Jogue para aumentar seu poder",
+	"difficulty": "DIFICULDADE:",
+	"level": "NÍVEL:",
+	"start": "COMEÇAR",
+	"wait": "AGUARDE...",
+	"time": "TEMPO:",
+	"reward": "RECOMPENSA:",
+	"comingSoon": "Em breve...",
+	"score": "Pontuação: ",
+	"points": "Pontos",
+	"power": "Seu Poder",
+	"or": "ou",
+	"pcInfo": {
+		"pcName": "Nome do PC: ",
+		"pcLevel": "Nível do PC: ",
+		"powerHolding": "Mantém energia por: ",
+		"levelReset": "O PC reseta em: ",
+		"never": "Nunca",
+		"nextLevel": "Próximo nível do PC: ",
+		"maxPcLevel": "Seu PC está no nível máximo",
+		"winGames": "Após vencer {{gamesCount}} jogos",
+		"temporaryPower": "O poder que você recebe ao vencer jogos é temporário e cada jogo tem seu próprio contador de declínio de 24 horas.",
+		"cooldown": "A recarga de um jogo aumenta conforme a dificuldade do jogo sobe.",
+		"externalSoftware": "O uso de qualquer software, script e serviços externos em RollerCoin resultará em um banimento permanente da conta e congelamento do saldo da conta.",
+		"winning": {
+			"title": "By winning games, you have a chance to receive one of the following items:",
+			"text1": "x2 Power time hold from the game",
+			"text2": "Gh/s for 24h",
+			"text3": "x2 Power reward from the game",
+			"text4": "RollerArc S1",
+			"text5": "RLT",
+			"text6": "Battery"
+		}
+	},
+	"play": {
+		"power": "Poder:",
+		"newHashrate": "Seu novo hashrate:",
+		"powerRemain": "O poder continuará válido pelos(as) próximos(as)",
+		"powerWhenYouWin": "Poder de mineração só é adicionado quando você vence o jogo.",
+		"goHome": "VOLTAR",
+		"chooseGame": "ESCOLHER JOGO",
+		"hours": "horas",
+		"days": "dias"
+	},
+	"captcha": {
+		"enterCaptchaTitle": "Para iniciar uma partida, resolva o ",
+		"enterCaptchaTitleStrong": "CAPTCHA ",
+		"enterCaptchaTitleEnd": "antes do tempo esgotar.",
+		"timeRemain": " segundos restantes",
+		"limit": "Atividade suspeita detectada. Aguarde e tente novamente mais tarde.",
+		"unbanTime": "O acesso ao jogo será aberto em ",
+		"utc": " UTC."
+	},
+	"error": "Erro! Não foi possível validar os resultados do jogo!"
+}

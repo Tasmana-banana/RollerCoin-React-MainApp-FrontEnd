@@ -1,0 +1,29 @@
+.static-event-banner-container {
+	position: relative;
+	margin: 0 -5px;
+	@media only screen and (min-width: 992px) {
+		margin: 0;
+	}
+	&.with-bottom-margin {
+		margin-bottom: 8px;
+		@media only screen and (min-width: 992px) {
+			margin: 0;
+		}
+	}
+	.banner-image {
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		border-radius: 4px;
+		image-rendering: pixelated;
+		@media only screen and (min-width: 992px) {
+			height: 114px;
+		}
+	}
+	.timer-block {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}

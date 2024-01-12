@@ -1,0 +1,1 @@
+export const LEFT_HOURS_TO_FREE_RECHARGE = 12;

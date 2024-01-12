@@ -1,0 +1,20 @@
+.static-data-content {
+	display: flex;
+	justify-content: center;
+	.banners-container {
+		max-width: 100%;
+		overflow: hidden;
+		position: relative;
+		div {
+			max-width: 100%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		&.banner-left {
+			justify-content: flex-end;
+		}
+		&.banner-right {
+			justify-content: flex-start;
+		}
+	}
+}

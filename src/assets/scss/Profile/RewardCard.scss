@@ -1,0 +1,40 @@
+.reward-card {
+    position: relative;
+    padding: 8px;
+    margin-bottom: 16px;
+    background-color: #181928;
+    border: 2px solid #6a668a;
+    min-height: 160px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.1;
+    &.received {
+        border: 2px solid #2bd600;
+        .reward-img, .reward-name, .reward-description {
+            opacity: 0.5;
+        }
+    }
+    .reward-receiver-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+    .reward-name {
+        max-height: 22px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        @media only screen and (min-width: 991px) {
+            font-size: 20px;
+        }
+    }
+    .reward-description {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        @media only screen and (min-width: 991px) {
+            font-size: 20px;
+        }
+    }
+}

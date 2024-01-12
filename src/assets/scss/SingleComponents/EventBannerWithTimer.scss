@@ -1,0 +1,29 @@
+.event-banner-with-timer {
+	@import "colors";
+
+	display: flex;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 4px;
+	min-height: 120px;
+	.event-timer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 6px 0;
+		width: 232px;
+		height: 28px;
+		border-radius: 4px;
+		background-color: $violetLightColor;
+		.time-text {
+			margin-left: 8px;
+			font-family: Roboto, sans-serif;
+			font-size: 14px;
+			font-weight: bold;
+			line-height: normal;
+			color: $whiteColor;
+		}
+	}
+}

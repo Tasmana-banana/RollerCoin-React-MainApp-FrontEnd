@@ -1,0 +1,60 @@
+.roller-quantity-inputs {
+	max-height: 32px;
+	padding: 3px 3px 3px;
+	background-color: #1f1f2d;
+	border-radius: 4px;
+	.roller-button.change-quantity-btn {
+		height: 24px;
+		width: 24px;
+		padding: 0;
+		border-radius: 4px;
+		&::before {
+			box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+			transform: translate3d(0, 3px, -1px);
+			transition: transform 100ms, box-shadow 100ms;
+		}
+		&:disabled {
+			transform: translateY(2px);
+			&::before {
+				box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+				transform: translate3d(0, 1px, -1px);
+			}
+		}
+		&:active {
+			transform: translateY(2px);
+			&::before {
+				box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+				transform: translate3d(0, 1px, -1px);
+			}
+		}
+		.shadow-3d {
+			bottom: 4px;
+		}
+		.roller-button-text-wrapper {
+			line-height: 20px;
+			.roller-button-text {
+				font-size: 20px;
+				font-weight: 400;
+			}
+		}
+	}
+	.quantity-input {
+		min-height: 26px;
+		margin: 0 2px;
+		padding: 0 2px 1px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1;
+		text-align: center;
+		background-color: #1f1f2d;
+		border: none;
+		&:focus {
+			z-index: 0;
+			background-color: #1f1f2d;
+		}
+		&:disabled {
+			color: #ffffff;
+		}
+	}
+}

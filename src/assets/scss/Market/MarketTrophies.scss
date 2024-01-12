@@ -1,0 +1,15 @@
+.trophies {
+	& .information-text span {
+		text-transform: uppercase;
+	}
+
+	& .slots {
+		font-size: 16px;
+		font-family: 'Roboto', sans-serif;
+		line-height: 1.2;
+
+		& span {
+			color: #03e1e4;
+		}
+	}
+}

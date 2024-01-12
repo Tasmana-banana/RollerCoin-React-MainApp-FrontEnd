@@ -1,0 +1,34 @@
+.event-timer {
+  position: relative;
+  padding: 4px 16px;
+  background-color: #514E72;
+  border-radius: 4px;
+  overflow: hidden;
+  .event-timer-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #9475D1;
+  }
+  .remaining-time {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    .timer-text {
+      margin-right: 8px;
+    }
+    .time-icon {
+      margin-right: 8px;
+    }
+    .time-text {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+}

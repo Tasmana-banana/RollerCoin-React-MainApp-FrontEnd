@@ -1,0 +1,160 @@
+.nft-token-modal {
+  @media screen and (min-width: 992px) {
+    min-width: 980px;
+  }
+  p {
+    margin: 0;
+  }
+  .nft-token-container {
+    position: relative;
+    padding: 16px;
+    background-color: #2f3045;
+    border: 1px solid #6a668a;
+    border-radius: 4px;
+    @media screen and (min-width: 992px) {
+      padding: 32px;
+    }
+    .nft-token-close-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 0;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      box-shadow: 0 4px #514e72, 0 5px #1f1f2c;
+      outline: none;
+      cursor: pointer;
+      z-index: 1;
+      @media screen and (min-width: 992px) {
+        top: 12px;
+        right: 12px;
+      }
+      span {
+        padding: 5px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        @media screen and (min-width: 992px) {
+          width: 18px;
+          height: 18px;
+        }
+      }
+      &:active,
+      &:disabled {
+        > span {
+          transform: translate(0, 3px);
+        }
+      }
+    }
+    .token-side-menu {
+      .token-avatar-wrapper {
+        margin-bottom: 16px;
+        .token-avatar-claimed-img-wrapper {
+          .token-avatar-claimed-img{
+            max-height: 32px;
+          }
+        }
+        .token-rewards-wrapper {
+          top: 4px;
+          left: 4px;
+          .token-reward {
+            padding: 3px 6px;
+            margin-bottom: 4px;
+            &:not(:last-child) {
+              margin-right: 4px;
+            }
+            .token-reward-img {
+              min-width: 24px;
+              min-height: 24px;
+              margin-right: 6px;
+            }
+            .reward-text {
+                font-size: 20px;
+                line-height: 1;
+              }
+            }
+          }
+        }
+      .tree-dimensional-button {
+        margin-bottom: 22px;
+        &.btn-cyan {
+          .button-text-wrapper {
+            box-shadow: 0 1px #186c6d;
+          }
+        }
+        &.btn-default {
+          .button-text-wrapper {
+            box-shadow: 0 1px #514e72;
+          }
+        }
+        .button-text-wrapper {
+          padding: 13px 34px 12px;
+          .btn-text {
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+    .token-title-wrapper {
+      margin-bottom: 10px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      line-height: 1.1;
+      .token-title {
+        font-size: 24px;
+        color: #03e1e4;
+        @media screen and (min-width: 992px) {
+          margin-bottom: 6px;
+        }
+      }
+      .token-id {
+        font-size: 32px;
+        @media screen and (min-width: 992px) {
+          font-size: 40px;
+        }
+      }
+    }
+    .token-properties-title {
+      margin: 10px 0 16px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.2;
+      @media screen and (min-width: 992px) {
+        margin: 12px 0;
+        font-size: 32px;
+      }
+    }
+    .properties-wrapper {
+      .property-wrapper {
+        margin-bottom: 16px;
+        padding: 10px 16px;
+        border: 1px solid #6a668a;
+        border-radius: 4px;
+        line-height: 1.1;
+        .property-trait {
+          margin-bottom: 6px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+        }
+        .property-value {
+          margin-bottom: 8px;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 28px;
+          color: #03e1e4;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+        .property-times-used {
+          font-family: 'Roboto', sans-serif;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.item-info-buy-wrapper {
+	margin-bottom: 16px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #6a668a;
+	@media only screen and (min-width: 992px) {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	.item-img-wrapper {
+		display: flex;
+		justify-content: center;
+		position: relative;
+		margin-bottom: 12px;
+		padding: 32px 0;
+		background-color: #1f1f2d;
+		border-radius: 4px;
+		overflow: hidden;
+		.collection-product-level-img-size-2 {
+			position: absolute;
+			top: 66px;
+			left: 51px;
+		}
+		.collection-product-level-img-size-1 {
+			position: absolute;
+			top: 68px;
+			left: 84px;
+		}
+	}
+}
+.item-info-characteristics-wrapper {
+	.characteristics-item-wrapper {
+		display: flex;
+		margin-bottom: 4px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height: 32px;
+		color: #ffffff;
+		&.title {
+			line-height: 40px;
+		}
+		.characteristics-title,
+		.item-title,
+		.item-value {
+			display: flex;
+			align-items: center;
+			padding: 0 12px;
+			background-color: #1f1f2d;
+			border-radius: 4px;
+
+			&.bonus-value {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				color: #03e1e4;
+				display: flex;
+				align-items: center;
+				.power-icon {
+					display: flex;
+					align-items: center;
+					margin-right: 4px;
+				}
+			}
+		}
+		.characteristics-title {
+			flex-grow: 1;
+			.characteristics-icon-wrapper {
+				margin-right: 12px;
+				line-height: 20px;
+			}
+			.characteristics-bold-text {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+		}
+		.item-title {
+			flex: 0 0 106px;
+			@media only screen and (min-width: 992px) {
+				flex: 0 0 96px;
+			}
+		}
+		.item-value {
+			flex-grow: 1;
+			margin-left: 4px;
+			&.cyan {
+				color: #03e1e4;
+			}
+			&.green {
+				color: #5ce319;
+			}
+			&.bold {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+		}
+		.icon-wrapper {
+			margin-right: 4px;
+			transform: translateY(-1px);
+		}
+	}
+	.characteristics-item-description {
+		margin-top: 16px;
+		margin-bottom: 16px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 16px;
+		line-height: 1.1;
+		color: #ffffff;
+		@media only screen and (min-width: 992px) {
+			margin-top: 8px;
+			margin-bottom: 0;
+		}
+	}
+}

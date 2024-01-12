@@ -1,0 +1,98 @@
+{
+  "or": "O",
+  "date": {
+    "days": "Días",
+    "hours": "Horas",
+    "min": "Min",
+    "sec": "Segundos"
+  },
+  "market": {
+    "buyBox": "COMPRAR CAJA",
+    "buy": "COMPRAR",
+    "discard": "DESCARTAR",
+    "notEnough": "NO HAY FONDOS SUFICIENTES"
+  },
+  "questionBanner": {
+    "title": "Tenemos preguntas",
+    "subtitle": "PARA TI",
+    "answer": "Respuesta"
+  },
+  "offerwallBanner": {
+    "title": "Muro de tareas",
+    "descr": "Recibe tu recompensa al instante",
+    "button": "¡Consigue ahora RLT gratis!"
+  },
+  "miniEventBanner": {
+    "button": "A LA ZONA DE CONSTRUCCIÓN"
+  },
+  "lunarBanner": {
+    "button": "Coge la pala"
+  },
+  "discountDogeTimer": {
+    "descr": "Descuento al comprar tokens a través de ",
+    "descr2": "El descuento termina dentro de",
+    "button": "COMPRAR TOKENS"
+  },
+  "metamaskButton": {
+    "button": "CONECTAR METAMASK",
+    "messages": {
+      "somethingWrong": "Algo ha fallado. ¡Inténtalo de nuevo!",
+      "walletConnected": "Billeteras conectado correctamente"
+    }
+  },
+  "twoFactor": {
+    "modal": {
+      "successfullyEnabled": "¡Autentificación de dos factores activada correctamente!",
+      "successfullyDisabled": "¡Autentificación de dos factores desactivada correctamente!",
+      "passwordChanged": "La contraseña se ha modificado correctamente",
+      "withdrawalAccepted": "Tu solicitud de retirada está aceptada.",
+      "codeSent": "¡El código se ha enviado a tu e-mail!",
+      "passwordRequired": "La contraseña es necesaria",
+      "passwordNotMatch": "La contraseña y la confirmación de contraseña no coinciden",
+      "enterCode": "Introduce el código de tu e-mail para desactivar la autentificación de dos factores",
+      "authCodeSent": "Código de autentificación enviado a",
+      "invalidCode": "Código no válido",
+      "notGet": "¿No has recibido un e-mail?",
+      "tryAgain": "Inténtalo de nuevo dentro de {viewTime} segundos.",
+      "button": "Volver a enviar código"
+    },
+    "password": {
+      "minPassword": "Introduce al menos seis caracteres",
+      "maxPassword": "Introduce 32 caracteres o menos",
+      "noSpace": "No puede haber espacios en la contraseña",
+      "passwordRequired": "La contraseña es necesaria"
+    },
+    "viewedModal": {
+      "title": "¡Protege mis criptomonedas!",
+      "message": "¡Querido Roller! Nos preocupamos por la seguridad de tu imperio minero, así que tómate un momento y habilita la autentificación de dos factores para asegurarte de que nadie más pueda acceder a tu sala. Solo tienes que dar un paso muy fácil: ¡haz clic en el botón que aparece a continuación e indícanos el código que te hemos enviado por e-mail!",
+      "button": "No volver a mostrar"
+    }
+  },
+  "disclaimer": {
+    "title": "Términos y condiciones y Política de privacidad",
+    "dearRoller": "¡Querido Roller!",
+    "byUsing": "Al usar ",
+    "text": ", confirmas que has leído los Términos y condiciones y la Política de privacidad, que los comprendes y que aceptas incondicionalmente su cumplimiento.",
+    "confirm": "Confirmo que he leído y acepto ",
+    "terms": "los Términos de uso",
+    "privacy": "la Política de privacidad",
+    "and": "y",
+    "disclaimer": "la Descarga de responsabilidad",
+    "accept": "aceptar"
+  },
+  "customModal": {
+    "title": "You have got miner The Big Boss!",
+    "subtitle": "Congrats, Roller!",
+    "text": "You have collected all 9 Miner-Yachts and completed Luxury Yacht Club Event! You deserve an award — Miner The Big Boss with 9,200,000 Gh/s Power! ",
+    "accept": "Get Miner"
+  },
+  "eventPopup": {
+    "btnText": "Let's start!"
+  },
+  "influencers": {
+    "welcome": "Welcome to Rollercoin!",
+    "youReceived": "You‘ve received a ",
+    "toStart": " rewards. Time to start mining!",
+    "startPlay": "Start Playing"
+  }
+}

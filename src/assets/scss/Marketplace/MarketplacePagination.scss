@@ -1,0 +1,61 @@
+html {
+  scroll-behavior: smooth;
+};
+
+.marketplace-pagination {
+  margin-top: 24px;
+  .load-more {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    .load-more-btn {
+      min-width: 280px;
+    }
+  }
+  .marketplace-pagination-list-wrapper {
+    .marketplace-pagination-list {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+      .marketplace-pagination-item {
+        min-height: 32px;
+        min-width: 32px;
+        margin: 0 6px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        .marketplace-pagination-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100%;
+          min-width: 100%;
+          color: #ffffff;
+          background-color: #181928;
+          border: 1px solid #6a668a;
+          border-radius: 4px;
+          cursor: pointer;
+          &:hover {
+            &:not(:disabled) {
+              color: #03e1e4;
+            }
+          }
+          &:disabled {
+            background-color: #2f3045;
+            cursor: default;
+          }
+          &:active {
+            outline: none;
+            border: 1px solid #03e1e4;
+          }
+        }
+        .marketplace-pagination-divider {
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.entry-email-code {
+    padding: 0 15px 25px;
+    .info-text-wrapper {
+        line-height: 1;
+    }
+    .confirm-code-input {
+        text-align: left;
+        letter-spacing: 8px;
+        padding-left: 130px;
+        @media screen and (max-width: 991px) {
+            padding-left: 120px;
+        }
+        &::placeholder {
+            letter-spacing: 10px;
+        }
+    }
+    .btn-link-style {
+        background: none;
+        border: none;
+        padding: 0;
+        color: #03e1e4;
+        text-decoration: underline;
+        cursor: pointer;
+        &:focus {
+            outline: 0
+        }
+        &:hover {
+            color: #029698;
+        }
+        &:disabled,
+        &[disabled] {
+            color: #029698;
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        &.error {
+            padding-bottom: 15px;
+        }
+    }
+}

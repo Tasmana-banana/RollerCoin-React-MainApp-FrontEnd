@@ -1,0 +1,249 @@
+.quests-container {
+	@media (max-width: 961px) {
+		margin-top: 10px;
+	}
+
+	& .roller-tabs-base.tabs-container.daily-weekly-quests {
+		& .nav {
+			margin-bottom: 0;
+			border-bottom-color: #6a668a;
+			flex-wrap: nowrap;
+			column-gap: 10px;
+			border-bottom: 1px solid #6a668a;
+			overflow: visible;
+		}
+		& .nav.nav-tabs .nav-item {
+			margin-left: 0;
+			flex-grow: 1;
+			flex-basis: calc(50% - 8px);
+
+			& .nav-link {
+				position: relative;
+				text-transform: none;
+				margin-bottom: 0;
+
+				&.active {
+					border-color: #6a668a;
+					border-bottom-color: transparent;
+
+					&:hover {
+						border-color: #6a668a;
+						border-bottom-color: transparent;
+					}
+				}
+
+				&:hover {
+					border-color: transparent;
+				}
+			}
+
+			& .nav-link {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 16px;
+				text-transform: capitalize;
+			}
+		}
+
+		& .tab-content {
+			min-height: 320px;
+			border: 1px solid #6a668a;
+			border-top: 0;
+			background: #2f3045;
+			padding: 12px 8px;
+			border-radius: 0 0 8px 8px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			& .marketplace-preloader-layer {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			& .event-timer-wrapper {
+				& .remaining-time {
+					display: flex;
+					align-items: center;
+
+					& .time-icon-block {
+						& .time-icon {
+							vertical-align: top;
+						}
+					}
+
+					& .time-text {
+						margin-left: 12px;
+						font-family: 'Roboto', sans-serif;
+						font-weight: 700;
+						text-transform: lowercase;
+						font-size: 16px;
+					}
+				}
+			}
+
+			& .quests-block {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				margin-top: 10px;
+
+				& .quest-item-card {
+					display: flex;
+					background: #1f1f2d;
+					border-radius: 4px;
+					align-items: center;
+					padding: 4px;
+
+					&:not(:last-child) {
+						margin-bottom: 8px;
+					}
+
+					&.crypto-quest {
+						border: 1px solid #ffdc00;
+						.quest-item-wrapper {
+							.quest-item-description-wrapper {
+								.quest-action {
+									.roller-button {
+										background-color: #ffdc00;
+										border-color: #fff199;
+
+										&::before {
+											background: #b98500;
+										}
+									}
+								}
+							}
+
+							.quest-item-progress-wrapper {
+								.progress-bar > .progress-bar {
+									background-color: #ffdc00;
+								}
+
+									.quest-progress-text {
+										color: #ffdc00;
+									}
+							}
+						}
+					}
+
+					& .quest-item-rlt-wrapper {
+						background: #2f3045;
+						border-radius: 4px;
+						width: 48px;
+						height: 48px;
+						min-width: 48px;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+
+						& .quest-item-rlt-text {
+							margin-top: 2px;
+							font-family: 'Arcana', sans-serif;
+							text-align: center;
+							line-height: 14px;
+							font-size: 10px;
+						}
+					}
+
+					& .quest-item-wrapper {
+						display: flex;
+						flex-direction: column;
+						padding: 0 4px 0 8px;
+						width: 100%;
+
+						& .quest-item-description-wrapper {
+							display: flex;
+							align-items: center;
+							width: 100%;
+
+							& .quest-item-title {
+								font-family: 'Roboto', sans-serif;
+								font-size: 14px;
+								line-height: 1;
+								margin-right: 10px;
+								flex: 5;
+							}
+
+							& .quest-action {
+								text-align: right;
+
+								& .quest-collected {
+									width: 24px;
+									padding: 3px 0;
+								}
+
+								& .roller-button {
+									padding: 5px 6px;
+
+									& .roller-button-text-wrapper {
+										line-height: 1;
+									}
+
+									&:before {
+										bottom: 3px;
+									}
+
+									&.green-btn {
+										background-color: #40bf40;
+										border-color: #8bee8b;
+
+										&:before {
+											background: #145814;
+										}
+									}
+								}
+							}
+						}
+
+						& .quest-item-progress-wrapper {
+							margin-top: 8px;
+							display: flex;
+							align-items: center;
+							text-align: center;
+							line-height: 1;
+							justify-content: space-between;
+							@media only screen and (min-width: 992px) {
+								padding: 0;
+								border-bottom: none;
+							}
+							.progress-bar {
+								width: 152px;
+								background-color: #2f2f4c;
+								height: 4px;
+								margin-top: 0;
+								border-radius: 4px;
+								> .progress-bar {
+									background-color: #03e1e4;
+								}
+
+								&.green-color {
+									> .progress-bar {
+										background-color: #2bd600;
+									}
+								}
+							}
+							.quest-progress-value {
+								font-family: 'Roboto', sans-serif;
+								font-size: 14px;
+
+								& .green-color {
+									color: #2bd600;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			& .quests-btn-block {
+				width: 100%;
+				margin-top: auto;
+				margin-bottom: 12px;
+			}
+		}
+	}
+}

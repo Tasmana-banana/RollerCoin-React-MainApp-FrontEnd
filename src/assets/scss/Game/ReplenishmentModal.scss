@@ -1,0 +1,599 @@
+.replenishment-modal {
+	@media only screen and (min-width: 992px) {
+		width: 100%;
+		max-width: 580px;
+	}
+	p {
+		margin: 0;
+	}
+	.replenishment-modal-wrapper {
+		padding: 16px;
+		@media only screen and (min-width: 992px) {
+			padding: 20px;
+		}
+
+		border: solid 1px #6a668a;
+		border-radius: 4px;
+		background-color: #2f3045;
+		position: relative;
+		font-family: Roboto, sans-serif;
+		font-weight: 700;
+		.modal-close-btn {
+			position: absolute;
+			top: 8px;
+			right: 8px;
+			padding: 0;
+			color: #ffffff;
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			span {
+				padding: 6px;
+			}
+			.close-menu-btn {
+				.close-btn-text {
+					padding: 6px;
+				}
+			}
+		}
+		.not-enough-wrapper {
+			.not-enough-header {
+				margin: 0;
+				text-align: center;
+				font-size: 20px;
+				@media only screen and (min-width: 573px) {
+					font-size: 24px;
+				}
+			}
+			.not-enough-order {
+				padding-top: 20px;
+				.order-title {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.title-text {
+						margin: 0;
+						font-size: 16px;
+						@media only screen and (min-width: 573px) {
+							font-size: 18px;
+						}
+					}
+				}
+				.order-body {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					background-color: #1f1f2d;
+					border-radius: 4px;
+					padding: 10px 14px;
+					line-height: 1.1;
+					.order-body-name {
+						font-family: Roboto, sans-serif;
+						font-weight: 400;
+						font-size: 16px;
+					}
+					.order-body-price {
+						font-size: 16px;
+						color: #03e1e4;
+					}
+				}
+				.order-select {
+					margin-top: 22px;
+					padding: 20px 0 18px;
+					border-bottom: 1px solid #6a668a;
+					border-top: 1px solid #6a668a;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex-wrap: wrap;
+					.order-select-warning {
+						display: flex;
+						align-items: center;
+						.select-warning-img {
+							max-height: 30px;
+						}
+						.select-warning-text {
+							margin: 0 0 0 12px;
+							font-size: 18px;
+						}
+					}
+					.order-select-currency {
+						display: flex;
+						align-items: center;
+						margin: 16px 0 0 10px;
+						@media only screen and (min-width: 446px) {
+							margin: 0 0 0 16px;
+						}
+						.select-currency-text {
+							margin: 0 15px 0 0;
+							font-size: 16px;
+						}
+						.select-currency-container {
+							.react-select-option-inner {
+								display: flex;
+							}
+							.lazyload-wrapper {
+								padding-right: 8px;
+							}
+							.select-currency {
+								&__control {
+									min-width: 105px;
+									padding: 8px 12px;
+									background-color: #19151c;
+									border: 1px solid #6a668a;
+									border-radius: 4px;
+									box-shadow: none;
+									cursor: pointer;
+									@media only screen and (min-width: 992px) {
+										padding: 4px 12px;
+									}
+									.react-select-option-with-image {
+										cursor: pointer;
+										> div {
+											margin: 0;
+											display: flex;
+											align-items: center;
+											> img {
+												margin-right: 8px;
+											}
+										}
+									}
+								}
+
+								&__control--menu-is-open {
+									border-bottom-right-radius: 0;
+									border-bottom-left-radius: 0;
+									border-bottom: 0;
+								}
+
+								&__value-container {
+									padding: 0;
+								}
+
+								&__single-value {
+									color: #fff;
+									font-family: Roboto, sans-serif;
+									font-size: 16px;
+								}
+
+								&__menu {
+									padding: 0;
+									margin: 0;
+									color: #fff;
+									font-family: Roboto, sans-serif;
+									font-size: 16px;
+									background-color: #19151c;
+									cursor: pointer;
+									&:focus {
+										outline: none;
+									}
+									.react-select-option-with-image {
+										cursor: pointer;
+										> div {
+											margin: 0;
+											display: flex;
+											align-items: center;
+											> img {
+												margin-right: 8px;
+											}
+										}
+									}
+								}
+
+								&__menu-list {
+									padding: 0;
+									border: 1px solid #6a668a;
+									border-top: none;
+									border-bottom-left-radius: 4px;
+									border-bottom-right-radius: 4px;
+								}
+
+								&__option {
+									padding: 8px 12px;
+									cursor: pointer;
+									@media only screen and (min-width: 992px) {
+										padding: 4px 12px;
+									}
+								}
+
+								&__option--is-selected {
+									display: none;
+								}
+
+								&__option--is-focused {
+									background-color: #6a668a;
+								}
+
+								&__indicator {
+									padding: 0;
+									color: #fff;
+
+									svg {
+										max-width: 20px;
+									}
+								}
+
+								&__indicator-separator {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+				.order-confirmation-button {
+					margin-top: 24px;
+					.btn-text {
+						font-family: Arcana, sans-serif;
+					}
+					@media only screen and (min-width: 573px) {
+						padding: 0 100px;
+					}
+				}
+			}
+		}
+		.wallet-address-wrapper {
+			.total-text {
+				margin: 0;
+				text-align: center;
+				font-size: 24px;
+				font-weight: 700;
+			}
+			.wallet-address-amount-payment {
+				font-size: 24px;
+				font-weight: 700;
+				color: #03e1e4;
+				text-align: center;
+				margin: 12px 0;
+				@media only screen and (min-width: 453px) {
+					margin: 16px 0 16px;
+				}
+			}
+			.wallet-address-description {
+				font-family: Roboto;
+				font-weight: 400;
+				line-height: 1.14;
+				font-size: 14px;
+				margin-bottom: 14px;
+				text-align: center;
+				.description-select {
+					font-weight: 700;
+				}
+			}
+			.gold-title {
+				color: #fcb300;
+				font-family: Roboto;
+				font-size: 14px;
+				font-weight: 700;
+				margin-bottom: 8px;
+			}
+			.min-deposit-small-text {
+				color: #c3b0d0;
+				font-family: Roboto;
+				font-size: 12px;
+				font-weight: normal;
+				margin-bottom: 12px;
+				@media screen and (min-width: 992px) {
+					margin-bottom: 16px;
+				}
+			}
+			.warning-container {
+				border-radius: 4px;
+				background: rgba(31, 31, 45, 0.5);
+				padding: 12px;
+				margin: 0 0 12px;
+				@media screen and (min-width: 992px) {
+					margin: 0 0 16px;
+				}
+				.warning-small-text {
+					color: #c3b0d0;
+					font-family: Roboto;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: normal;
+					margin: 8px 0 0;
+				}
+			}
+			.wallet-address-main {
+				border-top: 1px solid #6a668a;
+				border-bottom: 1px solid #6a668a;
+				padding: 12px 0;
+				display: flex;
+				flex-direction: column;
+				@media screen and (min-width: 992px) {
+					padding: 16px 0;
+				}
+				.network-warning-block {
+					justify-content: center;
+					margin: 0 0 16px;
+					width: 100%;
+					@media screen and (min-width: 992px) {
+						margin: 16px 0 0;
+						justify-content: flex-start;
+					}
+					.network-warning-message {
+						width: 100%;
+						padding: 16px;
+						border-radius: 4px;
+						border: solid 2px #fee761;
+						.pic-container {
+							flex-shrink: 0;
+							margin-right: 8px;
+							line-height: 0;
+						}
+						.text-container {
+							font-family: Roboto, sans-serif;
+							font-weight: 400;
+							color: #fff;
+							font-size: 16px;
+							line-height: 1.33;
+							p {
+								margin-bottom: 8px;
+							}
+							> :last-child {
+								margin-bottom: 0;
+							}
+							.title {
+								font-family: Roboto, sans-serif;
+								font-weight: 700;
+								font-size: 16px;
+								line-height: 0.8;
+							}
+							.text-bold {
+								font-family: Roboto, sans-serif;
+								font-weight: 700;
+								color: #fee761;
+							}
+						}
+					}
+				}
+				.wallet-address-qrcode{
+					line-height: 0;
+				}
+				.wallet-address-info {
+					margin-right: 10px;
+					display: flex;
+					flex-flow: column nowrap;
+					@media only screen and (min-width: 992px) {
+						display: block;
+					}
+					.info-header {
+						margin: 0;
+						font-size: 14px;
+						font-weight: 700;
+					}
+					.info-wallet {
+						margin: 12px 16px 12px 0;
+						font-size: 14px;
+						font-weight: 700;
+						font-family: Roboto, sans-serif;
+						color: #03e1e4;
+						word-break: break-all;
+						line-height: 1.14;
+					}
+					.tree-dimensional-button {
+						width: 160px;
+						height: 44px;
+						.btn-copy-icon:before{
+								content: "";
+								background: url("../../img/icon/copy.svg"), no-repeat;
+								display: block;
+								width: 24px;
+								height: 24px;
+								margin: 0 6px 0 0;
+
+						}
+						.btn-text {
+							flex-direction: row;
+						}
+						.btn-icon:before {
+							content: "";
+							background: url("../../img/icon/tick-dark.svg"), no-repeat;
+							display: block;
+							width: 24px;
+							height: 24px;
+							margin: 0 6px 0 0;
+						}
+					}
+				}
+				.qrcode-show-button {
+					border-top: 1px solid #6a668a;
+					padding-top: 16px;
+					margin: 18px 0 16px;
+					.visible-qrcode {
+						display: flex;
+						justify-content: center;
+						margin-bottom: 10px;
+					}
+				}
+			}
+			.wallet-no-address {
+				border-top: 1px solid #6a668a;
+				border-bottom: 1px solid #6a668a;
+				padding: 18px 0;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-family: Roboto;
+				color: #C3B0D0;
+				font-size: 12px;
+				font-weight: normal;
+				.no-address-text {
+					font-family: Roboto, sans-serif;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 1.14;
+				}
+				.generate-btn {
+					margin-top: 10px;
+				}
+			}
+			.wallet-address-transaction-info {
+				margin-top: 12px;
+				text-align: center;
+				font-size: 14px;
+				font-weight: 400;
+				font-family: Roboto, sans-serif;
+				color: #C3B0D0;
+				@media only screen and (min-width: 992px) {
+					margin-top: 16px;
+				}
+				.exchange-fixed-time {
+					line-height: 1.14;
+				}
+				.time {
+					font-weight: 700;
+				}
+				.fixed-rate {
+					line-height: 1.14;
+					.rate {
+						color: #03e1e4;
+						font-weight: 700;
+					}
+					.rate-new {
+						color: #5ce319;
+					}
+					.rate-old {
+						line-height: 0.4;
+						text-decoration: line-through;
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+		.payment-received-wrapper {
+			.payment-received-body {
+				border-bottom: 1px solid #6a668a;
+				padding-right: 24px;
+				.payment-received-total-text {
+					margin: 0;
+					font-size: 32px;
+					@media only screen and (min-width: 453px) {
+						text-align: center;
+					}
+				}
+				.payment-received-amount-payment {
+					font-size: 32px;
+					color: #03e1e4;
+					margin: 0 0 12px;
+					@media only screen and (min-width: 453px) {
+						margin: 16px 0 24px;
+						text-align: center;
+					}
+				}
+				.payment-received-status {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					.received-status-text {
+						margin: 0 0 0 12px;
+						font-size: 20px;
+					}
+				}
+				.payment-received-info {
+					margin-top: 12px;
+					font-family: Roboto, sans-serif;
+					font-size: 20px;
+					line-height: 1.14;
+				}
+				.payment-received-time-left {
+					font-size: 20px;
+					.time-left-color {
+						color: #03e1e4;
+					}
+				}
+			}
+			.payment-received-footer {
+				margin-top: 24px;
+				font-family: Roboto, sans-serif;
+				font-size: 16px;
+				color: #6a668a;
+				line-height: 1.14;
+			}
+		}
+		.invoice-canceled-wrapper {
+			.invoice-canceled-total-text {
+				margin: 0;
+				font-size: 32px;
+				@media only screen and (min-width: 453px) {
+					text-align: center;
+				}
+			}
+			.invoice-canceled-amount-payment {
+				font-size: 32px;
+				color: #03e1e4;
+				margin: 0 0 12px;
+				@media only screen and (min-width: 453px) {
+					margin: 16px 0 24px;
+					text-align: center;
+				}
+			}
+			.invoice-canceled-status {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				.canceled-status-text {
+					margin: 0 0 0 12px;
+					font-size: 20px;
+					color: #d22d1f;
+				}
+			}
+			.invoice-canceled-info {
+				margin-top: 24px;
+				font-family: Roboto, sans-serif;
+				font-size: 20px;
+				line-height: 1.14;
+			}
+		}
+		.payment-confirmed-wrapper {
+			.payment-confirmed-body {
+				border-bottom: 1px solid #6a668a;
+				padding-bottom: 28px;
+				@media only screen and (min-width: 453px) {
+					padding-bottom: 50px;
+				}
+				.payment-confirmed-total-text {
+					margin: 0;
+					font-size: 32px;
+					@media only screen and (min-width: 453px) {
+						text-align: center;
+					}
+				}
+				.payment-confirmed-amount-payment {
+					font-size: 32px;
+					color: #03e1e4;
+					margin: 0 0 12px;
+					@media only screen and (min-width: 453px) {
+						margin: 16px 0 24px;
+						text-align: center;
+					}
+				}
+				.payment-confirmed-status {
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					p {
+						margin: 0 0 0 12px;
+						font-size: 20px;
+						color: #2bd600;
+					}
+				}
+				.payment-confirmed-info {
+					margin: 8px 0 0;
+					font-family: Roboto, sans-serif;
+					font-size: 20px;
+					line-height: 1.14;
+					.confirmed-info-price {
+						font-family: Roboto, sans-serif;
+						font-weight: 700;
+					}
+				}
+			}
+			.payment-confirmed-footer {
+				margin-top: 32px;
+				@media only screen and (min-width: 573px) {
+					padding: 0 100px;
+				}
+			}
+		}
+	}
+}

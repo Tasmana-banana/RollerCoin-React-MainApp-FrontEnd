@@ -1,0 +1,268 @@
+.event-container {
+    margin-top: 20px;
+    padding-bottom: 80px;
+    @media screen and (min-width: 992px) {
+        margin-top: 0;
+    }
+    p {
+        margin: 0;
+    }
+    .event-title {
+        min-height: 192px;
+        margin-bottom: 32px;
+        background: url("../../img/singleComponents/easter_header_mobile.png") no-repeat 46%;
+        text-align: center;
+        @media screen and (min-width: 992px) {
+            background: none;
+        }
+        .event-title-background {
+            height: 100%;
+            @media screen and (min-width: 992px) {
+                width: 100%;
+            }
+        }
+        .event-title-text-img {
+            margin-top: 44px;
+        }
+    }
+    .gradient {
+        background-image: linear-gradient(to top, #181928, #262840, #181928);
+    }
+    .pedestal-container {
+        position: relative;
+        margin-bottom: 16px;
+        text-align: center;
+        .main-miner-container {
+            position: absolute;
+            bottom: 40%;
+            left: 50%;
+            transform: translateX(-50%);
+            .main-miner-img {
+                image-rendering: pixelated;
+                width: 126px;
+                height: 100px;
+                @media screen and (min-width: 375px) {
+                    width: 158px;
+                    height: 125px;
+                }
+                @media screen and (min-width: 440px) {
+                    width: 189px;
+                    height: 150px;
+                }
+                @media screen and (min-width: 576px) {
+                    width: 252px;
+                    height: 200px;
+                }
+                @media screen and (min-width: 992px) {
+                    width: 189px;
+                    height: 150px;
+                }
+                @media screen and (min-width: 1200px) {
+                    width: 252px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .progress-container {
+        margin-bottom: 12px;
+        position: relative;
+        @media screen and (min-width: 992px) {
+            margin-bottom: 24px;
+        }
+        .progress-block {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            min-height: 32px;
+            height: auto;
+            background-color: #662121;
+            .progress-bar {
+                background-color: #b83939;
+            }
+        }
+        .progress-number {
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            &.cn {
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+        }
+    }
+    .event-info-container {
+        background-color: #2f3045;
+        padding: 24px 16px 36px;
+        border: 1px solid #6a668a;
+        border-radius: 4px;
+        @media screen and (min-width: 992px) {
+            padding: 24px 40px 36px;
+        }
+        .miner-title {
+            margin-bottom: 8px;
+            text-align: center;
+            font-size: 32px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            line-height: 0.8;
+            @media screen and (min-width: 992px) {
+                margin-bottom: 8px;
+            }
+        }
+        .miner-characters {
+            margin-bottom: 18px;
+            text-align: center;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            line-height: 0.8;
+        }
+        .miner-description {
+            margin-bottom: 24px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+            font-weight: 200;
+            line-height: 24px;
+            text-align: center;
+            .miner-description-margin {
+                margin-bottom: 16px;
+                .bolded-text {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                }
+            }
+        }
+        .change-quantity-wrapper {
+            display: flex;
+            margin: 0 auto;
+            @media only screen and (min-width: 576px) {
+                max-width: 340px;
+            }
+            .change-quantity-inputs {
+                flex: 0 100px;
+                padding: 3px 3px 2px;
+                margin-right: 4px;
+                background-color: #181928;
+                border-radius: 4px;
+                .tree-dimensional-button.small-btn {
+                    padding: 0;
+                    width: 24px;
+                    height: 24px;
+                    background-color: transparent;
+                    box-shadow: 0 4px #514e72, 0 4px #1f1f2c;
+                    border-radius: 5px;
+                    &:disabled {
+                        box-shadow: none;
+                        cursor: not-allowed;
+                        .change-quantity-text {
+                            box-shadow: 0 1px #514e72, 0 1px #1f1f2c;
+                            transform: translateY(3px);
+                            filter: brightness(0.7);
+                            &:active {
+                                transform: translateY(3px);
+                            }
+                        }
+                    }
+                    .change-quantity-text {
+                        padding: 6px 4px 4px 6px;
+                        width: 100%;
+                        height: 100%;
+                        font-size: 22px;
+                        color: #ffffff;
+                        background-color: #8984b1;
+                        border: 1px solid #c3b0d0;
+                        &:active {
+                            transform: translateY(3px);
+                            box-shadow: 0 1px #514e72, 0 1px #1f1f2c;
+                        }
+                        &:hover {
+                            filter: brightness(0.7);
+                        }
+                    }
+                }
+                .quantity-input {
+                    text-align: center;
+                    max-height: 28px;
+                    padding: 5px 12px 8px;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 18px;
+                    background-color: #181928;
+                    border: none;
+                    &:focus {
+                        z-index: 0;
+                    }
+                    &:disabled {
+                        color: #ffffff;
+                    }
+                }
+            }
+            .total-price {
+                display: flex;
+                align-items: center;
+                flex: 1 auto;
+                padding-left: 12px;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+                background-color: #181928;
+                border-radius: 4px;
+                .product-price-title {
+                    color: #03e1e4;
+                }
+            }
+        }
+    }
+    .accent-color {
+        color: #03e1e4;
+    }
+    .gold-color {
+        color: #ffdc00;
+    }
+    .limit-text {
+        margin-top: 4px;
+        margin-bottom: 22px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #03e1e4;
+        text-align: center;
+    }
+    .separate-line {
+        width: 100%;
+        margin-bottom: 28px;
+        border-bottom: 1px solid #6a668a;
+    }
+    .miner-buy-button {
+        text-align: center;
+        margin: 0 auto;
+        @media screen and (min-width: 992px) {
+            max-width: 260px;
+        }
+        .tree-dimensional-button {
+            .button-text-wrapper {
+                padding: 12px 20px;
+                @media screen and (min-width: 992px) {
+                    padding: 8px 20px;
+                }
+            }
+        }
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 3px;
+            .tree-dimensional-button {
+                .btn-text {
+                    padding: 13px 20px;
+                    @media screen and (min-width: 992px) {
+                        padding: 9px 20px;
+                    }
+                }
+                &:first-child {
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+.special-products-item {
+  max-height: 156px;
+  margin-bottom: 8px;
+  @media (min-width: 992px) {
+    margin-bottom: 16px;
+  }
+
+
+  &:nth-child(odd) .special-products-card {
+    margin-right: 8px;
+    @media (min-width: 992px) {
+      margin-right: 0;
+    }
+
+  }
+
+  .special-products-card {
+    position: relative;
+    width: 100%;
+    min-height: 156px;
+    max-height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px 11px;
+    border-radius: 4px;
+    border: solid 1px #514e72;
+    background-color: #1f1f2d;
+    cursor: pointer;
+
+    &.max-slots-filled:hover .special-tooltip-info {
+      display: block;
+    }
+
+    &.max-slots-filled {
+      cursor: not-allowed;
+
+      .special-tooltip-info {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 85%;
+        transform: translate(-50%, -50%);
+        border-radius: 4px;
+        border: 1px solid #514E72;
+        background: #2F3045;
+        padding: 2px 0;
+        text-align: center;
+        z-index: 5;
+
+        .special-tooltip-text {
+          font-size: 12px;
+          color: #C3B0D0;
+        }
+      }
+    }
+
+    &.burning-item {
+      cursor: inherit;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 21, 28, 0.8);
+        z-index: 4;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/system_sale_event/icon/fire.svg") no-repeat center;
+        z-index: 5;
+      }
+    }
+
+    .special-reward-block {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1px 16px;
+      background-color: #514e72;
+      border-radius: 0 0 4px 4px;
+
+      .special-reward-currency {
+        margin-right: 8px;
+      }
+
+      .special-reward-count {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1;
+        color: #ffa336;
+      }
+    }
+
+    .special-product-close-block {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      padding: 4px;
+      background-color: #6fa9aa;
+      border-radius: 0 0 0 4px;
+    }
+
+    .special-product-image-wrapper {
+      position: relative;
+      z-index: 1;
+
+      .collection-product-level-img-size-2 {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        z-index: 1;
+      }
+
+      .collection-product-level-img-size-1 {
+        position: absolute;
+        top: 5px;
+        left: 20px;
+        z-index: 1;
+      }
+
+      .rating-star-wrapper {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        z-index: 1;
+
+        &.rating-img-size-1 {
+          top: 5px;
+          left: 20px;
+        }
+      }
+
+      .special-product-image {
+        max-width: 102px;
+        max-height: 80px;
+      }
+    }
+
+    .special-product-name {
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .special-power-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+
+      .special-power-count {
+        font-size: 12px;
+        white-space: nowrap;
+
+        &::after {
+          content: "|";
+          margin: 0 4px;
+        }
+      }
+
+      .special-bonus-count {
+        font-size: 12px;
+        color: #03bcbe;
+      }
+    }
+  }
+}
+
+.special-burn-products {
+  .special-products-item {
+    @media (max-width: 992px){
+      &:nth-child(odd) {
+        padding-left: 0;
+      }
+
+      &:nth-child(even) {
+        padding-right: 0;
+      }
+    }
+
+    @media (min-width: 992px) {
+      &:nth-child(3n+1) {
+        padding-left: 0;
+      }
+
+      &:nth-child(3n) {
+        padding-right: 0;
+      }
+    }
+
+    .special-products-card {
+      border-color: #6fa9aa;
+    }
+  }
+}

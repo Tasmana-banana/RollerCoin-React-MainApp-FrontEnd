@@ -1,0 +1,11 @@
+{
+  "eventBanner" : {
+    "eventPass": "Passe de Temporada",
+    "levelReward": "Recompensa de Nível",
+    "level": "Nível",
+    "getXp": "Obtenha EXP"
+  },
+  "socialBanner": {
+    "stayTuned": "NÃO PERCA"
+  }
+}

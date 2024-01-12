@@ -1,0 +1,55 @@
+{
+	"playGame": "玩游戏提升你的算力",
+	"difficulty": "困难：",
+	"level": "等级：",
+	"start": "开始游戏",
+	"wait": "等待...",
+	"time": "时间：",
+	"reward": "奖励：",
+	"comingSoon": "马上就来…",
+	"score": "分数：",
+	"points": "分",
+	"power": "你的算力",
+	"or": "或",
+	"pcInfo": {
+		"pcName": "电脑名称：",
+		"pcLevel": "电脑等级: ",
+		"powerHolding": "持有电力:",
+		"levelReset": "电脑级别重置：",
+		"never": "从不",
+		"nextLevel": "下一个电脑等级：",
+		"maxPcLevel": "您拥有最高个人电脑级别",
+		"winGames": "胜利游戏{{gamesCount}}次后",
+		"temporaryPower": "您从贏胜游戏來获得的力量只是暂时的，每个游戏都有自己的24小时计时器。",
+		"cooldown": "游戏的冷却时间随着游戏难度的增加而增加。",
+		"externalSoftware": "如因任何外部软件使用脚本和Rollercoin中的服务将导致该帐户永久禁止或帐户余额冻结。",
+		"winning": {
+			"title": "By winning games, you have a chance to receive one of the following items:",
+			"text1": "x2 Power time hold from the game",
+			"text2": "Gh/s for 24h",
+			"text3": "x2 Power reward from the game",
+			"text4": "RollerArc S1",
+			"text5": "RLT",
+			"text6": "Battery"
+		}
+	},
+	"play": {
+		"power": "算力：",
+		"newHashrate": "你的新算力：",
+		"powerRemain": "算力将在未来保持有效",
+		"powerWhenYouWin": "Mining Power is added only when you win the game.",
+		"goHome": "回家",
+		"chooseGame": "选择游戏",
+		"hours": "小时内",
+		"days": "天"
+	},
+	"captcha": {
+		"enterCaptchaTitle": "开始游戏前请在時间內输入验证码。",
+		"enterCaptchaTitleStrong": "",
+		"enterCaptchaTitleEnd": "",
+		"timeRemain": " 秒剩下",
+		"limit": "检测到可疑登录！请稍候再试，谢谢. ",
+		"unbanTime": "开始游戏时间 ",
+		"utc": " UTC."
+	}
+}

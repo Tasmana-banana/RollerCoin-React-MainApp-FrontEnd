@@ -1,0 +1,80 @@
+.check-withdraw-modal {
+	$cyan-color: #03e1e4;
+	padding: 10px;
+	position: relative;
+	@media only screen and (min-width: 992px) {
+		width: 100%;
+		max-width: 580px;
+	}
+	.check-withdraw-modal-wrapper {
+		padding: 16px;
+		@media screen and (min-width: 992px) {
+			padding: 16px 82px 45px 82px;
+		}
+		border: solid 1px #6a668a;
+		border-radius: 4px;
+		background-color: #2f3045;
+		font-family: 'Roboto', sans-serif;
+		.title {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			text-align: start;
+			@media screen and (min-width: 992px) {
+				text-align: center;
+				font-size: 24px;
+			}
+		}
+		.withdraw-info-block {
+			margin: 16px 0 16px 0;
+			padding: 16px 0 16px 0;
+			border-top: 1px solid #6a668a;
+			border-bottom: 1px solid #6a668a;
+			font-size: 16px;
+			width: 100%;
+			@media screen and (min-width: 992px) {
+				margin: 20px 0 26px 0;
+				padding: 24px 0 24px 0;
+			}
+			td {
+				vertical-align: baseline;
+			}
+			tr > td:first-child {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				padding-right: 8px;
+				@media screen and (min-width: 992px) {
+					padding-right: 16px;
+				}
+			}
+			.currency,
+			.network,
+			.fee-free {
+				color: $cyan-color;
+			}
+			.word-break {
+				word-wrap: break-word;
+				word-break: break-all;
+			}
+			.address {
+				line-height: 0.9;
+				padding: 8px 0 8px;
+			}
+			.amount, .fee-free {
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+			}
+		}
+		.modal-btn {
+			> span {
+				padding: 15px;
+			}
+		}
+		.confirm-btn {
+			margin-bottom: 21px;
+			@media screen and (min-width: 992px) {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

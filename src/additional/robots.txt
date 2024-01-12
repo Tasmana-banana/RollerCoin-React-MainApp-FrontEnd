@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /sign-up
+Disallow: /sign-in
+Disallow: /invalidMail
+Disallow: /validFacebook
+Disallow: /email-verify
+Disallow: /sign-up/facebook
+Disallow: /cdn-cgi/
+Disallow: /static/
+Disallow: /wp-content/plugins/
+Disallow: /wp-admin/
+Disallow: /restore
+Disallow: *?question=
+Disallow: */rank/?page=
+Disallow: /*/rank/?page
+Disallow: */embed
+Disallow: */feed
+Disallow: */rss
+Allow: /rank/
+Allow: /wp-content/uploads/
+Host: https://rollercoin.com/
+
+Sitemap: https://rollercoin.com/sitemap.xml

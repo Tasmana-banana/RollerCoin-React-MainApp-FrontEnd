@@ -1,0 +1,214 @@
+.crafting-card-container {
+	padding: 0 10px 16px;
+	.card-wrapper {
+		padding: 12px 16px 20px;
+		background: #4e4e7e;
+		background: linear-gradient(180deg, #4e4e7e 0%, #3e3e65 100%);
+		border-radius: 4px;
+		.confirmation-merge-info {
+			font-size: 16px;
+			font-family: 'Roboto', sans-serif;
+			margin-bottom: 8px;
+		}
+
+		.item-title {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 18px;
+			text-transform: uppercase;
+			line-height: 1;
+			margin-bottom: 4px;
+			text-align: center;
+		}
+
+		.item-power {
+			font-family: 'Roboto', sans-serif;
+			font-size: 14px;
+			line-height: 1.1;
+			text-align: center;
+		}
+
+		.crafting-status-of-sell {
+			width: 100%;
+			padding: 6px 0;
+			margin-top: 8px;
+			background-color: #27273f;
+			border-radius: 4px;
+			.text {
+				text-align: center;
+				font-family: 'Roboto', sans-serif;
+				font-size: 14px;
+				line-height: 1.14;
+			}
+			.positive {
+				color: #5ce319;
+			}
+			.negative {
+				color: #d53f3f;
+			}
+		}
+
+		.result-image-wrapper {
+			width: 100%;
+			margin-top: 12px;
+			background-color: #27273f;
+			border-radius: 4px;
+			text-align: center;
+			padding: 8px;
+			position: relative;
+			min-height: 216px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.image-wrapper {
+				position: relative;
+				image-rendering: pixelated;
+				.level-img-size-2 {
+					position: absolute;
+					top: 27px;
+					left: 4px;
+					image-rendering: pixelated;
+				}
+				.level-img-size-1 {
+					position: absolute;
+					top: 34px;
+					left: 33px;
+					image-rendering: pixelated;
+				}
+			}
+			.crafting-timer-block {
+				position: absolute;
+				bottom: 8px;
+				left: 8px;
+				width: calc(100% - 16px);
+				height: auto;
+				background: #49376c;
+				padding: 2px 8px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-radius: 4px;
+				font-family: 'Roboto', sans-serif;
+				font-weight: 700;
+				font-size: 16px;
+				line-height: 1;
+
+				.progress-timer {
+					position: absolute;
+					top: 0;
+					left: 0;
+					height: 100%;
+					background: #9475d1;
+					border-radius: 4px;
+				}
+
+				.crafting-timer {
+					z-index: 1;
+				}
+
+				&.timer-out {
+					justify-content: center;
+					background: #9475d1;
+				}
+
+				.timer-text {
+					display: flex;
+					align-items: center;
+					z-index: 1;
+
+					img {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+
+		.claim-speed-price {
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			margin-top: 8px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 8px;
+			line-height: 1;
+			font-size: 15px;
+			background: #27273f;
+			border-radius: 4px;
+
+			.price-value {
+				color: #00fcff;
+
+				&.not-enough {
+					color: #d53f3f;
+				}
+			}
+		}
+
+		.crafting-button {
+			margin-top: 8px;
+		}
+
+		.components-list {
+			margin-top: 8px;
+			.component-list-item {
+				display: flex;
+				align-items: center;
+				position: relative;
+				justify-content: space-between;
+				background: #27273f;
+				margin-bottom: 8px;
+				border-radius: 4px;
+				padding: 0 8px;
+				line-height: 1;
+				font-size: 20px;
+				min-height: 50px;
+
+				.component-item-level-img {
+					position: absolute;
+					top: 4px;
+					left: 4px;
+				}
+
+				.rating-star-wrapper {
+					.star-wrapper {
+						line-height: 0;
+						&:not(:last-child) {
+							margin-right: 2px
+						}
+						.star {
+							max-width: 20px;
+							max-height: 16px;
+						}
+					}
+				}
+
+				.component-count {
+					font-family: 'Roboto', sans-serif;
+					font-weight: 700;
+
+					&.green {
+						color: #2bd600;
+					}
+					&.red {
+						color: #d53f3f;
+					}
+				}
+			}
+		}
+
+		.confirmation-wrapper {
+			margin-top: 8px;
+			font-family: 'Roboto', sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1;
+
+			.confirmation-btn-block {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+		}
+	}
+}

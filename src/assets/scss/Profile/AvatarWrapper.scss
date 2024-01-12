@@ -1,0 +1,75 @@
+.token-avatar-wrapper {
+    position: relative;
+    min-height: 276px;
+    border-radius: 4px;
+    background-color: #7E7DA0;
+    &.claimed-all {
+        border: 2px solid #2bd600;
+    }
+    .token-avatar-img {
+        width: 100%;
+        height: auto;
+    }
+    .token-avatar-claimed-img-wrapper {
+        position: absolute;
+        left: 12px;
+        bottom: 12px;
+        .token-avatar-claimed-img {
+            max-height: 24px;
+            @media only screen and (min-width: 992px) {
+                max-height: 32px;
+            }
+        }
+    }
+    .token-rewards-wrapper {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        display: flex;
+        flex-wrap: wrap;
+        @media only screen and (min-width: 992px) {
+            top: 4px;
+            left: 4px;
+        }
+        .token-reward {
+            display: flex;
+            flex-shrink: 0;
+            align-items: center;
+            margin-bottom: 2px;
+            padding: 3px 2px;
+            border-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.25);
+            line-height: 1;
+            @media only screen and (min-width: 992px) {
+                padding: 3px 6px;
+                margin-bottom: 4px;
+            }
+            &:not(:last-child) {
+                margin-right: 2px;
+                @media only screen and (min-width: 992px) {
+                    margin-right: 4px;
+                }
+            }
+            .token-reward-img {
+                margin-right: 3px;
+                @media only screen and (min-width: 992px) {
+                    margin-right: 6px;
+                }
+                &.claimed {
+                    opacity: 0.5;
+                }
+            }
+            .reward-text {
+                margin: 0;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.1;
+                @media only screen and (min-width: 992px) {
+                    font-size: 20px;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,127 @@
+.bounty-container {
+	@import "../RollerSelect";
+	@import "../RollerInputs";
+	.wrapper-line {
+		height: 2px;
+		margin-top: 24px;
+		margin-bottom: 24px;
+		background-color: #6a668a;
+	}
+	.bounty-header {
+		font-size: 24px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+	.gold-text {
+		color: #c2a633;
+	}
+	.silver-text {
+		color: #c4c4c4;
+	}
+	.bronze-text {
+		color: #c7731d;
+	}
+	.bounty-additional-text {
+		margin-bottom: 32px;
+	}
+	.buttons-block {
+		padding-bottom: 32px;
+		.tree-dimensional-button {
+			min-width: 80px;
+			padding: 0;
+			flex: 0 0 calc(33.3333% - 20px);
+			@media screen and (min-width: 991px) {
+				min-width: 0;
+			}
+			&:not(:first-child) {
+				margin-left: 8px;
+				@media screen and (min-width: 991px) {
+					margin-left: 20px;
+				}
+			}
+			> span {
+				img {
+					height: 23px;
+					width: 23px;
+				}
+				@media screen and (min-width: 991px) {
+					padding: 11px 48px 9px;
+				}
+			}
+		}
+	}
+	.bounty-info-container {
+		font-size: 20px;
+		.info-list-text {
+			margin-bottom: 24px;
+			&.with-img{
+				>span{
+					padding-left: 8px;
+				}
+			}
+		}
+		.tokens-text {
+			> span {
+				font-size: 30px;
+			}
+			margin-top: 8px;
+		}
+		.rewards-bounty-container {
+			margin-bottom: 40px;
+			.reward-bounty-block {
+				margin-bottom: 24px;
+			}
+		}
+		.good-luck-text {
+			text-align: center;
+			margin-top: 32px;
+			margin-bottom: 48px;
+		}
+		.social-info-container {
+			.social-img {
+				order: 2;
+				margin-bottom: 16px;
+				margin-top: 16px;
+				text-align: center;
+			}
+			@media screen and (min-width: 991px) {
+				.social-img {
+					order: 0;
+					margin-bottom: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	.btn-submit {
+		margin-bottom: 16px;
+		margin-top: 8px;
+		button > span {
+			padding-top: 14px;
+			padding-bottom: 15px;
+		}
+	}
+	.apply-container {
+		@import "../ListItems";
+		.list-items {
+			padding-top: 16px;
+			.list-item {
+				background-color: #181928;
+			}
+		}
+	}
+	.statistics-container {
+		@import "../StatisticWithNavAndChart";
+
+		.statistics-right-block-container {
+			.copy-referral-link-block {
+				margin-bottom: 20px;
+			}
+		}
+
+		.money-income-container {
+			margin-top: 16px;
+			@import "../RollerTable";
+		}
+	}
+}

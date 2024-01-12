@@ -1,0 +1,41 @@
+.roller-input {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  .input-group {
+    border: 2px solid #5f5d7e;
+    border-radius: 4px;
+
+    input.form-control {
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      border-right: 0 !important;
+      border-radius: 4px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      min-height: 40px;
+    }
+    input.input-password {
+      border-radius: 4px 0 0 4px;
+    }
+
+    &:hover,
+    &:focus {
+      border: 2px solid #6fa9aa;
+    }
+    &.danger {
+      border: 1px solid #d53f3f;
+    }
+    .toggle-pass {
+      border: none;
+      background-color: #19171f;
+      color: #8984b1;
+      user-select: none;
+      cursor: pointer;
+    }
+    .pass-control-btn {
+      max-width: 15px;
+    }
+  }
+}

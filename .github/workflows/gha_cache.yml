@@ -1,0 +1,71 @@
+name: gha cache
+
+on:
+  workflow_dispatch:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - dev
+      - '!master'
+
+
+env:
+  REGISTRY: bitmediacorp
+  IMAGE_NAME: rollercoin-react-mainapp-frontend
+  PROCESS_COUNT: 1
+
+jobs:
+  docker-build-dev:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Import Secrets
+        id: secrets
+        uses: hashicorp/vault-action@v2
+        with:
+          url: ${{ secrets.RC_VAULT_URL }}
+          token: ${{ secrets.RC_VAULT_TOKEN_DEV }}
+          secrets: |
+            dev/data/variable GTM_ID | GTM_ID ;
+            dev/data/variable SLACK_WEBHOOK_ROLLER_ERROR | SLACK_WEBHOOK_ROLLER_ERROR ;
+
+      - name: Set config file
+        run: |-
+          rm ./src/config/.env.production
+          mv ./src/config/.env.development ./src/config/.env.production
+          cd config/
+          mv development.json default.json
+          rm production.json
+          sed -i 's|GTM_ID|${{ steps.secrets.outputs.GTM_ID }}|g' default.json
+          sed -i 's|SLACK_WEBHOOK_ROLLER_ERROR|${{ steps.secrets.outputs.SLACK_WEBHOOK_ROLLER_ERROR }}|g' default.json
+          cat default.json
+
+      - name: Replace max process in ecosystem.js
+        run: |-
+          sed -i 's/instances: "max"/instances: "${{ env.PROCESS_COUNT }}"/g' ecosystem.config.js
+
+      - name: Get Hash
+        id: hash
+        run: echo "git_hash=$(git rev-parse --short "$GITHUB_SHA")" >> $GITHUB_ENV
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: build and push image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          tags: |
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}-${{ env.git_hash }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max

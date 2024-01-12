@@ -1,0 +1,49 @@
+.apply-cancel-modal-wrapper {
+	@import "colors";
+	max-width: 380px;
+	.modal-content {
+		background-color: $violetColor;
+		border-radius: 4px;
+		overflow: hidden;
+	}
+
+	.modal-body {
+		overflow: hidden;
+		padding: 20px;
+		font-family: Roboto, sans-serif;
+		font-size: 14px;
+		line-height: 16px;
+		@media only screen and (min-width: 992px) {
+			padding: 40px;
+		}
+		.modal-text-wrapper {
+			.modal-body-title {
+				text-align: center;
+				font-size: 24px;
+				line-height: 28px;
+				font-weight: 700;
+			}
+			.modal-body-description {
+				.blue-text {
+					color: $cyanColor;
+				}
+			}
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		.button-wrapper {
+			padding-left: 10px;
+			padding-right: 10px;
+			.modal-button {
+				width: 100%;
+				.roller-button-text-wrapper {
+					line-height: 23px;
+					.roller-button-text {
+						font-family: Arcana, sans-serif;
+					}
+				}
+			}
+		}
+	}
+}

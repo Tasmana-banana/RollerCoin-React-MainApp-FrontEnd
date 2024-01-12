@@ -1,0 +1,299 @@
+.special-event-burn {
+  padding: 0;
+
+  .special-timer-block {
+    max-width: 232px;
+    margin: 0 auto;
+
+    &.little-time-left {
+      .event-timer {
+        background: rgba(145, 44, 48, 0.6);
+      }
+    }
+  }
+
+  .special-burn-wrapper {
+    padding: 0 16px 16px;
+    @media (min-width: 992px) {
+      padding: 0 24px 16px;
+    }
+
+    .special-burn-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+
+      .special-burn-title {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      .special-total-coin-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 149px;
+        border: solid 1px #514e72;
+        background-color: #181927;
+        padding: 8px 16px;
+        border-radius: 4px;
+
+        .special-total-coin-icon {
+          margin-right: 8px;
+        }
+
+        .special-total-coin {
+          font-size: 18px;
+          color: #ed955a;
+        }
+      }
+    }
+
+    .special-info-block {
+      width: 100%;
+      border: solid 1px #fcb300;
+      background-color: #181927;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.1;
+      @media (min-width: 992px) {
+        padding: 16px;
+      }
+
+      .accent-reward {
+        font-weight: 700;
+        color: #ed955a;
+      }
+
+      .accent-price {
+        font-weight: 700;
+        color: #03e1e4;
+      }
+    }
+
+    .special-burn-loading-wrapper {
+      height: 495px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .special-burn-items-block {
+      margin-top: 20px;
+      min-height: 248px;
+      @media (min-width: 992px) {
+        min-height: 344px;
+      }
+
+      .special-burn-products {
+        width: 100%;
+
+        .special-burn-item {
+          margin-bottom: 8px;
+
+          @media (max-width: 992px) {
+            &:nth-child(odd) {
+              padding-left: 0;
+            }
+
+            &:nth-child(even) {
+              padding-right: 0;
+            }
+          }
+
+
+          @media (min-width: 992px) {
+            margin-bottom: 16px;
+            &:nth-child(3n+1) {
+              padding-left: 0;
+            }
+
+            &:nth-child(3n) {
+              padding-right: 0;
+            }
+          }
+
+          .special-burn-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 156px;
+            max-height: 156px;
+            border: 2px dashed #514e72;
+            background: #1f1f2d;
+          }
+        }
+      }
+    }
+
+    .special-burn-action-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 4px auto 0;
+
+      .special-profit-block {
+        display: flex;
+        min-width: 300px;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+
+        @media (min-width: 992px) {
+          min-width: 260px;
+        }
+
+        .special-profit-text {
+          color: #c3b0d0;
+          font-size: 14px;
+          line-height: 1;
+        }
+
+        .special-profit-count-block {
+          display: flex;
+          align-items: center;
+
+          .special-profit-img {
+            margin-right: 4px;
+          }
+
+          .special-profit-count-img {
+            margin-right: 8px;
+          }
+
+          .special-profit-count {
+            color: #ed955a;
+            font-weight: 700;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .special-processing-timer {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 12px;
+        @media (min-width: 992px) {
+          width: 240px;
+        }
+
+        .event-timer {
+          background-color: #463869;
+        }
+      }
+
+      .special-burn-button-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .special-burn-btn {
+          width: 48%;
+          @media (min-width: 992px) {
+            width: 240px;
+          }
+        }
+
+        .special-burn-btn-cancel {
+          width: 48%;
+        }
+
+        @media (min-width: 992px) {
+          justify-content: center;
+        }
+      }
+
+      .special-burn-action-text {
+        margin-top: 20px;
+        font-size: 13px;
+        color: #c3b0d0;
+      }
+
+      .special-speedup-block {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (min-width: 992px) {
+          max-width: 240px;
+        }
+
+        .special-speedup-text {
+          font-size: 16px;
+          color: #c3b0d0;
+        }
+
+        .roller-button {
+          min-width: 104px;
+        }
+      }
+
+      .special-claimreward-block {
+        display: flex;
+        flex-direction: column;
+        width: 240px;
+        align-items: center;
+
+        .special-claimreward-profit-block {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .profit-text {
+            font-size: 16px;
+            color: #ffffff;
+            text-align: center;
+          }
+
+          .special-profit-count-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .special-profit-count-img {
+              margin-right: 8px;
+            }
+
+            .special-profit-count {
+              color: #ed955a;
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 1;
+            }
+          }
+        }
+
+        .roller-button {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.special-event-toast-container.Toastify__toast {
+  padding: 15px;
+  width: 360px;
+
+  .toast-with-image {
+    display: flex;
+    align-items: center;
+
+    .special-toast-img {
+      margin-right: 16px;
+    }
+
+    .special-toast-text {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+  }
+}

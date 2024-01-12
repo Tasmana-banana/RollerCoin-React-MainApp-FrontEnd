@@ -1,0 +1,179 @@
+.quests-wrapper {
+	@import "colors";
+
+	padding: 20px 20px 4px;
+	background-color: $violetColor;
+	border: 1px solid $violetLightColor;
+	border-radius: 4px;
+	min-height: 620px;
+	@media screen and (min-width: 992px) {
+		min-height: 824px;
+	}
+	.quests-preloader {
+		min-height: 620px;
+		position: relative;
+		z-index: 10;
+		@media screen and (min-width: 992px) {
+			min-height: 784px;
+		}
+		&.season-preloader {
+			@media screen and (min-width: 992px) {
+				min-height: 934px;
+			}
+		}
+
+		.loader-img {
+			display: block;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 11;
+		}
+	}
+	&.max-user-xp {
+		min-height: 777px;
+	}
+	&.empty-tasks {
+		background-color: $darkColor;
+	}
+	.event-quest-unavailable-block {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 85%;
+		.event-quest-unavailable {
+			margin-top: 15px;
+			font-family: Arcana, sans-serif;
+			font-size: 24px;
+			color: $whiteColor;
+			text-align: center;
+		}
+	}
+	.event-quest-title-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-bottom: 16px;
+		margin-bottom: 16px;
+		border-bottom: 1px solid $violetLightColor;
+		.event-quest-title {
+			margin-bottom: 0;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			@media screen and (min-width: 992px) {
+				font-size: 24px;
+			}
+		}
+	}
+	.event-quest-list {
+		&.with-scroll {
+			.quest-item-card {
+				margin-right: 24px;
+			}
+		}
+		.simplebar-track {
+			width: 8px;
+			background: $darkColor;
+			border-radius: 4px;
+			.simplebar-scrollbar.simplebar-visible {
+				&::before {
+					top: 0;
+					bottom: -1px;
+					left: 0;
+					width: 8px;
+					background-color: $violetLightColor;
+					border-radius: 4px;
+					opacity: 1;
+				}
+			}
+			&.simplebar-hover {
+				.simplebar-scrollbar.simplebar-visible::before {
+					background-color: $lavanderColor;
+				}
+			}
+		}
+		.quest-item-card {
+			padding: 12px 12px 16px;
+			margin-bottom: 16px;
+			font-family: Roboto, sans-serif;
+			background-color: $violetColor;
+			border: 1px solid $violetLightColor;
+			border-radius: 4px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			.quest-item-title-wrapper {
+				display: flex;
+				padding-bottom: 12px;
+				margin-bottom: 12px;
+				border-bottom: 1px solid $violetLightColor;
+				.quest-item-title {
+					margin-left: 8px;
+					margin-bottom: 0;
+					font-size: 16px;
+					line-height: 1.2;
+				}
+			}
+			.quest-item-progress-block {
+				display: flex;
+				align-items: center;
+				line-height: 1.2;
+				.quest-item-progress-wrapper {
+					flex-grow: 1;
+					margin-right: 12px;
+					.quest-item-progress-data {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-bottom: 8px;
+						font-size: 14px;
+						p {
+							margin-bottom: 0;
+						}
+						.quest-progress-reward {
+							color: $lavanderColor;
+							.quest-accent-text {
+								font-weight: 700;
+								color: $cyanColor;
+								.event-icon-img {
+									padding-bottom: 1px;
+								}
+							}
+						}
+						.quest-progress-value {
+							font-weight: 700;
+							font-size: 12px;
+						}
+					}
+					.progress-bar {
+						flex: 1 1 auto;
+						background-color: $darkBlueColor;
+						height: 8px;
+						margin-top: 0;
+						border-radius: 4px;
+						> .progress-bar {
+							background-color: $violetContrastColor;
+						}
+					}
+				}
+			}
+			.quest-item-action {
+				min-width: 92px;
+				.quest-collected {
+					display: flex;
+					.quest-collected-text {
+						margin-bottom: 0;
+						margin-left: 7px;
+						font-family: Arcana, sans-serif;
+						font-size: 14px;
+						font-weight: 700;
+						color: $greenContrastColor;
+					}
+				}
+			}
+		}
+	}
+}

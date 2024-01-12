@@ -1,0 +1,34 @@
+.offerwall-banner-container {
+	padding: 6px 0;
+	margin-top: 12px;
+	background-image: linear-gradient(to bottom, #7a29a3, #3366cc);
+	.banner-title {
+		margin-bottom: 0;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 32px;
+		color: #ffdc00;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.banner-description {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		font-size: 26px;
+		color: #ffffff;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.banner-img {
+		display: block;
+		margin: 0 auto;
+	}
+	.button-wrapper {
+		margin: 8px 8px 10px;
+		.tree-dimensional-button {
+			.btn-text {
+				font-size: 20px;
+			}
+		}
+	}
+}

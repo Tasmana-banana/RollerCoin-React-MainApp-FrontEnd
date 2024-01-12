@@ -1,0 +1,39 @@
+{
+	"port": 3000,
+	"url": "https://rollercoin.com",
+	"providers": {
+		"gtm": {
+			"id": "GTM-WBNSG89"
+		}
+	},
+	"log4js": {
+		"pm2": true,
+		"pm2InstanceVar": "INSTANCE_ID",
+		"appenders": {
+			"app": {
+				"type": "stdout"
+			},
+			"slackAppender": {
+				"type": "helpers/slackErrorAppender.js",
+				"webhook": "https://hooks.slack.com/services/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"
+			},
+			"slackAppender_filter": {
+				"type": "logLevelFilter",
+				"appender": "slackAppender",
+				"level": "error"
+			}
+		},
+		"categories": {
+			"default": {
+				"appenders": ["app"],
+				"level": "info"
+			}
+		}
+	},
+	"languages": ["en", "cn", "es", "pt"],
+	"lightship": {
+		"detectKubernetes": false,
+		"port": 9000,
+		"signals": ["SIGINT", "SIGTERM"]
+	}
+}

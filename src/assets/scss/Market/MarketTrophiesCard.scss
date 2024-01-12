@@ -1,0 +1,41 @@
+.market-trophy-card {
+	padding: 0 7px 16px;
+	@media only screen and (min-width: 992px) {
+		padding: 0 10px 16px;
+	}
+	.main-trophy-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 8px 8px 18px;
+		background-color: #2f3045;
+		border: 1px solid #6a668a;
+		border-radius: 4px;
+		@media only screen and (min-width: 992px) {
+			padding: 12px 16px 24px;
+		}
+		.trophy-image-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+			position: relative;
+			min-height: 150px;
+			margin-bottom: 8px;
+			background: #1f1f2d;
+			@media only screen and (min-width: 992px) {
+				min-height: 180px;
+				margin-bottom: 12px;
+			}
+			.trophy-image {
+				position: absolute;
+				bottom: 60px;
+				left: 50%;
+				image-rendering: pixelated;
+				transform: translateX(-50%) scale(2);
+				@media only screen and (min-width: 992px) {
+					bottom: 76px;
+					transform: translateX(-50%) scale(2.5);
+				}
+			}
+		}
+	}
+}

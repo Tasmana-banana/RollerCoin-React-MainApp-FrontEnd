@@ -1,0 +1,16 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#py60qbvo8a)" fill="#fff">
+        <path d="M3 7h3v1H3V7zM3 15h3v1H3v-1zM0 13v-3h1v3H0zM8 13v-3h1v3H8zM6 9V8h1v1H6zM7 10V9h1v1H7zM1 10V9h1v1H1zM2 9V8h1v1H2zM2 15v-1h1v1H2zM1 14v-1h1v1H1zM6 15v-1h1v1H6zM7 14v-1h1v1H7zM4 9h1v5H4V9z"/>
+        <path d="M7 11v1H2v-1h5zM13 0h-3v1H9v1H8v1H7v4h1v1h1v1h1v5H9v1h7v-4h-1v-1h-2V9h1V8h1V7h1V3h-1V2h-1V1h-1V0z"/>
+    </g>
+    <defs>
+        <filter id="py60qbvo8a" x="0" y="0" width="16" height="17" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+            <feOffset dy="1"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_13037_18100"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_13037_18100" result="shape"/>
+        </filter>
+    </defs>
+</svg>

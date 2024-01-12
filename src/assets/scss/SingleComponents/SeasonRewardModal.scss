@@ -1,0 +1,138 @@
+.season-reward-modal {
+	@import "colors";
+
+	position: relative;
+	@media only screen and (min-width: 992px) {
+		min-width: 540px;
+	}
+	.reward-simplified-modal-body {
+		padding: 8px 12px 12px;
+		background-color: $violetColor;
+		border: 1px solid $lavanderSecondColor;
+		border-radius: 4px;
+		@media only screen and (min-width: 992px) {
+			padding: 16px 32px 32px;
+		}
+		.reward-simplified-modal-title-text {
+			margin-bottom: 8px;
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1;
+			text-align: center;
+			@media only screen and (min-width: 992px) {
+				margin-bottom: 16px;
+			}
+		}
+	}
+	.reward-modal-body {
+		display: flex;
+		flex-direction: column;
+		padding: 12px 16px 28px;
+		background-color: $violetColor;
+		border: 1px solid $lavanderSecondColor;
+		border-radius: 4px;
+		@media only screen and (min-width: 992px) {
+			flex-direction: row;
+			padding: 16px 16px 24px;
+		}
+		p {
+			margin: 0;
+		}
+		.reward-modal-title {
+			font-family: Roboto, sans-serif;
+			font-weight: 700;
+			font-size: 20px;
+			line-height: 1;
+			padding-bottom: 12px;
+			@media only screen and (min-width: 992px) {
+				padding-bottom: 8px;
+			}
+			&.gold-title {
+				color: $goldColor;
+			}
+		}
+		.reward-modal-left-side {
+			@media only screen and (min-width: 992px) {
+				margin-right: 16px;
+			}
+			.reward-modal-img-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 176px;
+				min-width: 100%;
+				padding: 12px 18px;
+				background: $darkColor;
+				@media only screen and (min-width: 992px) {
+					min-width: 226px;
+				}
+				.reward-modal-img {
+					image-rendering: pixelated;
+				}
+			}
+		}
+		.reward-modal-right-side {
+			width: 100%;
+			font-family: Roboto, sans-serif;
+			font-size: 16px;
+			line-height: 36px;
+
+			.reward-modal-size,
+			.reward-modal-power {
+				display: flex;
+				justify-content: space-between;
+			}
+			.reward-modal-description {
+				font-size: 14px;
+				padding-top: 8px;
+				line-height: 1.1;
+			}
+			.with-divider {
+				border-bottom: 1px solid $lavanderSecondColor;
+			}
+		}
+		.buy-btn-wrapper {
+			margin-top: 16px;
+			.tree-dimensional-button {
+				.button-text-wrapper {
+					padding: 12px 10px 11px;
+					font-family: Arcana, sans-serif;
+
+					.btn-icon {
+						transform: translateY(-1px);
+					}
+				}
+			}
+		}
+	}
+
+	.reward-modal-close {
+		position: absolute;
+		top: 8px;
+		right: 8px;
+		padding: 0;
+		color: #fff;
+		background-color: transparent;
+		border: none;
+		box-shadow: 0 3px $violetLightColor, 0 4px $darkColor;
+		outline: none;
+		cursor: pointer;
+		span {
+			padding: 4px;
+			box-shadow: none;
+		}
+		img {
+			width: 14px;
+			height: 14px;
+		}
+		&:active,
+		&:disabled {
+			box-shadow: 0 3px $violetLightColor, 0 3px $darkColor;
+
+			> span {
+				transform: translateY(2px);
+			}
+		}
+	}
+}

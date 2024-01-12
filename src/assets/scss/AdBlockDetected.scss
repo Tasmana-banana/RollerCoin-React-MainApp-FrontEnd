@@ -1,0 +1,35 @@
+.adBlock-banner{
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  line-height: 1;
+  p{
+    margin: 0;
+  }
+  .attention-img{
+    margin-bottom: 24px;
+  }
+  .attention-text-container{
+    .header-attention {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 56px;
+      text-shadow: 4px 4px 0 #d92323;
+      margin-bottom: 24px;
+    }
+    .body-attention {
+      font-family: 'Roboto', sans-serif;
+      font-size: 32px;
+      font-weight: 400;
+    }
+  }
+}

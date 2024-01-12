@@ -1,0 +1,49 @@
+.game-banner-container {
+	text-align: center;
+	margin: 10px auto 0;
+	//background: top center no-repeat url("../../img/singleComponents/Banners/new_era.png");
+	padding: 12px 9px 14px;
+	height: 100%;
+	min-height: 300px;
+	max-width: 300px;
+	.banner-text {
+		border-bottom: 2px solid #fff;
+		padding: 0 10px;
+		.banner-title {
+			padding-bottom: 0;
+			font-size: 26px;
+			font-family: 'Roboto', sans-serif;
+			color: #fff;
+			-webkit-background-clip: text;
+		}
+		.banner-subtitle {
+			font-family: 'Arcana', sans-serif;
+			font-size: 38px;
+			background: linear-gradient(180deg, #81fcfd, #03e1e4);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			@media only screen and (min-width: 992px) and (max-width: 1199px) {
+				font-size: 30px;
+			}
+		}
+
+	}
+	.banner-timer {
+		margin-top: 8px;
+		font-size: 32px;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+		background: linear-gradient(180deg, #fff199, #ffdc00);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	.close-button-wrapper {
+		justify-content: flex-end;
+		text-align: right;
+		.close-button-custom {
+			padding: 0;
+			border: none;
+			background: transparent;
+		}
+	}
+}

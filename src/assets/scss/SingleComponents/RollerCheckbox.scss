@@ -1,0 +1,43 @@
+.roller-checkbox-wrapper {
+	max-height: 28px;
+	.roller-checkbox-input {
+		position: absolute;
+		display: none;
+		& + .checkbox-label {
+			display: inline-flex;
+			align-items: center;
+			font-family: 'Roboto', sans-serif;
+			font-size: 16px;
+			color: #ffffff;
+			line-height: 1.2;
+			text-transform: capitalize;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+
+		& + .checkbox-label::before {
+			content: '';
+			display: inline-block;
+			flex-shrink: 0;
+			flex-grow: 0;
+			margin-right: 8px;
+			width: 28px;
+			height: 28px;
+			background-color: #1f1f2d;
+			background-image: url("../../img/profile/check.svg");
+			background-position: center;
+			background-size: 0;
+			background-repeat: no-repeat;
+			border: 2px solid #6a668a;
+			border-radius: 2px;
+			box-shadow: inset 3px 3px 0 0 #15151e;
+			transition: background 200ms cubic-bezier(0.5, 2.4, 0.6, 1);
+		}
+
+		&:checked + .checkbox-label::before {
+			background-size: 65%;
+		}
+	}
+}
+

@@ -1,0 +1,75 @@
+.modal-reward {
+  @media (min-width: 576px) {
+    max-width: 100%;
+    width: 398px;
+  }
+
+  .modal-body {
+    position: relative;
+    max-width: 100%;
+    padding: 40px;
+    background-color: #2f3045;
+    border-radius: 4px;
+
+    .reward-modal-close-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 0;
+      color: #ffffff;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      span {
+        padding: 6px;
+      }
+    }
+    .reward-content {
+      .reward-title {
+        font-family: 'Arcana', sans-serif;
+        font-size: 24px;
+        color: #9ff2f3;
+        text-align: center;
+      }
+      .pool-reward-table {
+        .reward-tr {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          padding: 8px 0;
+          &:not(:last-child) {
+            border-bottom: 1px dashed #6a668a;
+          }
+          .reward-place {
+            font-family: 'Roboto', sans-serif;
+            color: #efefef;
+            .reward-place-text {
+              display: flex;
+              align-items: center;
+            }
+            span {
+              font-family: 'Roboto', sans-serif;
+              font-weight: 700;
+              margin-right: 4px;
+            }
+            .reward-cup {
+              margin-right: 8px;
+            }
+          }
+          .reward-count {
+            display: flex;
+            align-items: center;
+            span {
+              color: #03e1e4;
+              margin-left: 5px;
+              font-weight: 700;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

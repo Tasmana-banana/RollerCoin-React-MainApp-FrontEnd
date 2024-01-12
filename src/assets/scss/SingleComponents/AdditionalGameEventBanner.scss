@@ -1,0 +1,40 @@
+.additional-event-banner-container {
+	display: flex;
+	justify-content: center;
+	padding: 246px 0 16px;
+	margin-top: 12px;
+	background-image: url("../../img/singleComponents/additional_game_banner_mobile.png?v=1.0");
+	background-position: 50%;
+	background-color: #ffffff;
+	background-size: cover;
+	@media (min-width: 992px) {
+		background-image: url("../../img/singleComponents/additional_game_banner_desktop.png?v=1.0");
+	}
+	.button-wrapper {
+		width: 280px;
+		.btn-gold {
+			box-shadow: 0 6px #b98500, 0 10px rgba(0, 0, 0, 0.35);
+			&:active,
+			&:disabled {
+				box-shadow: 0 6px #b98500, 0 8px rgba(0, 0, 0, 0.35);
+				.btn-text {
+					transform: translateY(4px);
+				}
+			}
+			&:hover,
+			&:disabled {
+				opacity: 1;
+			}
+			.btn-text {
+				padding: 11px 4px 11px;
+				font-size: 20px;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+				box-shadow: none;
+				border: 1px solid #fff199;
+				&:hover {
+					background-color: #ffe647;
+				}
+			}
+		}
+	}
+}

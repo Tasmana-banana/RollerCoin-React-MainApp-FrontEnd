@@ -1,0 +1,140 @@
+{
+	"title": "Perguntas Frequentes",
+	"basics": "O Básico de RollerCoin",
+	"mining": "Detalhes de mineração",
+	"withdrawals": "Saques",
+	"game": "Detalhes do jogo e solução de problemas",
+	"share": "Compartilhar resposta",
+	"copied": "Link copiado",
+	"helpful": "Esta resposta foi útil?",
+	"feedback": "Agradecemos seu feedback",
+	"faqCards": {
+		"howChangeEmail": {
+			"question": "How to change an email connected to my account?",
+			"description": "To initiate an email change process, you need to click on the form below:",
+			"linkName": "Email Change Request Form",
+			"description2": "After this, a window with a list of questions and information that is required to change the email will open. Please fill out the questionnaire carefully and double-check the information that you have stated before sending the form.",
+			"description3": "After the form has been filled out, our support team will review your request and, depending on the provided information, will either proceed with the request or deny it and provide you with the progress of the process. Additionally, you will receive a confirmation email from",
+			"email": "support@rollercoin.com",
+			"description4": "to proceed your request or cancel it.",
+			"description5": "These strict measures are necessary as a means of confirming that you are the account owner and preventing any foul activity such as stealing accounts from our users."
+		},
+		"whyCantLogin": {
+			"question": "Why can’t I log in to my account?",
+			"description": "The most frequent reason for an unsuccessful login attempt is that the account is not verified, you can find the solution to this case above.",
+			"description2": "Another reason that causes login difficulties is that site is in a state of an overload or previous cookie and cache files prevent the proper loading of the site, so we kindly advise you to follow these steps:",
+			"list1": "Log out and clear your browser's Internet cache.",
+			"list2": "Close the browser and reopen it.",
+			"list3": "Make sure cookies are allowed/enabled in your browser settings.",
+			"list4": "Log in and try again.",
+			"description3": "Make sure that browser extensions (such as AdBlock) that may interfere is disabled on RollerCoin and try again, alternatively, you can try using another device and or browser.",
+			"description4": "Be certain that you enter via our only official site: ",
+			"description5": "as we do not have any supported application.",
+			"description6": "If an issue persists, we suggest you try using a VPN service, as some countries restrict access to certain sites and platforms.",
+			"description7": "If the password is invalid, you can send a request to reset the password to our support department at ",
+			"description8": " and we will send a link to your email address so you can reset your password and enter a new one."
+		},
+		"whereCanFindStatistic": {
+			"question": "Where I can find my income statistic?",
+			"description": "You can find your income statistic by going to your ",
+			"profile": "profile",
+			"description2": ", which you can find at the top right corner, where your RollerCoin avatar is located.",
+			"description3": "Then just press on the ",
+			"descrBold3": "“Income Stats”",
+			"description4": " button.",
+			"description5": "Here, you can view your income statistics categorized by different time periods and cryptocurrencies."
+		},
+		"howConnectNFT": {
+			"question": "How to connect my NFT?",
+			"description": "You can find your NFT collection by going to your ",
+			"profile": "profile",
+			"description2": ", which you can find at the top right corner, where your RollerCoin avatar is located.",
+			"description3": "Then find the ",
+			"descBold": "“NFT Collection”",
+			"description4": " button:",
+			"description5": "Once you press it, a window will appear where you can connect your MetaMask wallet just by clicking ",
+			"descrBold5": "“Connect MetaMask”",
+			"description6": "Simply follow the instructions that appear in the open window. After successfully connecting, a new window will appear where your NFT will be located."
+		},
+		"taskWallLeaderboardRulesWeekly": {
+			"question": "Rules Weekly",
+			"description": "Compete with other players by earning as many points as possible in the competition",
+			"description2": "All participants who complete at least one task on the Task Wall during the competition period will automatically enter the Weekly Competition",
+			"description3": "Each 1 RLT rewarded from completed tasks will earn you 1 point on the Weekly Competition leaderboard",
+			"description4": "Players who rank in the Top 200 at the end of the week will receive rewards in RLT based on their position on the leaderboard.",
+			"description5": "The competition runs every week from Tuesday 0:00 UTC to Monday 23:59 UTC",
+			"description6": "At the end of each Weekly Competition, the leaderboard will be reset, and you will receive a reward according to your place on the leaderboard",
+			"description7": "Points earned in the Task Wall will be counted for both the Weekly Competition and Grand Competition. As a result, you can participate in two competitions at the same time"
+		},
+		"taskWallLeaderboardRulesGrand": {
+			"question": "Rules Grand",
+			"description": "Compete with other players by earning as many points as possible in the competition",
+			"description2": "All participants who completed at least one task on the Task Wall during the period of the competition automatically entered the Grand Competition",
+			"description3": "Each 1 RLT rewarded from completed tasks will get you 1 point to the Weekly Competition leaderboard",
+			"description4": "Players who rank in the Top 100 at the end of the week will receive rewards in RLT based on their position on the leaderboard.",
+			"description5": "The competition runs every four weeks, starting on Wednesday 0:00 UTC and ending on Tuesday 23:59 UTC.",
+			"description6": "At the end of each Grand Competition, the leaderboard resets, and you will receive a reward according to your place on the leaderboard",
+			"description7": "Points earned on the Task Wall are counted simultaneously in the Weekly Competition and Grand Competition. As a result, you can participate in two competitions at the same time"
+		},
+		"taskWallLeaderboardRulesRewards": {
+			"question": "Rewards distribution",
+			"description": "In order to award the prize for the task and competition points, the partner-provider must confirm the player's completion of the task.",
+			"description2": "The awarding of the prize and competition points occurs at the moment when the partner confirms the completed task, not at the moment of task completion itself.",
+			"description3": "Each 1 RLT rewarded from completed tasks will get you 1 point on the Weekly Competition leaderboard",
+			"description4": "The rewards are distributed according to the table, which can be found above the leaderboard by clicking on the banner.",
+			"description5": "The reward is automatically credited to the player's account after the competition ends, based on their ranking and the reward table.",
+			"description6": "If two or more players have the same number of points, the ranking is determined by the number of completed tasks. If this value is also the same, the leader is the one who completed the last task earlier.",
+			"description7": "Participating in two competitions simultaneously does not hinder you from receiving rewards. You can achieve prize-winning positions in multiple competitions at once."
+		}
+	},
+	"system_sales_event": {
+		"title": "How it works",
+		"description": [
+			"Burn your old miners and get new ones! You have an opportunity not only to choose which miners you want to get rid of, but also to do it in a beneficial way!",
+			"As you fill up the progression, you'll receive powerful miners, including the true legend — Singularity! Additionally, as you make progress, you'll earn Event Coins that you can spend at your discretion in the Burning Shop. Get yourself a couple of powerful miners include incredibly Icy Souse try your luck and win a legendary powerful Riding Free Relic from the Burning Case!",
+			"Time to burn it all, Rollers!"
+		],
+		"step1": {
+			"title": "Select miners",
+			"description": "They should be in the inventory"
+		},
+		"step2": {
+			"title": "Calculate the reward",
+			"description": "For burning you will receive progression points and Event Coins"
+		},
+		"step3": {
+			"title": "Start burning miners",
+			"description": "You can burn no more than 6 miners at a time"
+		},
+		"step4": {
+			"title": "Claim your reward!",
+			"description": "You can wait for the timer to end or speed up the time using RLT"
+		},
+		"faqTitle": "FAQ - Burning"
+	},
+	"offerwalls": {
+		"title": "How it works",
+		"subtitle": "A New Way to Increase Your Earnings in RollerCoin",
+		"inscription": "Complete simple tasks from our partners and get credited with RLT!",
+		"description": [
+			"The funds will be transferred directly to your in-game wallet in RLT. You will be able to use them as you wish – purchase in-game items, merge your miners or trade with other players on the Marketplace!"
+		],
+		"step1": {
+			"title": "Choose a task",
+			"description": "Choose from the list a task/survey you want to complete"
+		},
+		"step2": {
+			"title": "Check Details",
+			"description": "Read the Task Details carefully to complete it"
+		},
+		"step3": {
+			"title": "Complete it",
+			"description": "Complete the Task in accordance with the rules"
+		},
+		"step4": {
+			"title": "Take reward",
+			"description": "Your Reward will be automatically credited to your balance in up to 7 days."
+		},
+		"faqTitle": "FAQ - Task Wall"
+	}
+}

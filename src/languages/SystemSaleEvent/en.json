@@ -1,0 +1,41 @@
+{
+	"specialEvent": {
+		"event": "Event",
+		"shop": "Burning Shop",
+		"howItWorks": "How it Works",
+		"exchangeProfit": "Exchange profit",
+		"continue": "Continue"
+	},
+	"specialEventBurn": {
+		"timerText": "ENDS",
+		"title": "Burn Miners",
+		"btnStart": "Start",
+		"actionText": "Burning is irreversible and cannot be undone.",
+		"cancelBtnText": "Cancel",
+		"youProfit": "You profit",
+		"claimReward": "Claim reward",
+		"speedUpText": "Speed up burning",
+		"successfullyBurning": "Burning was successfully accelerated"
+	},
+	"specialEventProducts": {
+		"infoText": "Click on the miner you want to burn",
+		"emptyTitle": "You don't have any miners to burn.",
+		"emptyText": "To burn a miner, it must be in the inventory.",
+		"emptyBtnText": "Get miners",
+		"search": "Search",
+		"maxSlotsFilled": "No free slots available"
+	},
+	"sort": {
+		"powerHigh": "Power: High - Low",
+		"powerLow": "Power: Low - High",
+		"powerPercentHigh": "Bonus: High – Low",
+		"powerPercentLow": "Bonus: Low – High",
+		"rewardCountHigh": "Points: High – Low",
+		"rewardCountLow": "Points: Low – High"
+	},
+	"progressBar": {
+		"timerText": "ENDS",
+		"level": "Level",
+		"showAllRewards": "Show all rewards"
+	}
+}

@@ -1,0 +1,117 @@
+.rewards-modal {
+  position: relative;
+  margin: 73px 16px 21px;
+
+  @media only screen and (min-width: 576px) {
+    margin: 73px auto 21px;
+  }
+
+
+  .modal-content {
+    border: none;
+  }
+
+  .modal-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    span {
+      padding: 6px;
+    }
+
+    .close-menu-btn {
+      .close-btn-text {
+        padding: 6px;
+      }
+    }
+  }
+
+  .rewards-modal-body {
+    border-radius: 4px;
+    background-color: #2f3045;
+    padding: 0 16px;
+
+    .rewards-modal-title {
+      text-align: center;
+      color: #9ff2f3;
+      font-family: Arcana, sans-serif;
+      font-size: 24px;
+      font-weight: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-top: 23px;
+      margin-bottom: 16px;
+    }
+
+    .rewards-list {
+      .reward-item {
+        margin: 0 0 16px;
+
+        .reward-item-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px 6px;
+          border-radius: 4px;
+          border: solid 1px #514e72;
+          background-color: #1f1f2d;
+
+          .reward-item-img {
+            padding: 10px 24px 0;
+          }
+
+          .reward-item-text {
+            font-family: Roboto, sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: normal;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 4px;
+
+            .reward-item-bonus {
+              color: #03E1E4
+            }
+          }
+        }
+
+        .reward-item-description {
+          margin-top: 8px;
+          font-family: Roboto, sans-serif;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: normal;
+          display: flex;
+          align-items: center;
+
+          span {
+            display: flex;
+            align-items: center;
+          }
+
+          & span:last-child {
+            margin-left: 8px;
+
+            img {
+              margin-right: 2px;
+            }
+          }
+        }
+
+        &:nth-child(odd) {
+          padding-right: 6px;
+        }
+
+        &:nth-child(even) {
+          padding-left: 6px;
+        }
+      }
+    }
+  }
+}

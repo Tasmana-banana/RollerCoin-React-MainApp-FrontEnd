@@ -1,0 +1,26 @@
+{
+  "cells": "Célula(s): ",
+  "power": "Poder: ",
+  "price": "Preço: ",
+  "unlimited": "Ilimitado",
+  "left": "Restante(s)",
+  "main": {
+    "yes": "Sim",
+    "no": "Não",
+    "buy": "Comprar",
+    "notEnough": "Insuficiente",
+    "buySuccess": "Compra realizada com sucesso!",
+    "soldOut": "Esgotado",
+    "canBuy": "*Você pode comprar apenas ",
+    "onYourAccount": " em sua conta"
+  },
+  "landingSaleEvent": {
+    "miner": "Minerador",
+    "hat": "Chapéu",
+    "appearance": "Visual",
+    "loot_box": "Caixa de Itens",
+    "trophy": "Troféu",
+    "rack": "Prateleira",
+    "battery": "Bateria"
+  }
+}

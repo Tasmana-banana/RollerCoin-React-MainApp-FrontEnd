@@ -1,0 +1,12 @@
+.event-banner-container {
+	margin: 0 -5px;
+	@media only screen and (min-width: 992px) {
+		margin: 0;
+	}
+	.banner-image {
+		width: 100%;
+		max-height: 114px;
+		border-radius: 4px;
+		image-rendering: pixelated;
+	}
+}

@@ -1,0 +1,223 @@
+.roller-button {
+	position: relative;
+	padding: 9px 8px 8px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #8984b1;
+	border: 1px solid #c3b0d0;
+	border-radius: 6px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+	transition: transform 100ms;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		background-color: #a29ec2;
+	}
+	&:disabled {
+		background-color: #5f5d7e;
+		border: 1px solid #8e8198;
+		transform: translateY(4px);
+		cursor: not-allowed;
+		.shadow-3d {
+			box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+			transform: translate3d(0, 3px, -1px);
+		}
+		.roller-button-text-wrapper {
+			opacity: 0.7;
+		}
+	}
+	.shadow-3d {
+		position: absolute;
+		inset: 0 -1px;
+		background: #514e72;
+		border-radius: inherit;
+		box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25);
+		transform: translate3d(0, 7px, -1px);
+		transition: transform 100ms, box-shadow 100ms;
+	}
+	&:not(.loading):active {
+		transform: translateY(4px);
+		.shadow-3d {
+			box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+			transform: translate3d(0, 3px, -1px);
+		}
+	}
+	.roller-button-text-wrapper {
+		line-height: 25px;
+		.roller-button-img {
+			display: inline-block;
+			&.with-separate {
+				margin-right: 12px;
+			}
+			> img {
+				image-rendering: pixelated;
+			}
+		}
+		.roller-button-text {
+			font-family: 'Arcana', sans-serif;
+			font-size: 15px;
+			font-weight: 700;
+			@media only screen and (min-width: 992px) {
+				font-size: 14px;
+			}
+			@media only screen and (min-width: 1200px) {
+				font-size: 15px;
+			}
+		}
+	}
+	&.separate {
+		margin-right: 12px;
+	}
+	.red-dot {
+		position: absolute;
+		top: -8px;
+		right: -8px;
+		height: 16px;
+		width: 16px;
+		background-color: #ff1744;
+		border: 1px solid #ff8098;
+		border-radius: 50%;
+	}
+
+	// Sizes
+	&.smallest {
+		padding: 3px 3px 1px;
+		.shadow-3d {
+			transform: translate3d(0, 5px, -1px);
+		}
+		&:active {
+			transform: translateY(3px);
+		}
+		&:disabled {
+			transform: translateY(3px);
+		}
+		&:active::before,
+		&:disabled::before {
+			transform: translate3d(0, 3px, -1px);
+		}
+		.roller-button-text-wrapper {
+			line-height: 18px;
+			.roller-button-text {
+				font-family: 'Arcana', sans-serif;
+				font-size: 14px;
+			}
+		}
+	}
+	&.small {
+		padding: 7px 4px;
+		.shadow-3d {
+			transform: translate3d(0, 6px, -1px);
+		}
+		&:active {
+			transform: translateY(3px);
+		}
+		&:disabled {
+			transform: translateY(3px);
+		}
+		&:active::before,
+		&:disabled::before {
+			transform: translate3d(0, 3px, -1px);
+		}
+		.roller-button-text-wrapper {
+			line-height: 18px;
+			.roller-button-text {
+				font-family: 'Arcana', sans-serif;
+				font-size: 14px;
+			}
+		}
+	}
+	&.large {
+		padding: 10px 12px 8px;
+		.shadow-3d {
+			transform: translate3d(0, 10px, -1px);
+		}
+		&:active {
+			transform: translateY(5px);
+		}
+		&:disabled {
+			transform: translateY(5px);
+		}
+		&:active::before,
+		&:disabled::before {
+			transform: translate3d(0, 5px, -1px);
+		}
+		.roller-button-text-wrapper {
+			line-height: 24px;
+			.roller-button-text {
+				font-family: 'Arcana', sans-serif;
+				font-size: 20px;
+				@media only screen and (min-width: 992px) {
+					font-size: 18px;
+				}
+				@media only screen and (min-width: 1200px) {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+
+	// Colors
+	&.default {
+		color: #ffffff;
+		background-color: #8984b1;
+		border: 1px solid #c3b0d0;
+		&:hover {
+			background-color: #a29ec2;
+		}
+		&:disabled {
+			background-color: #5f5d7e;
+			border: 1px solid #8e8198;
+		}
+		.shadow-3d {
+			background: #514e72;
+		}
+	}
+	&.cyan {
+		color: #2f3045;
+		background-color: #03e1e4;
+		border: 1px solid #9ff2f3;
+		&:hover {
+			background-color: #1cf9fc;
+		}
+		&:disabled {
+			background-color: #029ea0;
+			border: 1px solid #6fa9aa;
+		}
+		.shadow-3d {
+			background: #186668;
+		}
+	}
+	&.gold {
+		color: #2f3045;
+		background-color: #ffdc00;
+		border: 1px solid #fff199;
+		&:hover {
+			background-color: #ffe647;
+		}
+		&:disabled {
+			background-color: #dcb000;
+			border: 1px solid #dcbb4c;
+		}
+		.shadow-3d {
+			background: #b98500;
+		}
+	}
+	&.red {
+		color: #ffffff;
+		background-color: #ca444a;
+		border: 1px solid #ee8b92;
+		&:hover {
+			background-color: #d36469;
+		}
+		&:disabled {
+			background-color: #912c30;
+			border: 1px solid #a34f54;
+		}
+		.shadow-3d {
+			background: #581416;
+		}
+	}
+}
